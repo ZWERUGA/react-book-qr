@@ -8,6 +8,9 @@ export const Route = createRootRoute({
 				<Link to="/" className="[&.active]:font-bold">
 					Главная
 				</Link>{" "}
+				<Link to="/books" className="[&.active]:font-bold">
+					Книги
+				</Link>{" "}
 			</div>
 			<hr />
 			<Outlet />
