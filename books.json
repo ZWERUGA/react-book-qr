@@ -61,7 +61,7 @@
 		"publishedDate": "2021-06-17",
 		"description": "Сборник филологических работ посвящен памяти профессора Московского университета Александра Андреевича Смирнова (07.05.1941–13.10.2014). Он состоит из следующих разделов: первый – статьи коллег и учеников А. А. Смирнова (работающих ныне в учреждениях науки, образования и культуры России, Беларуси, Украины, Болгарии, Венгрии и Германии), развивающие основные направления поисков ученого: история русской литературы XVIII–XX вв., творчество А. С. Пушкина, русско-европейские литературные взаимосвязи, вопросы теории литературы; второй – мемориальные заметки, воссоздающие неповторимый образ А. А. Смирнова как ученого, педагога и человека; третий – впервые публикуемые сведения по истории рода ученого, собранные на основе материалов его личного архива; четвертый – полный библиографический перечень печатных работ А. А. Смирнова; пятый – избранное научное наследие ученого, отражающее широту его интересов и энциклопедизм мышления.Для специалистов-филологов, преподавателей литературы и широкого круга читателей.",
 		"identifier": "9785043444011",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=jxEsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -100,7 +100,7 @@
 	},
 	{
 		"title": "Покупаем от А до Я No03 (43) 2013",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2017-07-23",
 		"description": "Журнал «Покупаем от А до Я» послужит великолепным гидом в мир покупок. Вы легко выберете лучшее среди инновационных разработок в сфере бытовой техники, аудио/видеотехники, мобильных технологий и фоторынка. Вы сможете узнать все плюсы и минусы новых марок автомобилей, которые прошли тест-драйв у наших испытателей. Журнал рассчитан на широкую, массовую аудиторию крепких профессионалов в своем деле, успешных, состоявшихся, достойных глубокого уважения людей и, разумеется, членов их семей. То есть на новый средний и преуспевающий класс. Более половины нашей аудитории доверяет нашему экспертному мнению в области выбора приборов и устройств для дома.В номере:Новый Range Rover Sport в Москве«Умный дом» настоящегоНовые проекторы ACERУльтиматум HTC с двумя SIM-картамиToshiba Satellite P50-A/P70-A для работы и развлеченийГотовим вместе с PolarisГодовщина сборки Samsung EcoBubble в РоссииРучные миксеры Bosch ErgoMixxHansa Integra: классика всегда в модеПрофессия – «гладить». Philips PerfectCare Azur с технологией OptimalTempи многое другое",
@@ -145,9 +145,9 @@
 	{
 		"title": "Книга о промыслѣ Божием, как он ѣрез православие ведет ко спасению, а неправославных обличает собстенными их дѣлами",
 		"authors": ["Parḟenij (igumen.)"],
-		"publisher": null,
+
 		"publishedDate": "1857",
-		"description": null,
+
 		"identifier": "UBBS:UBBS-00061087",
 		"pageCount": 224,
 		"imageLink": "http://books.google.com/books/content?id=DPTSXmk4r_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -213,7 +213,7 @@
 		"authors": ["Olʹga Vitalʹevna Berdnikova"],
 		"publisher": "ОЛМА Медиа Групп",
 		"publishedDate": "2003",
-		"description": null,
+
 		"identifier": "9785948461816",
 		"pageCount": 321,
 		"imageLink": "http://books.google.com/books/content?id=jqACNMAeseAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -221,7 +221,7 @@
 	},
 	{
 		"title": "Энциклопедический словарь Брокгауза и Ефрона (Б)",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2014-07-15",
 		"description": "Вашему вниманию предлагается уникальное издание «Энциклопедический словарь Брокгауза и Ефрона» - самая крупная дореволюционная универсальная энциклопедия на русском языке, изданная в Российской империи издательским обществом «Ф. А. Брокгауз - И. А. Ефрон». Книга справедливо считается одной из лучших русскоязычных энциклопедий, сохранившей свою справочно-научную ценность по сей день. К созданию словаря были привлечены крупнейшие научные силы того времени: Д. И. Менделеев, А. И. Бекетов, А. И. Воейков, Д. И. Анучин, Ю. М. Шокальский, Н. М. Книпович, А. О. Ковалевский, А. И. Советов и др. В настоящее издание включены большинство статей «Энциклопедического словаря» Брокгауза и Ефрона, за исключением статей, утратившие свое научное значение.",
@@ -232,12 +232,12 @@
 	},
 	{
 		"title": "Объединенный пленум ЦК и ЦКК ВКП(б) 21–23 октября 1927 г. Документы и материалы",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2021-05-15",
 		"description": "В книге впервые вводятся в научный оборот стенограммы заседаний и стенографический отчет заседаний октябрьского объединенного пленума ЦК и ЦКК ВКП(б). Публикуются тезисы директив по составлению пятилетнего плана народного хозяйства и о работе в деревне, решения пленума о проведении дискуссии перед очередным XV съездом партии и об исключении из ЦК ВКП(б) Л. Д. Троцкого и Г. Е. Зиновьева, а также заявления оппозиции против исключения Троцкого и Зиновьева из ЦК, о переносе созыва съезда на два месяца и по ряду других вопросов партийной жизни.Издание рассчитано на специалистов – исследователей истории партии, преподавателей и студентов гуманитарных факультетов и вузов, а также лиц, интересующихся отечественной историей.",
 		"identifier": "9785043464163",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=k6ouEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -245,7 +245,7 @@
 		"title": "Більське городище в наукових працях Б. А. Шрамка: збірник наукових праць, присвячений 95-річчю від дня народження вченого",
 		"authors": ["Корост І. І."],
 		"publisher": "Алексей",
-		"publishedDate": null,
+
 		"description": "Збірник наукових праць Б. А. Шрамка (1921–2012), присвячений 95-річчю від дня народження зна- ного археолога. Видання містить опубліковані в різні роки статті та тези доповідей і повідомлень, у яких представлені результати багаторічних досліджень харківського вченого на Більському городищі (VIII– IV ст. до н. е.). Роботи Б. А. Шрамка розміщено у збірнику в хронологічній послідовності, що дає можливість про- стежити розвиток концептуального погляду дослідника на місце та роль Більського городища в системі загальних етнокультурних процесів, що відбувалися в Східній Європі в епоху раннього залізного віку.",
 		"identifier": "9789663725611",
 		"pageCount": 608,
@@ -301,7 +301,7 @@
 		"authors": ["Быкова В. П."],
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2013-03-14",
-		"description": null,
+
 		"identifier": "9785446011179",
 		"pageCount": 416,
 		"imageLink": "http://books.google.com/books/content?id=kzRcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -321,9 +321,9 @@
 	{
 		"title": "Русский администратор новѣйшей школы",
 		"authors": ["Борис Петрович Обухов"],
-		"publisher": null,
+
 		"publishedDate": "1868",
-		"description": null,
+
 		"identifier": "BL:A0018390164",
 		"pageCount": 96,
 		"imageLink": "http://books.google.com/books/content?id=k7RbAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -332,9 +332,9 @@
 	{
 		"title": "Statistical Report of the Secretary of State to the Governor and General Assembly of the State of Ohio for the Period Commencing ... and Ending ...",
 		"authors": ["Ohio. Secretary of State"],
-		"publisher": null,
+
 		"publishedDate": "1887",
-		"description": null,
+
 		"identifier": "STANFORD:36105126606644",
 		"pageCount": 930,
 		"imageLink": "http://books.google.com/books/content?id=GvKi9Q8Me88C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -365,9 +365,9 @@
 	{
 		"title": "Annual Report of the Commissioner of Railroads and Telegraphs",
 		"authors": ["Ohio. Commissioner of Railroads and Telegraphs"],
-		"publisher": null,
+
 		"publishedDate": "1887",
-		"description": null,
+
 		"identifier": "UCAL:B2896940",
 		"pageCount": 780,
 		"imageLink": "http://books.google.com/books/content?id=e2gkAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -378,9 +378,9 @@
 		"authors": [
 			"Presbyterian Church in the U.S.A. Board of Publication and Sabbath-School Work"
 		],
-		"publisher": null,
+
 		"publishedDate": "1898",
-		"description": null,
+
 		"identifier": "HARVARD:32044017174608",
 		"pageCount": 374,
 		"imageLink": "http://books.google.com/books/content?id=xTwEQwPBqEgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -389,7 +389,7 @@
 	{
 		"title": "Annual Report of the Secretary of State",
 		"authors": ["Ohio. Secretary of State"],
-		"publisher": null,
+
 		"publishedDate": "1887",
 		"description": "1868- include the Statistical report of the Secretary of State.",
 		"identifier": "CORNELL:31924092250996",
@@ -400,7 +400,7 @@
 	{
 		"title": "Annual Report of the Secretary of State, to the Governor of the State of Ohio for the Year",
 		"authors": ["Ohio. Secretary of State"],
-		"publisher": null,
+
 		"publishedDate": "1887",
 		"description": "Vols. for 1868- include the Statistical report of the Secretary of State in continuation of the Annual report of the Commissioner of Statistics.",
 		"identifier": "OSU:32435063009013",
@@ -411,9 +411,9 @@
 	{
 		"title": "Responsive Readings from the Psalms and Other Scriptures, in the Revised Version",
 		"authors": ["Joseph Tuthill Duryea"],
-		"publisher": null,
+
 		"publishedDate": "1898",
-		"description": null,
+
 		"identifier": "HARVARD:32044077958726",
 		"pageCount": 374,
 		"imageLink": "http://books.google.com/books/content?id=hn0XT4t8bokC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -422,9 +422,9 @@
 	{
 		"title": "Remote Sensing and the Atmosphere",
 		"authors": ["Remote Sensing Society. Conference"],
-		"publisher": null,
+
 		"publishedDate": "1982",
-		"description": null,
+
 		"identifier": "UCAL:B4154483",
 		"pageCount": 336,
 		"imageLink": "http://books.google.com/books/content?id=ldDHAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
@@ -433,9 +433,9 @@
 	{
 		"title": "Annual Meeting and Report of the Women's National Indian Association",
 		"authors": ["National Indian Association"],
-		"publisher": null,
+
 		"publishedDate": "1884",
-		"description": null,
+
 		"identifier": "UIUC:30112033041770",
 		"pageCount": 230,
 		"imageLink": "http://books.google.com/books/content?id=GSBJAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -525,7 +525,7 @@
 		"publishedDate": "2022-01-27",
 		"description": "В условиях увеличения пассажиропотоков городского и пригородного транспорта возникает комплекс проблем, связанных с графиками движения транспортных средств при изменяющихся во времени пассажиропотоках и при наличии общих частей маршрутов. Предложены оптимальные по быстродействию алгоритмы перехода от одного равноинтервального графика к другому, а также алгоритмы составления оптимальных графиков движения в случае, когда один маршрут является частью другого.",
 		"identifier": "9785457386327",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=RWhnAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -534,7 +534,7 @@
 		"authors": ["К.Ю. Богданов"],
 		"publisher": "Рипол Классик",
 		"publishedDate": "1986",
-		"description": null,
+
 		"identifier": "9785458260428",
 		"pageCount": 145,
 		"imageLink": "http://books.google.com/books/content?id=Yc75AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -630,10 +630,9 @@
 	},
 	{
 		"title": "The Handbook of Jamaica for ...",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1928",
-		"description": null,
+
 		"identifier": "UCLA:L0054861844",
 		"pageCount": 618,
 		"imageLink": "http://books.google.com/books/content?id=O7sEpZrNtQAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -642,9 +641,9 @@
 	{
 		"title": "Finding List of the Free Public Library of Newark, N.J.",
 		"authors": ["Newark Public Library"],
-		"publisher": null,
+
 		"publishedDate": "1893",
-		"description": null,
+
 		"identifier": "UCAL:$B72272",
 		"pageCount": 310,
 		"imageLink": "http://books.google.com/books/content?id=MsZBAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -652,10 +651,9 @@
 	},
 	{
 		"title": "List of Parliamentary Papers for Sale",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "UIUC:30112070035982",
 		"pageCount": 142,
 		"imageLink": "http://books.google.com/books/content?id=fLkpTisAmX0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -664,9 +662,9 @@
 	{
 		"title": "Г. Гедеонов и его система о происхождении Варягов и Руси",
 		"authors": ["Михаил Петрович Погодин"],
-		"publisher": null,
+
 		"publishedDate": "1864",
-		"description": null,
+
 		"identifier": "NKP:3186209751",
 		"pageCount": 116,
 		"imageLink": "http://books.google.com/books/content?id=hSFfAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -674,10 +672,9 @@
 	},
 	{
 		"title": "Продолжение Свода законов Российской империи, изданнаго в 1857 г",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1868",
-		"description": null,
+
 		"identifier": "NKP:3186248422",
 		"pageCount": 1080,
 		"imageLink": "http://books.google.com/books/content?id=_yFfAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -688,7 +685,7 @@
 		"authors": ["Коллектив авторов"],
 		"publisher": "Litres",
 		"publishedDate": "2021-01-18",
-		"description": null,
+
 		"identifier": "9785040643554",
 		"pageCount": 272,
 		"imageLink": "http://books.google.com/books/content?id=8FYqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -696,11 +693,11 @@
 	},
 	{
 		"title": "Русская музыкальная газета. Еженедельное издание : (с иллюстрациями). 1912 г.",
-		"authors": null,
+
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2015-05-15",
 		"description": "Репринт. изд. 1912 г.",
-		"identifier": null,
+
 		"pageCount": 766,
 		"imageLink": "http://books.google.com/books/content?id=NJPTDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -763,9 +760,9 @@
 	{
 		"title": "Сочиненія В.Г. Бѣлинскаго",
 		"authors": ["Виссарион Григорьевич Белинский"],
-		"publisher": null,
+
 		"publishedDate": "1859",
-		"description": null,
+
 		"identifier": "NLI:1916508-10",
 		"pageCount": 546,
 		"imageLink": "http://books.google.com/books/content?id=Bc7HC1m3SKIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -801,7 +798,7 @@
 			"Панова Лариса Викторовна"
 		],
 		"publisher": "Scientific magazine \"Kontsep",
-		"publishedDate": null,
+
 		"description": "Монография посвящена изучению динамики социального благополучия населения как важнейшего критерия эффективности социально-экономической политики на уровне муниципального образования. В условиях регионализации российской экономики многоаспектность оценки социального благополучия обусловливает актуальность вопросов социологического исследования организации жизненного пространства населения различных территориальных образований. В монографии представлены результаты изучения общественного мнения жителей городского округа г. Уфа Республики Башкортостан о проблемах организации системы здравоохранения и социальной защиты населения, о состоянии системы дошкольного, школьного и дополнительного образования, об уровне жизни населения, состоянии рынка труда и занятости. Издание адресовано должностным лицам органов местного самоуправления для использования в практической деятельности, руководителям и педагогам образовательных учреждений всех уровней, специалистам службы здоровья, социальных и гуманитарных служб, врачам, студентам вузов и колледжей, а также всем, кто интересуется проблемами качества жизни и социального благополучия.",
 		"identifier": "9785878656351",
 		"pageCount": 207,
@@ -810,10 +807,10 @@
 	},
 	{
 		"title": "Сборник материалов по русско-турецкой войне 1877-78 г.г. на Балканском полуострове",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2016-03-13",
-		"description": null,
+
 		"identifier": "9785447572570",
 		"pageCount": 320,
 		"imageLink": "http://books.google.com/books/content?id=uQTODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -822,9 +819,9 @@
 	{
 		"title": "Экономическое состояніе городских поселеній европейской Россіи в 1861-62 г",
 		"authors": ["Russia. Ministerstvo vnutrennikh di︠e︡l"],
-		"publisher": null,
+
 		"publishedDate": "1863",
-		"description": null,
+
 		"identifier": "HARVARD:HXVAG9",
 		"pageCount": 928,
 		"imageLink": "http://books.google.com/books/content?id=yW4-AAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -866,9 +863,9 @@
 	{
 		"title": "The Collected Mathematical Papers",
 		"authors": ["Arthur Cayley"],
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "BSB:BSB11506089",
 		"pageCount": 616,
 		"imageLink": "http://books.google.com/books/content?id=bBeXyWQOYioC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -877,9 +874,9 @@
 	{
 		"title": "Theory of Functions of a Complex Variable",
 		"authors": ["Forsyth"],
-		"publisher": null,
+
 		"publishedDate": "1893",
-		"description": null,
+
 		"identifier": "UBBE:UBBE-00126279",
 		"pageCount": 718,
 		"imageLink": "http://books.google.com/books/content?id=VHg6f0ekISQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -887,9 +884,9 @@
 	},
 	{
 		"title": "«Будем надеяться на всё лучшее…»: из эпистолярного наследия Д. С. Лихачева: 1938–1999",
-		"authors": null,
+
 		"publisher": "Новое Литературное Обозрение",
-		"publishedDate": null,
+
 		"description": "Наследие Дмитрия Сергеевича Лихачева — филолога-слависта, специалиста по древнерусской литературе, одного из столпов отечественной культуры и науки XX века — включает в себя множество разных жанров от монографий и статей до эссе и воспоминаний. Однако долгое время оставалась неизученной еще одна важная часть его рукописного наследия — эпистолярная. В этой книге публикуются письма Д. С. Лихачева и ответы его корреспондентов за период с 1938 по 1999 год. Среди адресатов — ученые, деятели культуры, друзья и издатели, государственные деятели (в том числе М. С. Горбачев и Б. Н. Ельцин). В публикуемой переписке нашли отражение важные научные дискуссии, которые велись устно и на страницах периодических изданий (о проблемах текстологии, подлинности «Слова о полку Игореве», методологии изучения русских летописей и др.), обсуждение серии «Литературные памятники», подготовка и участие в международных конференциях по гуманитарным наукам, в том числе съездах Международного комитета славистов и его Эдиционно-текстологической комиссии. Кроме того, письма дают представления о быте, интересах и образе жизни гуманитарной научной интеллигенции XX века, о дружеских связях Д. С. Лихачева и его современников.",
 		"identifier": "9785444824276",
 		"pageCount": 4385,
@@ -1000,7 +997,7 @@
 		"authors": ["Заблоцкий-Десятовский А. П."],
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785998997389",
 		"pageCount": 461,
 		"imageLink": "http://books.google.com/books/content?id=LUowEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1020,9 +1017,9 @@
 	{
 		"title": "Изслѣдованіе теоріи поземельной ренты. 1. Законы Д. Рикардо и Г. Ф. Тюнена",
 		"authors": ["Vladimir Aleksandrovich FUKS"],
-		"publisher": null,
+
 		"publishedDate": "1871",
-		"description": null,
+
 		"identifier": "BL:A0021970523",
 		"pageCount": 178,
 		"imageLink": "http://books.google.com/books/content?id=WZDsyvBwWeIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1041,10 +1038,9 @@
 	},
 	{
 		"title": "Philosophical Transactions of the Royal Society of London",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1890",
-		"description": null,
+
 		"identifier": "PRNC:32101041137470",
 		"pageCount": 594,
 		"imageLink": "http://books.google.com/books/content?id=25JaAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1053,9 +1049,9 @@
 	{
 		"title": "Philosophical Transactions of the Royal Society of London",
 		"authors": ["Royal Society (London)"],
-		"publisher": null,
+
 		"publishedDate": "1870",
-		"description": null,
+
 		"identifier": "BSB:BSB10499747",
 		"pageCount": 744,
 		"imageLink": "http://books.google.com/books/content?id=_9m2tz2RedcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1074,8 +1070,7 @@
 	},
 	{
 		"title": "Proceedings of the London Mathematical Society",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
 		"description": "\"Papers presented to J.E. Littlewood on his 80th birthday\" issued as 3d ser., v. 14 A, 1965",
 		"identifier": "UCAL:$B671861",
@@ -1085,10 +1080,9 @@
 	},
 	{
 		"title": "The Eagle",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1869",
-		"description": null,
+
 		"identifier": "HARVARD:HXQH37",
 		"pageCount": 432,
 		"imageLink": "http://books.google.com/books/content?id=sv4AAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1096,10 +1090,9 @@
 	},
 	{
 		"title": "The London, Edinburgh and Dublin Philosophical Magazine and Journal of Science",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1925",
-		"description": null,
+
 		"identifier": "UCSD:31822016396491",
 		"pageCount": 690,
 		"imageLink": "http://books.google.com/books/content?id=wBRDAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1219,7 +1212,7 @@
 		"publishedDate": "2022-05-13",
 		"description": "Издание отличается содержанием рассматриваемых вопросов, структурой и организацией материала. Оно ориентировано на включение теоретических вопросов по аргументации, логике в практику юридической деятельности, но в то же время охватывает основные разделы традиционной и современной логики и теории аргументации применительно к различного вида беседам, которые имеют место в данной сфере человеческой жизнедеятельности. В конце каждой главы предлагаются структурно-логические схемы для лучшего осмысления и закрепления в памяти освоенного материала, а также вопросы и задания для контроля и выработки у студентов практических навыков и умений.",
 		"identifier": "9785040276301",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=ERwkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -1290,7 +1283,7 @@
 		"publishedDate": "2022-05-13",
 		"description": "Данное издание представляет собой уникальный полный практико-теоретический курс. Каждая тема курса представляет читателю исчерпывающий объем информации: программу темы; полный перечень литературы по ней; максимально структурированный теоретический лекционный материал, охватывающий все аспекты правового регулирования и правоприменения; практикум по теме, позволяющий оценить практическую значимость изученного материала, решить реальные жизненные проблемы; вопросы по теме, охватывающие все ее аспекты. Работа с курсом избавляет от необходимости поиска отдельных фрагментов информации по каждой теме, экономит время и порождает интерес студентов к изучаемой дисциплине. Соответствует актуальным требованиям Федерального государственного образовательного стандарта высшего образования. Для студентов высших учебных заведений, обучающихся по юридическим направлениям, и преподавателей юридических вузов.",
 		"identifier": "9785043446749",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=SDwsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -1483,9 +1476,9 @@
 	{
 		"title": "Изслѣдованія по русскому языку",
 		"authors": ["M Koslovskií"],
-		"publisher": null,
+
 		"publishedDate": "1895",
-		"description": null,
+
 		"identifier": "UOM:39015037039602",
 		"pageCount": 1104,
 		"imageLink": "http://books.google.com/books/content?id=RRYUAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1494,9 +1487,9 @@
 	{
 		"title": "Razsuždenija južnoslavjanskoj i russkoj stariny o cerkovno-slavjanskom jazykě",
 		"authors": ["Ignaty Vikentovič Jagić"],
-		"publisher": null,
+
 		"publishedDate": "1896",
-		"description": null,
+
 		"identifier": "BSB:BSB11793261",
 		"pageCount": 820,
 		"imageLink": "http://books.google.com/books/content?id=01Ia-ndx0OkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1505,9 +1498,9 @@
 	{
 		"title": "Izsli͡edovanie o i͡azyki͡e Ostromirova evangelii͡a",
 		"authors": ["Mikghail Matveevich Kozlovskīĭ"],
-		"publisher": null,
+
 		"publishedDate": "1895",
-		"description": null,
+
 		"identifier": "CHI:085222920",
 		"pageCount": 1088,
 		"imageLink": "http://books.google.com/books/content?id=8K1HAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1515,21 +1508,20 @@
 	},
 	{
 		"title": "Weekly return of births and deaths (infectious diseases, weather) in London (and other great towns).",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1851",
-		"description": null,
+
 		"identifier": "OXFORD:590831751",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=kVQFAAAAQAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "en"
 	},
 	{
 		"title": "Употребление буквы °",
 		"authors": ["Виктор Трофимович Чумаков"],
-		"publisher": null,
+
 		"publishedDate": "2009",
-		"description": null,
+
 		"identifier": "5879532585",
 		"pageCount": 366,
 		"imageLink": "http://books.google.com/books/content?id=-YtykgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
@@ -1538,9 +1530,9 @@
 	{
 		"title": "Изслѣдование о языкѣ Остромирова Евангелия",
 		"authors": ["M. M. Kozlovskij", "Aleksej Aleksandrovič Šachmatov"],
-		"publisher": null,
+
 		"publishedDate": "1895",
-		"description": null,
+
 		"identifier": "BSB:BSB11469058",
 		"pageCount": 1100,
 		"imageLink": "http://books.google.com/books/content?id=S-ymmaIYOIMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1548,10 +1540,9 @@
 	},
 	{
 		"title": "Russkij filologičeskij věstnik",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1895",
-		"description": null,
+
 		"identifier": "BSB:BSB11646228",
 		"pageCount": 448,
 		"imageLink": "http://books.google.com/books/content?id=kaE98HsDuyIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1559,10 +1550,9 @@
 	},
 	{
 		"title": "Russkīĭ filologicheskīĭ vi︠e︡stnik",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1882",
-		"description": null,
+
 		"identifier": "UIUC:30112042824570",
 		"pageCount": 764,
 		"imageLink": "http://books.google.com/books/content?id=egUjY7KwmzAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1571,9 +1561,9 @@
 	{
 		"title": "Замѣтки о литовском языкѣ и словарѣ И-VIII.",
 		"authors": ["Atanas Baranauskas (Vr.)"],
-		"publisher": null,
+
 		"publishedDate": "1898",
-		"description": null,
+
 		"identifier": "IND:30000132020813",
 		"pageCount": 96,
 		"imageLink": "http://books.google.com/books/content?id=3G0yAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1581,10 +1571,9 @@
 	},
 	{
 		"title": "Трудные звуки. Звуки \"Ж\", \"Ш\". Для детей 4-6 лет",
-		"authors": null,
+
 		"publisher": "ОЛМА Медиа Групп",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "5765428045",
 		"pageCount": 68,
 		"imageLink": "http://books.google.com/books/content?id=44Z1TienpJUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1619,13 +1608,13 @@
 		"publishedDate": "2021-01-15",
 		"description": "Второй том «Словаря языка русской поэзии XX века» содержит около 4500 статей. Каждая из статей представляет собой собрание стихотворных строк из источников Словаря – произведений десяти выдающихся поэтов Серебряного века: И. Анненского, А. Ахматовой, А. Блока, С. Есенина, М. Кузмина, О. Мандельштама, В. Маяковского, Б. Пастернака, В. Хлебникова, М. Цветаевой. В статьях эти строки хронологически упорядочены; они дают возможность судить и о ритмике окружения заглавного слова, и о «привращении смысла» в нем самом, и об истории слова в поэтическом языке эпохи. Словарь демонстрирует разнообразие и выразительность языка поэзии и «художественную память» его слов. Обогащая наш эстетический кругозор, Словарь помогает уточнить впечатления от давно любимых читателем строк и обдумать их связи с множеством менее известных. Обращенный прежде всего к широкому кругу любителей поэзии, Словарь построен так, что в его материалах много нового для себя найдут и специалисты – культурологи и филологи.",
 		"identifier": "9785041038342",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=vcQUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
 	{
 		"title": "Сибирская Советская энциклопедия. Том первый. А - Ж",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-15",
 		"description": "В четырех томах.",
@@ -1713,10 +1702,9 @@
 	},
 	{
 		"title": "National Lithographer",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1921",
-		"description": null,
+
 		"identifier": "CHI:098432649",
 		"pageCount": 578,
 		"imageLink": "http://books.google.com/books/content?id=v0UyAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1724,10 +1712,9 @@
 	},
 	{
 		"title": "The American Printer",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1921",
-		"description": null,
+
 		"identifier": "IND:30000111783613",
 		"pageCount": 1272,
 		"imageLink": "http://books.google.com/books/content?id=bCdaOn8FiLIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1735,10 +1722,9 @@
 	},
 	{
 		"title": "Tales Before Supper from Théophile Gautier and Prosper Mérimée",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1887",
-		"description": null,
+
 		"identifier": "CHI:17949798",
 		"pageCount": 236,
 		"imageLink": "http://books.google.com/books/content?id=Y21JAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1769,20 +1755,17 @@
 	{
 		"title": "Zhong wai jiu yue zhang da quan",
 		"authors": ["China"],
-		"publisher": null,
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "UCLA:L0084826858",
-		"pageCount": null,
-		"imageLink": null,
+
 		"language": "en"
 	},
 	{
 		"title": "PYS'MO Z PROSVITY",
 		"authors": ["LVOV PROSVITA"],
-		"publisher": null,
+
 		"publishedDate": "1922",
-		"description": null,
+
 		"identifier": "UIUC:30112120079501",
 		"pageCount": 392,
 		"imageLink": "http://books.google.com/books/content?id=6_xkQnviTQIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1791,9 +1774,9 @@
 	{
 		"title": "Русско-нѣмецкий словарь",
 		"authors": ["Ivan I︠A︡kovlevich Pavlovskīĭ"],
-		"publisher": null,
+
 		"publishedDate": "1879",
-		"description": null,
+
 		"identifier": "PSU:000024396547",
 		"pageCount": 1360,
 		"imageLink": "http://books.google.com/books/content?id=7xA8AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1812,10 +1795,10 @@
 	},
 	{
 		"title": "Сибирская советская энциклопедия. Том второй. З-К",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-14",
-		"description": null,
+
 		"identifier": "9785446073382",
 		"pageCount": 574,
 		"imageLink": "http://books.google.com/books/content?id=pzZsBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1825,8 +1808,7 @@
 		"title": "країнська мова. 8 клас: Плани­-конспекти уроків (для шкіл з російською мовою навчання)",
 		"authors": ["І. А. Крівіч"],
 		"publisher": "Ranok Publishing House Ltd",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9789666723942",
 		"pageCount": 209,
 		"imageLink": "http://books.google.com/books/content?id=Qnkwp4MOQj8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1869,8 +1851,7 @@
 		"title": "Предметні тижні з математики в початковій школі",
 		"authors": ["Л. С. Сухарева"],
 		"publisher": "Ranok Publishing House Ltd",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9786115400225",
 		"pageCount": 146,
 		"imageLink": "http://books.google.com/books/content?id=Jx2hdwshaCEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1905,7 +1886,7 @@
 		"publishedDate": "2021-01-15",
 		"description": "Третий том «Словаря языка русской поэзии XX века» содержит около 7000 статей. Каждая из статей представляет собой собрание стихотворных строк из источников Словаря – произведений десяти выдающихся поэтов Серебряного века: И. Анненского, А. Ахматовой, А. Блока, С. Есенина, М. Кузмина, О. Мандельштама, В. Маяковского, Б. Пастернака, В. Хлебникова, М. Цветаевой. В статьях эти строки хронологически упорядочены; они дают возможность судить и о ритмике окружения заглавного слова, и о «приращениях смысла» в нем самом, и об истории слова в поэтическом языке эпохи. Все строки-контексты сопровождаются шифрами; в условной статье соответственно: Анн909, Ахм912, АБ914, Ес915, Куз91б, ОМ918, М920, П921, Хл921, Цв935. В необходимых случаях к заглавным формам статей и контекстам даются пометы и краткий комментарий. Словарь демонстрирует разнообразие и выразительность языка поэзии и «художественную память» его слов. Обогащая наш эстетический кругозор, Словарь помогает уточнить впечатления от давно любимых читателем строк и обдумать их связи с множеством менее известных. Обращенный прежде всего к широкому кругу любителей поэзии, Словарь построен так, что в его материалах много нового для себя найдут и специалисты – культурологи и филологи.",
 		"identifier": "9785041038359",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=w8QUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -1944,7 +1925,7 @@
 	},
 	{
 		"title": "Т. С. Есенина о В. Э. Мейерхольде и З. Н. Райх (сборник)",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2014-07-29",
 		"description": "Письма Т.С. Есениной впервые были напечатаны в 1993 г, в журнале «Театр» (No 2 и 3). К ним были присоединены два ее письма к М.Я. Шагинян и «Сокровище» С.М. Эйзенштейна, остававшееся неизвестным в печати. Все эти тексты повторены в данной книге; в нее вошла также статья К.Л. Рудницкого «Портрет Зинаиды Райх». Комментарий к письмам расширен, в него введен ряд неизвестных прежде материалов. Среди включенных в книгу фотодокументов – альбом фотографий З.Н. Райх в ее основных ролях.",
@@ -1957,8 +1938,7 @@
 		"title": "Календарно-тематичний план з математики. 5–11 класи",
 		"authors": ["Т. М. Сипченко"],
 		"publisher": "Ranok Publishing House Ltd",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9786115405541",
 		"pageCount": 131,
 		"imageLink": "http://books.google.com/books/content?id=bXI9uBCjapUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1967,9 +1947,9 @@
 	{
 		"title": "PYS'MO Z PROSVITY",
 		"authors": ["LVOV PROSVITA"],
-		"publisher": null,
+
 		"publishedDate": "1922",
-		"description": null,
+
 		"identifier": "UIUC:30112120079501",
 		"pageCount": 392,
 		"imageLink": "http://books.google.com/books/content?id=6_xkQnviTQIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -1991,20 +1971,20 @@
 			"james major, u.s.n., lafayette maynard, u.s.n, william b. muse, u.s.n",
 			"john rodgers, u.s.n"
 		],
-		"publisher": null,
+
 		"publishedDate": "1872",
-		"description": null,
+
 		"identifier": "UOMDLP:adu6773:0009.001",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=1GthQdDSY5MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "en"
 	},
 	{
 		"title": "З. Серебрякова",
 		"authors": ["Зинаида Евгеньевна Серебрякова", "Татьяна Андреевна Савицкая"],
-		"publisher": null,
+
 		"publishedDate": "1988",
-		"description": null,
+
 		"identifier": "STANFORD:36105034122957",
 		"pageCount": 184,
 		"imageLink": "http://books.google.com/books/content?id=LHUuAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
@@ -2013,9 +1993,9 @@
 	{
 		"title": "(DARUNKY RUSALEK)",
 		"authors": ["S. GRACE TOPLIS"],
-		"publisher": null,
+
 		"publishedDate": "1922",
-		"description": null,
+
 		"identifier": "UIUC:30112073439546",
 		"pageCount": 32,
 		"imageLink": "http://books.google.com/books/content?id=wTBSAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2024,11 +2004,11 @@
 	{
 		"title": "Reports and Other Documents Relating to the State Lunatic Hospital at Worcester",
 		"authors": ["State Lunatic Hospital (Worcester, Mass.)"],
-		"publisher": null,
+
 		"publishedDate": "1857",
-		"description": null,
+
 		"identifier": "BSB:BSB10314815",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=gXU9AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "en"
 	},
@@ -2058,7 +2038,7 @@
 		"title": "Тропинки к грамоте: младший и средний дошкольный возраст",
 		"authors": ["Каплуновская Е. Н."],
 		"publisher": "Ranok Publishing House Ltd",
-		"publishedDate": null,
+
 		"description": "Методическое пособие в комплекте с CD-диском предлагает теоретические основы обучения грамоте, сценарии занятий, практический демонстрационный и раздаточный материал, что позволит педагогам дошкольных учреждений дать детям элементарные представления о звуках и буквах русского языка. Пособие рекомендовано педагогам детских садов, учащимся педагогических колледжей и студентам вузов по специальности «Дошкольное образование».",
 		"identifier": "9786170916471",
 		"pageCount": 179,
@@ -2100,7 +2080,7 @@
 	},
 	{
 		"title": "Обществознание. Подготовка к ОГЭ в 2019 году. Диагностические работы",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2022-05-15",
 		"description": "Данное пособие предназначено для отработки практических умений и навыков учащихся при подготовке к экзамену по обществознанию в 9 классе в форме ОГЭ. Оно содержит варианты диагностических работ по обществознанию, содержание которых соответствует контрольно-измерительным материалам, разработанным Федеральным институтом педагогических измерений для проведения государственной итоговой аттестации. В книгу входят также ответы к заданиям и критерии проверки и оценивания выполнения заданий с развёрнутым ответом.Материалы книги рекомендованы учителям и методистам для выявления уровня и качества подготовки учащихся по предмету, определения степени их готовности к государственной итоговой аттестации.Издание соответствует Федеральному государственному образовательному стандарту (ФГОС).",
@@ -2127,7 +2107,7 @@
 		"publishedDate": "2021-01-22",
 		"description": "Эта книга об отношении к себе и своим детям, так как в каждом человеке, сколько бы он ни прожил, продолжает жить ребенок. Многие проблемы начинаются еще в детстве, они приводят к болезням, страданиям и несчастным судьбам.Как помочь себе и близким? Как сделать судьбу своего ребенка счастливой? На эти и другие вопросы вы найдете в книге ответы.Предыдущие издания этой книги вызвали огромный интерес читателей. Продолжают приходить письма с благодарностями и рассказами об изменениях в жизни читателей, которые произошли после прочтения этих удивительных страниц.8-е издание.",
 		"identifier": "9785457698246",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=EOP8CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -2182,7 +2162,7 @@
 		"publishedDate": "2021-06-17",
 		"description": "Книга представляет собой сборник статей и публикаций А. В. Лаврова, петербургского филолога, и включает его многообразные разыскания в области русской литературы конца XIX – первой трети ХХ века. В центре внимания автора – историко-литературные темы и аспекты, ранее не привлекавшие пристального внимания исследователей. Наряду с крупнейшими представителями эпохи (Андреем Белым, Максимилианом Волошиным, А. М. Ремизовым, Вячеславом Ивановым и др.) в поле зрения оказываются фигуры малоизвестные (С. В. Панченко, Т. Д. Цемах, С. С. Заяицкий), а также профессиональные филологи, тесно связанные с литературной жизнью своего времени (С. М. Боткин, К. В. Мочульский, В. М. Жирмунский). В заключительном разделе собраны краткие мемориальные заметки автора.",
 		"identifier": "9785042385018",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=BtkUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -2298,10 +2278,9 @@
 	},
 	{
 		"title": "The Official Railway Guide",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1883",
-		"description": null,
+
 		"identifier": "STANFORD:36105020007725",
 		"pageCount": 1728,
 		"imageLink": "http://books.google.com/books/content?id=YapCAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2309,10 +2288,9 @@
 	},
 	{
 		"title": "Punch",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1876",
-		"description": null,
+
 		"identifier": "BSB:BSB11329397",
 		"pageCount": 318,
 		"imageLink": "http://books.google.com/books/content?id=PPQoXZtXRjgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2353,10 +2331,9 @@
 	},
 	{
 		"title": "Rudiments of Chemistry",
-		"authors": null,
+
 		"publisher": "Academic Publishers",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "8189781537",
 		"pageCount": 934,
 		"imageLink": "http://books.google.com/books/content?id=zooloy9XlPgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2389,7 +2366,7 @@
 		"authors": ["James A. Schwarz", "Cristian I. Contescu", "Karol Putyera"],
 		"publisher": "CRC Press",
 		"publishedDate": "2004",
-		"description": null,
+
 		"identifier": "0824750497",
 		"pageCount": 974,
 		"imageLink": "http://books.google.com/books/content?id=aveTxwZm40UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2398,9 +2375,9 @@
 	{
 		"title": "On Early English Pronunciation",
 		"authors": ["Alexander John Ellis"],
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "ZBZH:ZBZ-00145307",
 		"pageCount": 962,
 		"imageLink": "http://books.google.com/books/content?id=nwTTgQ2yLgcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2424,9 +2401,9 @@
 	{
 		"title": "An Almanack for the Year of Our Lord ...",
 		"authors": ["Joseph Whitaker"],
-		"publisher": null,
+
 		"publishedDate": "1880",
-		"description": null,
+
 		"identifier": "HARVARD:32044090349630",
 		"pageCount": 464,
 		"imageLink": "http://books.google.com/books/content?id=zLkMAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2456,10 +2433,9 @@
 	},
 	{
 		"title": "Astronomy and Astrophysics",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "HARVARD:32044077086551",
 		"pageCount": 570,
 		"imageLink": "http://books.google.com/books/content?id=D6sRAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2467,10 +2443,9 @@
 	},
 	{
 		"title": "Sidereal Messenger, a Monthly Review of Astronomy",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "HARVARD:32044077086544",
 		"pageCount": 1020,
 		"imageLink": "http://books.google.com/books/content?id=y6oRAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2511,7 +2486,7 @@
 	},
 	{
 		"title": "Ваш М. Г. Из писем Михаила Леоновича Гаспарова",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2012-04-28",
 		"description": "В книге представлена подборка писем выдающегося филолога-классика, стиховеда, литературоведа, переводчика, писателя Михаила Леоновича Гаcпарова (1935–2005). Их адресаты – его многолетние собеседницы и соавторы: филолог-классик Нина Владимировна Брагинская, литературовед Ирина Юрьевна Подгаецкая и философ Наталья Сергеевна Автономова. Письма охватывают период в тридцать лет (1972–2002) и фиксируют разные этапы многосторонней научной биографии М.Л. Гаспарова, его суждения о литературе античности и Нового времени, о задачах и методах филологии и о ее соотношении с другими дисциплинами. Читатель – современник автора писем – получает возможность войти в мир научных и художественных интересов одного из крупнейших ученых-гуманитариев нашей эпохи.",
@@ -2533,7 +2508,7 @@
 	},
 	{
 		"title": "М. М. Стасюлевич и его современники в их переписке",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2017-04-13",
 		"description": "Имя известного историка и публициста, редактора журнала «Вестник Европы» Михаила Матвеевича Стасюлевича (1826—1911 гг.) было широко известно в литературных кругах второй половины XIX — начала XX вв. Первые два тома данного издания вышли в свет в 1911 г. в связи со смертью этого талантливого и деятельного человека. В многотомнике собраны около 6000 писем известных литераторов и общественных деятелей к покойному, литературные и прочие документы, письма самого Михаила Матвеевича к ряду лиц, в том числе и к супруге Любови Исааковне. В предлагаемый вниманию читателей третий том, вышедший в1912 г., вошли письма выдающихся писателей и окружавших их лиц (И.С. Тургенева, П.В. Анненкова, Э. Золя, Г. де Мопассана и др.), а также письма М.М. Стасюлевича к супруге Любови Исааковне. Письма расположены в хронологическом порядке, с сохранением орфографии подлинника.",
@@ -2557,7 +2532,7 @@
 		"title": "Азбучный указатель имен русских деятелей для «Русского биографического словаря»: Часть вторая. М — Ф",
 		"authors": ["Коллектив авторов"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Подготовительная работа Русского исторического общества по составлению биографического словаря известных отечественных деятелей. Представляет собой список имен с указанием срока жизни и основного занятия.",
 		"identifier": "9785458044431",
 		"pageCount": 828,
@@ -2569,7 +2544,7 @@
 		"authors": ["Сперанский М. Н."],
 		"publisher": "Directmedia",
 		"publishedDate": "2015-02-09",
-		"description": null,
+
 		"identifier": "9785445826224",
 		"pageCount": 165,
 		"imageLink": "http://books.google.com/books/content?id=ISsoBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2577,7 +2552,7 @@
 	},
 	{
 		"title": "М-Хобби No07 (265) 2023",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2023-07-17",
 		"description": "Журнал для любителей масштабного моделизма и военной истории. Выходит с 1993 года. Периодичность 12 номеров в год. Полноцветное издание. Все новости Мира Моделей, секреты технологий, самые разные направления моделизма – всё это представлено на страницах журнала.В этом номере:Розовая ранняя пташка (Самолет-разведчик Supermarine Spitfire PR.XI в 1/72 от Italeri)Летающие пушки с литерой Z (Пушечный истребитель Григорович И-Z в 1/48 от «От Винта!»)Модель моей мечты (ПГРК «Тополь-М» в 1/35 от Trumpeter)Девятый «танковый» (Истребитель Як-9Т в 1/32 от ICM)Советский рорейлер (Автомобиль для движения по грунтовым и железным дорогам БХ-1 с чертежами в 1/35)Блеск и красота «Молнии» (Истребитель-перехватчик BAC Lightning F.6 в 1/48 от Airfix)и многое другое",
@@ -2589,9 +2564,9 @@
 	{
 		"title": "История нашествия императора Наполеона на Россию в 1812-м году",
 		"authors": ["Dmitrij Petrovič Buturlin"],
-		"publisher": null,
+
 		"publishedDate": "1838",
-		"description": null,
+
 		"identifier": "NKP:3186186538",
 		"pageCount": 444,
 		"imageLink": "http://books.google.com/books/content?id=nq1eAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2632,7 +2607,7 @@
 	},
 	{
 		"title": "М-Хобби No6 (145) 2013",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2014-05-14",
 		"description": "Журнал для любителей масштабного моделизма и военной истории. Выходит с 1993 года. Периодичность 11 номеров в год. Полноцветное издание. Все новости Мира Моделей, секреты технологий, самые разные направления моделизма – всё это представлено на страницах журнала.В этом номере:• чертежи: 76,2-мм пушка обр. 1900 г.• Монография: Неуправляемые ракеты С-5и многое другое.",
@@ -2645,7 +2620,7 @@
 		"title": "Отзыв о сочинении М. И. Орлова «Литургия святого Василия Великого»",
 		"authors": ["А. А. Дмитриевский"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Оттиск из «Сборника отчетов о премиях и наградах за 1909 г.» (Премии имени М. Н. Ахматова).",
 		"identifier": "9785518064324",
 		"pageCount": 179,
@@ -2676,7 +2651,7 @@
 	},
 	{
 		"title": "М-Хобби No8 (230) 2020",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2022-02-14",
 		"description": "Журнал для любителей масштабного моделизма и военной истории. Выходит с 1993 года. Периодичность 12 номеров в год. Полноцветное издание. Все новости Мира Моделей, секреты технологий, самые разные направления моделизма – всё это представлено на страницах журнала.В этом номере:• Чертежи: ЗРК 9К37М1 «Бук-М1»• Ракетизированные авиабомбы• Истребитель Martinsyde F.4 в РККВФи многое другое.",
@@ -2725,12 +2700,12 @@
 	},
 	{
 		"title": "Из эпистолярного наследства декабристов. Письма к Н. Н. Муравьеву-Карскому. Том 2",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2021-06-17",
 		"description": "В документальном издании впервые публикуются письма участников декабристского движения к одному адресату – известному военному деятелю XIX в. Н. Н. Муравьеву-Карскому. Представленные в томе 314 писем – вторая половина архивной публикации из фондов Государственного Исторического музея, первая часть которой вышла в 1975 г. Основной объем публикации составляют письма брата адресата А. Н. Муравьева, в издание также вошли письма А. И. Якубовича, З. Г. Чернышева, В. Д. Вольховского, Н. П. Воейкова и других декабристов.Публикуемые документы включают сведения по истории пребывания декабристов на Кавказе и в сибирской ссылке. Письма содержат ценный материал для характеристики духовного мира и идеологии декабристов, эволюции их взглядов после 1825 г., общественных настроений 1820-х–1860-х гг., в частности, отклики на проведение крестьянской реформы 1861 г., другие крупные исторические события этого периода, генеалогические и социально-экономические данные.",
 		"identifier": "9785041075736",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=OU5TDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -2749,7 +2724,7 @@
 		"title": "Сочинения Н.В. Гоголя",
 		"authors": ["Коллектив авторов"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "С биографическим очерком, составленным В.И. Яковенко, портретом автора и матери его, гравированными В. Матэ, и 4 фотографиями, снятыми любителями-фотографами Д.М. Старицким и В.К. Товстицким, и 180 иллюстрациями художников Н.А. Зубчанинова и Н.В. Пирогова.",
 		"identifier": "9785458114202",
 		"pageCount": 950,
@@ -2761,7 +2736,7 @@
 		"authors": ["Nikolaĭ Vasilʹevich Gogolʹ"],
 		"publisher": "ОЛМА Медиа Групп",
 		"publishedDate": "2002",
-		"description": null,
+
 		"identifier": "9785224039241",
 		"pageCount": 1055,
 		"imageLink": "http://books.google.com/books/content?id=TqF6kyYAPDQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2770,9 +2745,9 @@
 	{
 		"title": "Ключь, или, Алфавитный указатель к Исторіи Государства Россійскаго, Н.М. Карамзина",
 		"authors": ["Pavel Mikhaĭlovich Stroev"],
-		"publisher": null,
+
 		"publishedDate": "1844",
-		"description": null,
+
 		"identifier": "HARVARD:32044014106363",
 		"pageCount": 316,
 		"imageLink": "http://books.google.com/books/content?id=SusDAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2803,9 +2778,9 @@
 	{
 		"title": "Annual Report of the Indiana State Horticultural Society; Proceedings of the Annual Session",
 		"authors": ["Indiana Horticultural Society"],
-		"publisher": null,
+
 		"publishedDate": "1876",
-		"description": null,
+
 		"identifier": "UOM:39015067200405",
 		"pageCount": 148,
 		"imageLink": "http://books.google.com/books/content?id=eiBJAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2813,10 +2788,9 @@
 	},
 	{
 		"title": "Bulletin of the Department of Labor",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "HARVARD:HB162G",
 		"pageCount": 1096,
 		"imageLink": "http://books.google.com/books/content?id=FSQpAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2825,9 +2799,9 @@
 	{
 		"title": "Transactions of the Indiana Horticultural Society ...",
 		"authors": ["Indiana Horticultural Society"],
-		"publisher": null,
+
 		"publishedDate": "1879",
-		"description": null,
+
 		"identifier": "PSU:000019057521",
 		"pageCount": 268,
 		"imageLink": "http://books.google.com/books/content?id=CRQ8AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2836,9 +2810,9 @@
 	{
 		"title": "Annual Report of the Secretary of the Board of Agriculture",
 		"authors": ["Massachusetts. State Board of Agriculture"],
-		"publisher": null,
+
 		"publishedDate": "1887",
-		"description": null,
+
 		"identifier": "HARVARD:HXHKIA",
 		"pageCount": 584,
 		"imageLink": "http://books.google.com/books/content?id=zqYSAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2857,10 +2831,9 @@
 	},
 	{
 		"title": "An American Almanac and Treasury of Facts, Statistical, Financial, and Political, for the Year ...",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1883",
-		"description": null,
+
 		"identifier": "UCAL:B3726682",
 		"pageCount": 396,
 		"imageLink": "http://books.google.com/books/content?id=6VEwAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2869,9 +2842,9 @@
 	{
 		"title": "Washington Observations",
 		"authors": ["United States Naval Observatory"],
-		"publisher": null,
+
 		"publishedDate": "1892",
-		"description": null,
+
 		"identifier": "UOM:39015084719668",
 		"pageCount": 590,
 		"imageLink": "http://books.google.com/books/content?id=xXBqftcS7N0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2879,10 +2852,9 @@
 	},
 	{
 		"title": "American Almanac and Treasury of Facts, Statistical, Financial, and Political",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1881",
-		"description": null,
+
 		"identifier": "HARVARD:32044097927743",
 		"pageCount": 392,
 		"imageLink": "http://books.google.com/books/content?id=ZFMTAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2891,9 +2863,9 @@
 	{
 		"title": "An American Almanac and Treasury of Facts, Statistical, Financial, and Political, for the Year ..",
 		"authors": ["Ainsworth Rand Spofford"],
-		"publisher": null,
+
 		"publishedDate": "1882",
-		"description": null,
+
 		"identifier": "OSU:32435051595858",
 		"pageCount": 398,
 		"imageLink": "http://books.google.com/books/content?id=Bsy6KrS77jkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2901,10 +2873,9 @@
 	},
 	{
 		"title": "SIDA, Contributions to Botany",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1962",
-		"description": null,
+
 		"identifier": "UOM:39015029418046",
 		"pageCount": 662,
 		"imageLink": "http://books.google.com/books/content?id=NR0lAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
@@ -2913,7 +2884,7 @@
 	{
 		"title": "Proceedings of the London Mathematical Society",
 		"authors": ["London Mathematical Society"],
-		"publisher": null,
+
 		"publishedDate": "1898",
 		"description": "\"Papers presented to J.E. Littlewood on his 80th birthday\" issued as 3d ser., v. 14 A, 1965.",
 		"identifier": "IND:30000050154065",
@@ -2948,7 +2919,7 @@
 		"authors": ["Барац Г. М."],
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785998978227",
 		"pageCount": 585,
 		"imageLink": "http://books.google.com/books/content?id=CXvsBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -2958,8 +2929,7 @@
 		"title": "Учение о несостоятельности",
 		"authors": ["Г. Ф. Шершеневич"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785518073456",
 		"pageCount": 460,
 		"imageLink": "http://books.google.com/books/content?id=aDUHAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3000,7 +2970,7 @@
 	},
 	{
 		"title": "С. Апт о себе и других. Другие – о С. Апте",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2022-05-15",
 		"description": "Книга посвящена памяти выдающегося переводчика Соломона Константиновича Апта. Благодаря его таланту русский читатель открыл для себя тетралогию Томаса Манна «Иосиф и его братья», «Игру в бисер» и «Степного волка» Германа Гессе, Франца Кафку, Роберта Музиля и Элиаса Канетти. Начав свою деятельность с переводов античной литературы, С. К. Апт дал возможность современникам прочесть по-новому таких авторов, как Эсхил, Аристофан, Платон. В издание входят очерки самого переводчика о людях, которых он знал, воспоминания о нем, беседы журналистов с С. К. Аптом в последние годы его жизни, статьи о его работе. Надеемся, что сплав многих жанров позволит создать представление о личности и жизни переводчика.",
@@ -3058,9 +3028,7 @@
 	{
 		"title": "Climatological Data, Nevada",
 		"authors": ["United States. Environmental Data Service"],
-		"publisher": null,
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "UCR:31210023080177",
 		"pageCount": 502,
 		"imageLink": "http://books.google.com/books/content?id=YKal2guxFHoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3081,9 +3049,9 @@
 		"title": "Complete Physics for JEE-Main | JEE-(Main & Advanced) Medium-English",
 		"authors": ["GURCHARANAM ACADEMY PRIVATE LIMITED"],
 		"publisher": "GURCHARANAM ACADEMY PRIVATE LIMITED",
-		"publishedDate": null,
+
 		"description": "Complete Physics (Class-11th & 12th)for JEE-Main | JEE-(Main & Advanced) Medium-English",
-		"identifier": null,
+
 		"pageCount": 1344,
 		"imageLink": "http://books.google.com/books/content?id=PK9IEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "en"
@@ -3101,10 +3069,9 @@
 	},
 	{
 		"title": "Engineering",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1881",
-		"description": null,
+
 		"identifier": "DMM:057003456945",
 		"pageCount": 802,
 		"imageLink": "http://books.google.com/books/content?id=zijlFbkxvmkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3114,9 +3081,9 @@
 		"title": "Complete Physics for NEET(UG) Medium-English",
 		"authors": ["GURCHARANAM ACADEMY PRIVATE LIMITED"],
 		"publisher": "GURCHARANAM ACADEMY PRIVATE LIMITED",
-		"publishedDate": null,
+
 		"description": "Complete Physics (Class-11th & 12th) for NEET(UG) Medium-English",
-		"identifier": null,
+
 		"pageCount": 1344,
 		"imageLink": "http://books.google.com/books/content?id=4rJIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "en"
@@ -3135,9 +3102,9 @@
 	{
 		"title": "Climatological Data",
 		"authors": ["United States. Weather Bureau"],
-		"publisher": null,
+
 		"publishedDate": "1958",
-		"description": null,
+
 		"identifier": "IND:30000090045125",
 		"pageCount": 666,
 		"imageLink": "http://books.google.com/books/content?id=ZTFPaIsv3a8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3147,8 +3114,7 @@
 		"title": "Песни, собранныя П.В. Киреевским",
 		"authors": ["П.В. Киреевский", "П. Бессонов"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785518111332",
 		"pageCount": 821,
 		"imageLink": "http://books.google.com/books/content?id=jroGAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3156,10 +3122,9 @@
 	},
 	{
 		"title": "Гоголь и П. А. Плетнев",
-		"authors": null,
+
 		"publisher": "DirectMEDIA",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785998914140",
 		"pageCount": 154,
 		"imageLink": "http://books.google.com/books/content?id=CMKpQ2uvCtUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3178,10 +3143,9 @@
 	},
 	{
 		"title": "Дополнительные главы геометрии. Диффиринциальная геометрия кривых поверхностей., У/П",
-		"authors": null,
+
 		"publisher": "МГИУ",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785276012803",
 		"pageCount": 184,
 		"imageLink": "http://books.google.com/books/content?id=T9q9YrglCvoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3226,8 +3190,7 @@
 		"title": "Жизнь и литературная переписка П. И. Рычкова",
 		"authors": ["П. П. Пекарский"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785518078437",
 		"pageCount": 195,
 		"imageLink": "http://books.google.com/books/content?id=WTMIAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3235,10 +3198,9 @@
 	},
 	{
 		"title": "Уголовно-процессуальное право, У/П",
-		"authors": null,
+
 		"publisher": "МГИУ",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785276011639",
 		"pageCount": 388,
 		"imageLink": "http://books.google.com/books/content?id=ASMlDzRnLWEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3260,7 +3222,7 @@
 		"authors": ["Заблоцкий-Десятовский А. П."],
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785998997389",
 		"pageCount": 461,
 		"imageLink": "http://books.google.com/books/content?id=LUowEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3268,10 +3230,10 @@
 	},
 	{
 		"title": "Мериме П., Кумберленд Р Русская смута",
-		"authors": null,
+
 		"publisher": "ОЛМА Медиа Групп",
 		"publishedDate": "2006",
-		"description": null,
+
 		"identifier": "5224053498",
 		"pageCount": 592,
 		"imageLink": "http://books.google.com/books/content?id=wLfth3VCSUEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3293,7 +3255,7 @@
 		"authors": ["Гребенка Е. П."],
 		"publisher": "Directmedia",
 		"publishedDate": "2014-08-03",
-		"description": null,
+
 		"identifier": "9785446091034",
 		"pageCount": 382,
 		"imageLink": "http://books.google.com/books/content?id=b7pxBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3304,7 +3266,7 @@
 		"authors": ["Федченко А. П."],
 		"publisher": "Directmedia",
 		"publishedDate": "2015-06-16",
-		"description": null,
+
 		"identifier": "9785447524548",
 		"pageCount": 145,
 		"imageLink": "http://books.google.com/books/content?id=NZc5CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3324,9 +3286,9 @@
 	{
 		"title": "Сочиненія. [Edited by “П.”] Томъ I.",
 		"authors": ["Fedor Nikolaevich GLINKA"],
-		"publisher": null,
+
 		"publishedDate": "1869",
-		"description": null,
+
 		"identifier": "BL:A0018993455",
 		"pageCount": 516,
 		"imageLink": "http://books.google.com/books/content?id=OAReAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3336,8 +3298,7 @@
 		"title": "Жизнь и труды М. П. Погодина",
 		"authors": ["Н. П. Барсуков"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785424162237",
 		"pageCount": 429,
 		"imageLink": "http://books.google.com/books/content?id=4mnuAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3346,9 +3307,9 @@
 	{
 		"title": "Historical Lectures on the Life of Our Lord Jesus Christ",
 		"authors": ["Charles John Ellicott"],
-		"publisher": null,
+
 		"publishedDate": "1877",
-		"description": null,
+
 		"identifier": "YALE:39002051066968",
 		"pageCount": 386,
 		"imageLink": "http://books.google.com/books/content?id=y2DuDn71RUoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3357,9 +3318,9 @@
 	{
 		"title": "The Diary of Abraham de la Pryme, the Yorkshire Antiquary",
 		"authors": ["Abraham De la Pryme"],
-		"publisher": null,
+
 		"publishedDate": "1870",
-		"description": null,
+
 		"identifier": "BSB:BSB10996883",
 		"pageCount": 418,
 		"imageLink": "http://books.google.com/books/content?id=iM1SAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3378,10 +3339,10 @@
 	},
 	{
 		"title": "Московский некрополь. (Р-Ф)",
-		"authors": null,
+
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785998949333",
 		"pageCount": 440,
 		"imageLink": "http://books.google.com/books/content?id=Jeb0BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3392,8 +3353,7 @@
 		"authors": ["Усачев Петр Иванович"],
 		"publisher": "Alexander Doweld",
 		"publishedDate": "1928-01-01",
-		"description": null,
-		"identifier": null,
+
 		"pageCount": 186,
 		"imageLink": "http://books.google.com/books/content?id=aHwnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -3458,7 +3418,7 @@
 		"authors": ["Татьяна Васильевна Недзвецкая"],
 		"publisher": "ОЛМА Медиа Групп",
 		"publishedDate": "2000",
-		"description": null,
+
 		"identifier": "5224010969",
 		"pageCount": 392,
 		"imageLink": "http://books.google.com/books/content?id=NoNv9n5EFKIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3510,12 +3470,12 @@
 	},
 	{
 		"title": "Информатика вчера, сегодня, завтра. К 85-летию Р. С. Гиляревского (продолжение)",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2022-01-27",
 		"description": "Начало в No 4(52) 2014 г.Руджеро Сергеевич Гиляревский (р. 31 августа 1929 г.) – филолог, специалист в области информатики, научных и массовых коммуникаций. Кандидат педагогических наук, доктор филологических наук, профессор. Заслуженный деятель науки Российской Федерации (1999). Ко дню рождения Р. С. Гиляревского редакция журнала подготовила цикл бесед с юбиляром, посвященный анализу тенденций и перспектив развития информационно-коммуникационных технологий в современном обществе. В этом выпуске мы публикуем первую часть интервью, а также краткую биографию и перечень работ Руджеро Сергеевича в области информатики.",
 		"identifier": "9785040163212",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=_FwVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -3532,10 +3492,9 @@
 	},
 	{
 		"title": "House documents",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1878",
-		"description": null,
+
 		"identifier": "BSB:BSB11368836",
 		"pageCount": 1618,
 		"imageLink": "http://books.google.com/books/content?id=LNSuaLGV500C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3543,10 +3502,9 @@
 	},
 	{
 		"title": "World Almanac and Encyclopedia",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "NWU:35556017929274",
 		"pageCount": 540,
 		"imageLink": "http://books.google.com/books/content?id=SOI0AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3559,16 +3517,15 @@
 		"publishedDate": "2021-04-08",
 		"description": "Большая сложность для ребёнка состоит в том, чтобы следить за уже поставленными логопедом звуками не только при произнесении одного слова, но и при включении этого слова сначала в словосочетания, потом в предложения, двустишия и т. д. Главная цель всех предложенных к книге упражнений – настолько хорошо закрепить поставленный звук, чтобы ребёнок произносил его легко, не задумываясь каждый раз, автоматически – это и называется «автоматизировать звук». Для наиболее прочного усвоения материала в игровой форме для всех сонорных звуков даны занимательные задания с картинками.Для детей, родителей и логопедов.",
 		"identifier": "9785040209606",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=HYfmDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
 	{
 		"title": "The Official Railway Guide",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1888",
-		"description": null,
+
 		"identifier": "STANFORD:36105010449291",
 		"pageCount": 2310,
 		"imageLink": "http://books.google.com/books/content?id=4p1CAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3576,10 +3533,9 @@
 	},
 	{
 		"title": "Atlanta Medical and Surgical Journal",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1876",
-		"description": null,
+
 		"identifier": "HARVARD:HC41JK",
 		"pageCount": 782,
 		"imageLink": "http://books.google.com/books/content?id=tIERAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3590,9 +3546,9 @@
 		"authors": [
 			"National Education Association of the United States. Committee of Ten on Secondary School Studies"
 		],
-		"publisher": null,
+
 		"publishedDate": "1894",
-		"description": null,
+
 		"identifier": "UCAL:$B75529",
 		"pageCount": 270,
 		"imageLink": "http://books.google.com/books/content?id=fJRBAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3600,7 +3556,7 @@
 	},
 	{
 		"title": "Книжное обозрение (с приложением PRO) No03-04/2015",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2020-12-05",
 		"description": "«Книжное обозрение» – еженедельная газета о книгах и книгоиздании. Всё самое интересное из мира литературы: фантастика, детективы, беллетристика, бестселлеры. Российские и зарубежные новости литературы, критика, обзоры, интервью с писателями, заметки о литературной жизни, рейтинги продаж. «Книжное обозрение» – все, что вы хотите знать о книгах!Профессиональное приложение PRO содержит в себе новости книгораспространения и книготорговли, тематические рейтинги продаж, список сигнальных экземпляров, аналитические материалы и обзорные статьи о ведущих игроках книжного мира и книжного сообщества в целом.",
@@ -3721,7 +3677,7 @@
 	},
 	{
 		"title": "С. Апт о себе и других. Другие – о С. Апте",
-		"authors": null,
+
 		"publisher": "Litres",
 		"publishedDate": "2022-05-15",
 		"description": "Книга посвящена памяти выдающегося переводчика Соломона Константиновича Апта. Благодаря его таланту русский читатель открыл для себя тетралогию Томаса Манна «Иосиф и его братья», «Игру в бисер» и «Степного волка» Германа Гессе, Франца Кафку, Роберта Музиля и Элиаса Канетти. Начав свою деятельность с переводов античной литературы, С. К. Апт дал возможность современникам прочесть по-новому таких авторов, как Эсхил, Аристофан, Платон. В издание входят очерки самого переводчика о людях, которых он знал, воспоминания о нем, беседы журналистов с С. К. Аптом в последние годы его жизни, статьи о его работе. Надеемся, что сплав многих жанров позволит создать представление о личности и жизни переводчика.",
@@ -3734,9 +3690,9 @@
 		"title": "Экономический рост стран мира с древнейших времен по настоящее время",
 		"authors": ["А. Г. Виноградов"],
 		"publisher": "WP IPGEB",
-		"publishedDate": null,
+
 		"description": "Книга известного ученого А. Г. Виноградова «Народное Хозяйство. Экономический рост стран мира с древнейших времен по настоящее время. Статистические таблицы. Часть 1» является первым сводным трудом такого рода по экономике, созданным в России за последние годы. Работа посвящена народному хозяйству стран мира, а также дается характеристика ряда процессов экономики. Многие статистические материалы ранее в широкой печати не публиковались. The book is well-known scientist A.G. Vinogradov «National Economy. Economic growth around the world from ancient times to the present day. Statistical Tables. Part 1» is the first summary work such on economy, created in Russia in recent years. Work is devoted to a national economy of the countries of the world, and also the characteristic of a number of processes of economy is given. Many statistical materials weren't published in the wide press earlier ",
-		"identifier": null,
+
 		"pageCount": 461,
 		"imageLink": "http://books.google.com/books/content?id=SIBxCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -3745,7 +3701,7 @@
 		"title": "Париж с изнанки. Как приручить своенравный город",
 		"authors": ["Кларк С."],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Как бокал охлажденного шампанского, Париж всегда попадает в цель. В архитектуре, в любви, в гастрономии... В чем же секрет такой репутации - города роскоши, легкомыслия и культуры. Экскурсию по парижу, его тайнам, обыкновениям, казусам и контрастам ведет знаменитый британский писатель Стефан Кларк.",
 		"identifier": "9785386055905",
 		"pageCount": 400,
@@ -3767,7 +3723,7 @@
 		"title": "Упражнения с гантелями, амортизатором, гирями",
 		"authors": ["Б.Г. Пустовойт"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Сильными не появляются, сильными стают в итоге занятий физическими упражнениями с отягощениями. Для того чтоб стать мощным, ловким и выносливым нужно упорство и сила воли и итог не принудит себя ожидать.Данная книжка рассчитана на широкий круг желающих заниматься атлетизмом. В ней описаны упражнения с разными отягощениями, даны указания о том, как составить комплексы упражнений, чтоб достигнуть гармонического развития всех групп мускул. Имеются особые упражнения с амортизатором, которые можно проделывать не только в домашних критериях, но и в походах, командировках.",
 		"identifier": "9785458253505",
 		"pageCount": 105,
@@ -3787,11 +3743,11 @@
 	},
 	{
 		"title": "Русская музыкальная газета. Еженедельное издание : (с иллюстрациями). 1912 г.",
-		"authors": null,
+
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2015-05-15",
 		"description": "Репринт. изд. 1912 г.",
-		"identifier": null,
+
 		"pageCount": 766,
 		"imageLink": "http://books.google.com/books/content?id=NJPTDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -3844,8 +3800,7 @@
 		"title": "История государства Российского. В 4 т. Т. 3: От правления великого князя Василия Иоанновича",
 		"authors": ["Карамзин Н.М."],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785386077280",
 		"pageCount": 690,
 		"imageLink": "http://books.google.com/books/content?id=X2zyBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -3855,9 +3810,9 @@
 		"title": "Древо Жизни 5б т.",
 		"authors": ["Ари Рабби Ицха́к Лу́рия бен Шломо Ашкена́зи"],
 		"publisher": "Andrei Babii",
-		"publishedDate": null,
+
 		"description": "Это второй том пятой части главного труда великого Лурия, Ицхака бен Шломо Ашкенази (Ари). Главы с 10 по 17. Самая известная, самая востребованная и самая недоступная книга для пытливого ума впервые переведена на русский язык. Детальная информация о духовных мирах, изложенная в сопровождении ссылок на множество Святых книг в переплетении с гематрическими значениями смысла имён библейских персонажей, их действий и взаимного влияния на события прошлого и будущего. Умопомрачительные перекрёстные соответствия терминологии духовных миров, имён Святых и тайн, скрытых в библейских текстах, раскрывают всё величие таланта и глубину постижения автора книги - великого Ари. Книга-ключ, обязательная для присутствия на полке каждого мыслителя в областях Каббалы, Иудаистики, религиоведения и т.д.",
-		"identifier": null,
+
 		"pageCount": 50,
 		"imageLink": "http://books.google.com/books/content?id=-nLJEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -4040,9 +3995,9 @@
 	{
 		"title": "Report",
 		"authors": ["New York (State). Dept. of Agriculture"],
-		"publisher": null,
+
 		"publishedDate": "1894",
-		"description": null,
+
 		"identifier": "CORNELL:31924051521403",
 		"pageCount": 576,
 		"imageLink": "http://books.google.com/books/content?id=FvdIAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4051,9 +4006,9 @@
 	{
 		"title": "Сатѵ́ръ и̂лѝ диві́й човекъ. У пе́рвой ча́сти, пѣ́ва на сті́хови Славо́нцемъ; а̂ у̂ др́гой части, Славо́нацъ нѣ́ва у̂ сті́хови Сатѵ́р ... преве́денъ же на просто-се́рбскїй е́зыкъ С. Ра́нчемъ, etc",
 		"authors": ["Matthias Antonius RELKOVICH"],
-		"publisher": null,
+
 		"publishedDate": "1807",
-		"description": null,
+
 		"identifier": "BL:A0018983038",
 		"pageCount": 196,
 		"imageLink": "http://books.google.com/books/content?id=QxdeAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4107,7 +4062,7 @@
 		"title": "Заболевания щитовидной железы у женщин репродуктивного возраста",
 		"authors": ["Под ред. Г.Т. Сухих"],
 		"publisher": "ГЭОТАР-Медиа",
-		"publishedDate": null,
+
 		"description": "Руководство посвящено одной из актуальных проблем эндокринной патологии у женщин репродуктивного возраста - профилактике и лечению заболеваний щитовидной железы.",
 		"identifier": "9785970424629",
 		"pageCount": 82,
@@ -4160,10 +4115,9 @@
 	},
 	{
 		"title": "Хорвуд У. На исходе лета",
-		"authors": null,
+
 		"publisher": "Терра",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "530002077X",
 		"pageCount": 558,
 		"imageLink": "http://books.google.com/books/content?id=WkumOzA0GLkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4174,7 +4128,7 @@
 		"authors": ["К.Ю. Богданов"],
 		"publisher": "Рипол Классик",
 		"publishedDate": "1986",
-		"description": null,
+
 		"identifier": "9785458260428",
 		"pageCount": 145,
 		"imageLink": "http://books.google.com/books/content?id=Yc75AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4218,7 +4172,7 @@
 		"authors": ["Аничков Е. В."],
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785998984310",
 		"pageCount": 418,
 		"imageLink": "http://books.google.com/books/content?id=3GvsBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4261,7 +4215,7 @@
 		"title": "Всё, о чем не спросишь у взрослых - Популярная психология",
 		"authors": ["Ирина Лунина"],
 		"publisher": "Animedia Company",
-		"publishedDate": null,
+
 		"description": "Данная книга содержит большой объем важнейшей информации, необходимой любой девчонке от 11 до 15 лет. В ней представлены полезные практические сведения о том, как стать красивой и здоровой, очаровательной и привлекательной, уверенной в себе, а также о том, как выстраивать свои отношения с родителями, друзьями, противоположным полом. Как принимать правильные решения и уберечься от серьезных жизненных ошибок, не делать опрометчивых шагов. Как научиться уважать себя, ценить собственное «Я», оставаться самой собой в самых разных ситуациях. В этой книге каждая девчонка найдет для себя ответы на важные жизненные вопросы, которые не всегда хватает решимости обсуждать со старшими. Она научится быть настоящей женщиной, достойным членом общества, любящей и понимающей дочерью, спокойным, осторожным человеком. Книга адресована широкому кругу читателей – не только детям, но и их родителям! Издательство Animedia Company желает вам приятного чтения.",
 		"identifier": "9788074993695",
 		"pageCount": 281,
@@ -4275,7 +4229,7 @@
 		"publishedDate": "2022-03-10",
 		"description": "Монография посвящена исследованию становления онтологической парадигмы трансгрессии в истории европейской и русской философии. Основное внимание в книге сосредоточено на учениях Г. В. Ф. Гегеля и Ф. Ницше как на основных источниках формирования нового типа философского мышления.Монография адресована философам, аспирантам, студентам и всем интересующимся проблемами современной онтологии.В формате a4.pdf сохранен издательский макет.",
 		"identifier": "9785040660070",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=ZJorDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -4297,7 +4251,7 @@
 		"publishedDate": "2020-12-26",
 		"description": "В книге публикуется и исследуется текст «Речи» профессора российской и латинской словесности Царскосельского лицея Н.Ф. Кошанского «О преимуществах российского слова», которая готовилась к произнесению (или была произнесена?) на торжественном акте открытия Лицея 19 октября 1811 года. Знакомство с «Речью. Н.Ф. Кошанского позволяет не только почувствовать атмосферу Лицея, но и осмыслить те идеалы, которые выдающийся ученый и педагог передавал ученикам, составившим будущую славу России.Читателю предлагаются три версии текста: факсимиле, публикация в орфографии и пунктуации пушкинского времени и версия тексте по современным правилам орфографии и пунктуации.Книга адресована учетным-филологам, педагогам-русистам, студентам-гуманитариям, школьным словесникам и всем, кого интересует судьба Царскосельского лицея, его учителей и воспитанников.",
 		"identifier": "9785041116934",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=EKZWDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -4308,7 +4262,7 @@
 		"publishedDate": "2022-01-27",
 		"description": "В статье представлен вклад в развитие информатики советского ученого Ф. Е. Темникова (1906–1993), первым в 1963 г. употребившего термин «информатика» в отечественной научной литературе. Проект Ф. Е. Темникова отличался от западного понимания информатики как «информационной автоматики» у К. Штейнбуха (Германия), Ф. Дрейфуса (Франция) и У. Бауэра (США). Ученый предполагал создание интегральной научной дисциплины, состоящей из теорий информационных элементов, информационных процессов и информационных систем. Фундаментом информатики должна была стать теория информации (математическая теория связи). Раскрывается суть подхода Ф. Е. Темникова к созданию информатики, описываются и характеризуются такие его идеи, как информатика высших систем, триада «информатика – систематика – интеллектика», «ген» информационной системы, способы представления информации, оценки (меры) информации, синхронные поля общения. Авторы подчеркивают важность и перспективность идей Ф. Е. Темникова в наши дни.",
 		"identifier": "9785040349975",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=t0iiDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -4404,7 +4358,7 @@
 		"title": "Ф.Г.Волков",
 		"authors": ["А.А. Ярцев"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Его жизнь в связи с историей русской театральной старины.",
 		"identifier": "9785518074934",
 		"pageCount": 101,
@@ -4425,9 +4379,9 @@
 	{
 		"title": "Изслѣдованіе теоріи поземельной ренты. 1. Законы Д. Рикардо и Г. Ф. Тюнена",
 		"authors": ["Vladimir Aleksandrovich FUKS"],
-		"publisher": null,
+
 		"publishedDate": "1871",
-		"description": null,
+
 		"identifier": "BL:A0021970523",
 		"pageCount": 178,
 		"imageLink": "http://books.google.com/books/content?id=WZDsyvBwWeIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4435,10 +4389,10 @@
 	},
 	{
 		"title": "Криминология: Учебник / Под ред. проф. Н. Ф. Кузнецовой, проф. В. В. Лунеева. — 2-е изд., перераб. и доп.",
-		"authors": null,
+
 		"publisher": "Wolters Kluwer Russia",
 		"publishedDate": "2004",
-		"description": null,
+
 		"identifier": "9785466000191",
 		"pageCount": 674,
 		"imageLink": "http://books.google.com/books/content?id=aERGT2b50cIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4482,7 +4436,7 @@
 		"authors": ["Вигель Ф. Ф."],
 		"publisher": "ООО ДиректМедиа",
 		"publishedDate": "2013-03-12",
-		"description": null,
+
 		"identifier": "9785998987694",
 		"pageCount": 216,
 		"imageLink": "http://books.google.com/books/content?id=EcQDEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4539,7 +4493,7 @@
 		"publishedDate": "2021-01-15",
 		"description": "Книга восполняет один из важных пробелов в изучении феномена советской архитектуры 1920-х гг., который во всех его проявлениях исчерпывающе не изучен. Организационные формы архитектурной деятельности, сложившиеся в СССР в послереволюционные годы, беспрецедентная в мировой практике система организаций архитектурно-градостроительного проектирования, с которой были связаны лидеры всех творческих направлений тех лет, остаются до сего времени мало разработанными. В издании впервые рассмотрен уникальный процесс формирования этих организаций в период развития советского архитектурного авангарда 1917-1933 гг. Анализируется сложная, непрерывно изменявшаяся система государственных, акционерных, общественных и иной формы проектных организаций, выявляются факторы, обусловившие ее особенности на каждом из этапов, характер связи с содержанием архитектурной деятельности. Выявлены принципы проведения архитектурных конкурсов тех лет и их результативность. Использован метод изучения исторических источников, соединяющий анализ-описание становления форм организации творческой архитектурной деятельности с подготовкой системно-функционального Свода основных архитектурно-проектных организаций СССР, с выявлением их творческого состава и результатов деятельности как формы реконструкции анализируемого процесса.Для архитекторов, искусствоведов, историков, студентов и аспирантов соответствующих специальностей, а также широкого круга читателей.",
 		"identifier": "9785457480179",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=tboUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -4603,7 +4557,7 @@
 		"authors": ["Иакинф (Бичурин Н. Я.)", "монах"],
 		"publisher": "Directmedia",
 		"publishedDate": "2013-03-13",
-		"description": null,
+
 		"identifier": "9785446002542",
 		"pageCount": 674,
 		"imageLink": "http://books.google.com/books/content?id=ZFGOBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4633,7 +4587,7 @@
 		"publishedDate": "2022-05-30",
 		"description": "Набор «Полуфабрикат», состоящий из двух частей, представляет собой настольную книгу для социально ориентированного предприятия, чья деятельность связана с организацией и обеспечением потребителей, в возрасте от трех до семи лет. Набор «Полуфабрикат» позволит с высокой точностью определить себестоимость питания, на любое количество питающихся, практически без повтора выпуска первых, вторых блюд и салатов. 30 Перспективных планов-меню, 219 вариантов калькуляционных карточек, 30 разработанных сырьевых ведомостей, Актов реализации готовой продукции, с расчетом на одного потребителя. Набор «Полуфабрикат» является универсальным помощником при организации сбалансированного питания на научной основе. При разработке учетного технологического документооборота, использовалась информация о нормах вложения по Технологическим картам Сборника рецептур на продукцию для питания детей в дошкольных образовательных организациях (Москва. Дели плюс. 2016 г), являющегося Сборником технических нормативов.",
 		"identifier": "9785043365354",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=6U0lEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -4683,10 +4637,9 @@
 	},
 	{
 		"title": "Report of the Department of Science and Art of the Committee of Council on Education",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "BSB:BSB11803632",
 		"pageCount": 566,
 		"imageLink": "http://books.google.com/books/content?id=mx_axLXIowcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4694,10 +4647,9 @@
 	},
 	{
 		"title": "Senate documents",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "BSB:BSB11547794",
 		"pageCount": 594,
 		"imageLink": "http://books.google.com/books/content?id=Utyclc_H8t0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4707,9 +4659,9 @@
 		"title": "Биография хафиза Ибн Раджаба аль-Ханбали (736-795 г.х.)",
 		"authors": ["Али М."],
 		"publisher": "muntaqa.info",
-		"publishedDate": null,
+
 		"description": "Подробное описание семьи, личности, жизненного пути, наследия и значения в истории Ислама выдающегося имама Зейнуддина Абдуррахмана ибн Ахмада ибн Раджаба аль-Ханбали из множества надежных источников.",
-		"identifier": null,
+
 		"pageCount": 11,
 		"imageLink": "http://books.google.com/books/content?id=n1BSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -4738,10 +4690,9 @@
 	},
 	{
 		"title": "Science Et Esprit",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1898",
-		"description": null,
+
 		"identifier": "CORNELL:31924066310768",
 		"pageCount": 468,
 		"imageLink": "http://books.google.com/books/content?id=8P03AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4750,9 +4701,9 @@
 	{
 		"title": "Вѣстникъ Европы",
 		"authors": ["Mikhail Stasi︠u︡levich", "Konstantin Konstantinovich Arsenév"],
-		"publisher": null,
+
 		"publishedDate": "1868",
-		"description": null,
+
 		"identifier": "UCAL:$B475058",
 		"pageCount": 1044,
 		"imageLink": "http://books.google.com/books/content?id=X3g8AQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4771,10 +4722,9 @@
 	},
 	{
 		"title": "Bezirke und Ortschaften des europäischen Russlands",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1885",
-		"description": null,
+
 		"identifier": "UBBE:UBBE-00111405",
 		"pageCount": 374,
 		"imageLink": "http://books.google.com/books/content?id=jDti4Ion-poC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4793,10 +4743,9 @@
 	},
 	{
 		"title": "Russkoe bogatstvo",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "CHI:23119384",
 		"pageCount": 458,
 		"imageLink": "http://books.google.com/books/content?id=Br07AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4804,10 +4753,9 @@
 	},
 	{
 		"title": "Russian wealth",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "UCAL:$B561916",
 		"pageCount": 414,
 		"imageLink": "http://books.google.com/books/content?id=0QgNAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4816,9 +4764,9 @@
 	{
 		"title": "Geroj našego vremeni",
 		"authors": ["Michail Jurʹevič Lermontov"],
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "BSB:BSB11679073",
 		"pageCount": 240,
 		"imageLink": "http://books.google.com/books/content?id=-A1Pq-L_vu8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4826,8 +4774,7 @@
 	},
 	{
 		"title": "Istoricheskīĭ vi︠e︡stnik",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1895",
 		"description": "\"Includes the section \"Kritika i biblīografīi︠a︡.\"",
 		"identifier": "UIUC:30112118013025",
@@ -4837,10 +4784,9 @@
 	},
 	{
 		"title": "Mir božij",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1896",
-		"description": null,
+
 		"identifier": "BSB:BSB11821413",
 		"pageCount": 816,
 		"imageLink": "http://books.google.com/books/content?id=wq9URtyqKFcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4849,9 +4795,9 @@
 	{
 		"title": "Подробный словарь русских гравированных портретов",
 		"authors": ["Dmitrij Aleks Rovinskij"],
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "BSB:BSB11471326",
 		"pageCount": 796,
 		"imageLink": "http://books.google.com/books/content?id=EmS0jWknF-cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4871,9 +4817,9 @@
 	{
 		"title": "Н.А. Добролюбов",
 		"authors": ["Aleksandr Mikhaĭlovich Skabichevskīĭ"],
-		"publisher": null,
+
 		"publishedDate": "1894",
-		"description": null,
+
 		"identifier": "UCBK:C008166319",
 		"pageCount": 110,
 		"imageLink": "http://books.google.com/books/content?id=89BKAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4882,9 +4828,9 @@
 	{
 		"title": "П. Ж. Беранже",
 		"authors": ["Mikhail Vladislavovich Barro"],
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "UIUC:30112069249750",
 		"pageCount": 90,
 		"imageLink": "http://books.google.com/books/content?id=KzxEAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4892,10 +4838,9 @@
 	},
 	{
 		"title": "Niva",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1897",
-		"description": null,
+
 		"identifier": "UTEXAS:059171109414697",
 		"pageCount": 456,
 		"imageLink": "http://books.google.com/books/content?id=yKzSVrKp1mAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4903,10 +4848,9 @@
 	},
 	{
 		"title": "Русское богатство",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1896",
-		"description": null,
+
 		"identifier": "HARVARD:32044098434129",
 		"pageCount": 416,
 		"imageLink": "http://books.google.com/books/content?id=ZkMFAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4914,10 +4858,9 @@
 	},
 	{
 		"title": "Knižnyj věstnik",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1885",
-		"description": null,
+
 		"identifier": "BSB:BSB11659733",
 		"pageCount": 650,
 		"imageLink": "http://books.google.com/books/content?id=g3d7Ikmm9e8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4926,9 +4869,9 @@
 	{
 		"title": "Даламберъ",
 		"authors": ["Елизавета Федоровна Литвинова"],
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "NLI:2309520-10",
 		"pageCount": 90,
 		"imageLink": "http://books.google.com/books/content?id=pAvG1G_L2moC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -4970,9 +4913,9 @@
 	{
 		"title": "Свод законов Россійской Имперіи повелѣніем Государя Императора Николая Перваго составленный: ч. 1. Уставы лѣсной, оброчных статей, и устав казенных населенных имѣній в западных и прибалтійских губерніях",
 		"authors": ["Russia"],
-		"publisher": null,
+
 		"publishedDate": "1857",
-		"description": null,
+
 		"identifier": "WISC:89012751707",
 		"pageCount": 734,
 		"imageLink": "http://books.google.com/books/content?id=xEVu5xUWo0gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5174,7 +5117,7 @@
 		"authors": ["Шейла Оъфланаган"],
 		"publisher": "Geleos Publishing House",
 		"publishedDate": "2005",
-		"description": null,
+
 		"identifier": "5818905047",
 		"pageCount": 550,
 		"imageLink": "http://books.google.com/books/content?id=QswEJs06QHoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5185,7 +5128,7 @@
 		"authors": ["Шейла О'Фланаган"],
 		"publisher": "Geleos Publishing House",
 		"publishedDate": "2003",
-		"description": null,
+
 		"identifier": "5818905039",
 		"pageCount": 518,
 		"imageLink": "http://books.google.com/books/content?id=OvZNLDLnWKkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5218,7 +5161,7 @@
 		"authors": ["Шейла Оъфланаган"],
 		"publisher": "Geleos Publishing House",
 		"publishedDate": "2006",
-		"description": null,
+
 		"identifier": "5818906027",
 		"pageCount": 548,
 		"imageLink": "http://books.google.com/books/content?id=gLjaOxC-QtYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5231,7 +5174,7 @@
 		"publishedDate": "2021-04-08",
 		"description": "Большая сложность для ребёнка состоит в том, чтобы следить за уже поставленными логопедом звуками не только при произнесении одного слова, но и при включении этого слова сначала в словосочетания, потом в предложения, двустишия и т. д. Главная цель всех предложенных в книге упражнений – настолько хорошо закрепить поставленный звук, чтобы ребёнок произносил его легко, не задумываясь каждый раз, автоматически – это и называется «автоматизировать звук». Для наиболее прочного усвоения материала в игровой форме для всех шипящих и звука [т’] даны занимательные задания с картинками.Для детей, родителей и логопедов.",
 		"identifier": "9785040209590",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=IIjmDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -5249,9 +5192,9 @@
 	{
 		"title": "Севастопольскія воспоминанія Артиллерійскаго Офицера. Сочиненіе Е. Р. Ш-ова..",
 		"authors": ["E. R. SH-OV"],
-		"publisher": null,
+
 		"publishedDate": "1858",
-		"description": null,
+
 		"identifier": "BL:A0017808999",
 		"pageCount": 312,
 		"imageLink": "http://books.google.com/books/content?id=wS1YAAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5270,10 +5213,9 @@
 	},
 	{
 		"title": "Джей Ш. Кости мертвецов",
-		"authors": null,
+
 		"publisher": "Терра",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "5273000661",
 		"pageCount": 424,
 		"imageLink": "http://books.google.com/books/content?id=llnpmL7b5EwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5380,10 +5322,9 @@
 	},
 	{
 		"title": "Expansion of Snowmaking Coverage and Development of Alternative Water Supplies at Mount Snow Ski Resort",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1998",
-		"description": null,
+
 		"identifier": "NWU:35556025494691",
 		"pageCount": 290,
 		"imageLink": "http://books.google.com/books/content?id=Hp82AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5402,10 +5343,9 @@
 	},
 	{
 		"title": "Трудные звуки. Звуки \"Ч\", \"Щ\". Для детей 4-6 лет",
-		"authors": null,
+
 		"publisher": "ОЛМА Медиа Групп",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "5765428037",
 		"pageCount": 68,
 		"imageLink": "http://books.google.com/books/content?id=yG-t-bG78kwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5435,10 +5375,9 @@
 	},
 	{
 		"title": "Князь В-ский и княжна Щ-ва; или: Умереть за отечество славно",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1807",
-		"description": null,
+
 		"identifier": "NKP:3186126462-001",
 		"pageCount": 158,
 		"imageLink": "http://books.google.com/books/content?id=FcP8u4u5c9IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5473,7 +5412,7 @@
 		"publishedDate": "2021-04-08",
 		"description": "Большая сложность для ребёнка состоит в том, чтобы следить за уже поставленными логопедом звуками не только при произнесении одного слова, но и при включении этого слова сначала в словосочетания, потом в предложения, двустишия и т. д. Главная цель всех предложенных в книге упражнений – настолько хорошо закрепить поставленный звук, чтобы ребёнок произносил его легко, не задумываясь каждый раз, автоматически – это и называется «автоматизировать звук». Для наиболее прочного усвоения материала в игровой форме для всех шипящих и звука [т’] даны занимательные задания с картинками.Для детей, родителей и логопедов.",
 		"identifier": "9785040209590",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=IIjmDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -5491,9 +5430,9 @@
 	{
 		"title": "Корнеслов русскаго языка",
 		"authors": ["Vasilīĭ Zelinskīĭ"],
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "STANFORD:36105028430044",
 		"pageCount": 84,
 		"imageLink": "http://books.google.com/books/content?id=ytkNAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5502,9 +5441,9 @@
 	{
 		"title": "Russisch-deutsches Wörterbuch",
 		"authors": ["Ivan Ja Pavlovskij"],
-		"publisher": null,
+
 		"publishedDate": "1879",
-		"description": null,
+
 		"identifier": "BSB:BSB11383566",
 		"pageCount": 1358,
 		"imageLink": "http://books.google.com/books/content?id=zF2Qy1FKweYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5513,9 +5452,9 @@
 	{
 		"title": "Zyri︠a︡nskiĭ kraĭ",
 		"authors": ["G. S. Lytkin"],
-		"publisher": null,
+
 		"publishedDate": "1889",
-		"description": null,
+
 		"identifier": "HARVARD:32044086544475",
 		"pageCount": 464,
 		"imageLink": "http://books.google.com/books/content?id=-reSIcDTZdwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5526,9 +5465,9 @@
 		"authors": [
 			"Moskovskiĭ gosudarstvennyĭ universitet im. M.V. Lomonosova. Obshchestvo istorii i drevnosteĭ rossiĭskikh"
 		],
-		"publisher": null,
+
 		"publishedDate": "1885",
-		"description": null,
+
 		"identifier": "UIUC:30112083834165",
 		"pageCount": 852,
 		"imageLink": "http://books.google.com/books/content?id=AnxIAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5539,9 +5478,9 @@
 		"authors": [
 			"Imperatorskoe obshchestvo istorīi i drevnosteĭ rossīĭskikh (Moscow, Russia)"
 		],
-		"publisher": null,
+
 		"publishedDate": "1891",
-		"description": null,
+
 		"identifier": "STANFORD:36105007335594",
 		"pageCount": 1412,
 		"imageLink": "http://books.google.com/books/content?id=gZEKAAAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5549,10 +5488,9 @@
 	},
 	{
 		"title": "Русский энциклопедический словарь: Ч-Я",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1879",
-		"description": null,
+
 		"identifier": "CHI:089560964",
 		"pageCount": 588,
 		"imageLink": "http://books.google.com/books/content?id=nfFMAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5560,10 +5498,9 @@
 	},
 	{
 		"title": "Russkij ėnciklopedičeskij slovarʹ",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1879",
-		"description": null,
+
 		"identifier": "BSB:BSB11389413",
 		"pageCount": 586,
 		"imageLink": "http://books.google.com/books/content?id=FjNuVVD9aIsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5572,9 +5509,9 @@
 	{
 		"title": "Курс русской грамматики",
 		"authors": ["Vsevolod Miropolʹskiĭ"],
-		"publisher": null,
+
 		"publishedDate": "1884",
-		"description": null,
+
 		"identifier": "UIUC:30112090173276",
 		"pageCount": 244,
 		"imageLink": "http://books.google.com/books/content?id=zK9GAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5582,10 +5519,9 @@
 	},
 	{
 		"title": "Universitetskīi︠a︡ izvi︠e︡stīi︠a︡",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1894",
-		"description": null,
+
 		"identifier": "HARVARD:32044022395412",
 		"pageCount": 432,
 		"imageLink": "http://books.google.com/books/content?id=XQ8FAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5593,10 +5529,9 @@
 	},
 	{
 		"title": "Universitetskīi︠a︡ izviestīi︠a︡",
-		"authors": null,
-		"publisher": null,
+
 		"publishedDate": "1894",
-		"description": null,
+
 		"identifier": "UIUC:30112118326625",
 		"pageCount": 1362,
 		"imageLink": "http://books.google.com/books/content?id=dUpKAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5605,9 +5540,9 @@
 	{
 		"title": "Marksheĭderskai͡a praktika",
 		"authors": ["V. A. Krat"],
-		"publisher": null,
+
 		"publishedDate": "1893",
-		"description": null,
+
 		"identifier": "PSU:000003537190",
 		"pageCount": 546,
 		"imageLink": "http://books.google.com/books/content?id=m1Y6AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5629,8 +5564,7 @@
 		"authors": ["Османов, Фазиль Латиф оглы"],
 		"publisher": "Баку, «Тахсил»",
 		"publishedDate": "2006-06-08",
-		"description": null,
-		"identifier": null,
+
 		"pageCount": 251,
 		"imageLink": "http://books.google.com/books/content?id=f57JDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
@@ -5675,7 +5609,7 @@
 		"publishedDate": "2022-04-05",
 		"description": "«Наглядная хронология» – новый иллюстрированный формат представления достоверных исторических событий и процессов на «ленте времени». Данное издание отображает историю России в хронологическом порядке на протяжении более одиннадцати веков – от образования государственности до наших дней. Наглядный характер изложения позволяет сопоставлять различные аспекты российской истории с историей других европейских стран. Научное редактирование издания выполнено при участии ведущих отечественных историков.Настоящий выпуск посвящен истории Древнего мира до второй половины V в. н.э. (падение Западной Римской империи в 476 г.). Важнейшие политические и культурные события и процессы с аннотациями и иллюстрациями располагаются вдоль основной «ленты времени» на параллельных горизонтальных «лентах», которые обозначают основные ареалы цивилизаций Древнего мира: Грецию, Рим, Египет, Междуречье, Иран, Индию, Китай.Каждая из них открывается краткой хронологией периодов и событий до начала VIII в. до н.э. Далее идет основная «лента времени» в едином масштабе, что позволяет наглядно представить историю Древнего мира на протяжении тринадцати столетий.",
 		"identifier": "9785044314627",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=xgtoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -5716,8 +5650,7 @@
 		"title": "Северные фракийцы в VI-I вв. до н. э",
 		"authors": ["И.Т. Никулицэ"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785458397285",
 		"pageCount": 271,
 		"imageLink": "http://books.google.com/books/content?id=3HL-AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5727,8 +5660,7 @@
 		"title": "Сарматское погребение I в. н.э.",
 		"authors": ["Г.Т. Ковпаненко"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
-		"description": null,
+
 		"identifier": "9785458403931",
 		"pageCount": 151,
 		"imageLink": "http://books.google.com/books/content?id=n9z_AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -5848,7 +5780,7 @@
 		"title": "Ю-Ю",
 		"authors": ["Куприн А."],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Александр Иванович Куприн (1870–1938) – известный русский писатель, творчеству которого присущ активный, действующий гуманизм, пламенная любовь к природе и человеку. «Ю-Ю» – прекрасный сборник рассказов и повестей писателя, среди которых: «Синяя звезда», «Дурной Каламбур», «Завирайка», «Ю-Ю» и многие другие. Отличающиеся глубоким психологизмом и неповторимыми сюжетами, произведения настоящего мастера литературы оставят неизгладимый след в душе каждого читателя.",
 		"identifier": "9785517003669",
 		"pageCount": 179,
@@ -5906,7 +5838,7 @@
 		"publishedDate": "2022-01-27",
 		"description": "Цель настоящей работы – охарактеризовать развитие научной дискуссии, проходящей на станицах журнала «Современная конкуренция», и попытаться примирить кажущиеся противоположными позиции участников научной полемики, а также изложить позицию автора по ряду ключевых пунктов дискуссии.",
 		"identifier": "9785457403536",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=bQjMAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -5917,7 +5849,7 @@
 		"publishedDate": "2021-01-18",
 		"description": "В сборнике представлены научные статьи, посвященные восьмидесятилетию академика Юрия Дерениковича Апресяна, одного из самых выдающихся лингвистов нашей страны. Среди авторов статей как всемирно известные ученые, так и более молодые ученики Ю. Д. Апресяна и его коллеги из России, Белоруссии, Австралии, Австрии, Германии, Италии, Канады, Польши, США, Финляндии и Чехии. В книге 7 разделов, тематика которых отражает широту научных интересов юбиляра: Семантика и прагматика языковых единиц, Лексикография, Синтаксис и семантика синтаксиса, Прикладная лингвистика и проблемы перевода, Типология, Лингвистика и поэтика, Философия языка. В предисловии, написанном И. А. Мельчуком, ближайшим коллегой и другом Ю. Д. Апресяна, кратко излагаются важнейшие научные результаты юбиляра в теоретическом языкознании, лексикографии и прикладной лингвистике.",
 		"identifier": "9785041038335",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=kXUVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -5994,7 +5926,7 @@
 		"publishedDate": "2022-06-28",
 		"description": "Книга повествует о жизни и творчестве пианиста, композитора и музыкального педагога Юрия Васильевича Николаева (1923–2003). В первом разделе представлены автобиографические тексты Ю. В. Николаева и фрагменты его переписки с родными и коллегами-музыкантами, во втором – методические работы композитора, в третьем – воспоминания о нем коллег и учеников. Все материалы публикуются впервые. В приложении помещены статьи о музыканте и рецензии на его авторские концерты, список концертных программ, указатель произведений Николаева. Издание иллюстрировано факсимильными воспроизведениями писем, концертных программ и других документов эпохи, фотографиями из семейного архива. Книга адресована музыкантам-профессионалам, а также всем, интересующимся историей российской музыкальной культуры.",
 		"identifier": "9785044500723",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=G-d3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},
@@ -6024,7 +5956,7 @@
 		"title": "С. Ю. Витте и его проекты злостного банкротства пред Государственным советом",
 		"authors": ["И.Ф. Цион"],
 		"publisher": "Рипол Классик",
-		"publishedDate": null,
+
 		"description": "Статья содержит критику валютной реформы бывшего министра финансов России графа Сергея Юлиевича Витте. Автор обвиняет его в хищениях, финансовых злоупотреблениях, а также в составлении дутых бюджетов.",
 		"identifier": "9785458064538",
 		"pageCount": 95,
@@ -6034,9 +5966,9 @@
 	{
 		"title": "Сочинения Ю.Ф. Самарина",
 		"authors": ["Юрий Федорович Самарин"],
-		"publisher": null,
+
 		"publishedDate": "1878",
-		"description": null,
+
 		"identifier": "NKP:3186281510",
 		"pageCount": 472,
 		"imageLink": "http://books.google.com/books/content?id=1yo9BUhUWnIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -6045,9 +5977,9 @@
 	{
 		"title": "Sbornik",
 		"authors": ["Leningrad (R.S.F.S.R.). Arkheologicheskiĭ institut"],
-		"publisher": null,
+
 		"publishedDate": "1878",
-		"description": null,
+
 		"identifier": "CHI:101239873",
 		"pageCount": 348,
 		"imageLink": "http://books.google.com/books/content?id=ark7AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
@@ -6225,7 +6157,7 @@
 		"publishedDate": "2021-02-02",
 		"description": "Книга – победитель Национальной молодежной литературной премии 2020 в номинациях \"Детектив\" и \"Электронная книга\". Неподалеку от мебельного гипермаркета убита молодая женщина – руководитель одного из отделов. Чтобы удостовериться, что ее смерть не имеет отношения к компании, в магазин приезжает специалист службы безопасности из центрального офиса. Вместе с ним читателю предстоит погрузиться в атмосферу тайн, интриг и борьбы за власть, царящую в гипермаркете. На что готовы люди, чтобы удовлетворить свои амбиции, построить карьеру или просто отомстить? Глубокое погружение в психологию персонажей, реалистичный внутренний портрет крупной компании и неожиданные повороты сюжета не дадут читателю заскучать. А над разгадкой преступления придется поломать голову даже любителю жанра.",
 		"identifier": "9785042625411",
-		"pageCount": null,
+
 		"imageLink": "http://books.google.com/books/content?id=JFkUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"language": "ru"
 	},

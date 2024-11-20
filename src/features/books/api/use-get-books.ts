@@ -1,11 +1,12 @@
+import { BATCH_SIZE } from "@/constants/books";
 import { usePaginatedQuery } from "convex/react";
-import { api } from "../../../convex/_generated/api";
+import { api } from "../../../../convex/_generated/api";
 
 export function useGetBooks() {
 	const { results, status, loadMore } = usePaginatedQuery(
 		api.books.getAll,
 		{},
-		{ initialNumItems: 5 }
+		{ initialNumItems: BATCH_SIZE }
 	);
 
 	return {

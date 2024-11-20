@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { ThemeProvider } from "@/components/theme-provider";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
+import { RouterProvider, createRouter } from "@tanstack/react-router";
 import "./index.css";
 
 // Import the generated route tree
@@ -24,9 +25,11 @@ if (!rootElement.innerHTML) {
 	const root = ReactDOM.createRoot(rootElement);
 	root.render(
 		<StrictMode>
-			<ConvexProvider client={convex}>
-				<RouterProvider router={router} />
-			</ConvexProvider>
+			<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+				<ConvexProvider client={convex}>
+					<RouterProvider router={router} />
+				</ConvexProvider>
+			</ThemeProvider>
 		</StrictMode>
 	);
 }
