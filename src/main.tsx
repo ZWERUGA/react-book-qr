@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ConvexProvider, ConvexReactClient } from "convex/react";
+import { ConvexReactClient } from "convex/react";
+import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import "./index.css";
 
@@ -26,9 +27,9 @@ if (!rootElement.innerHTML) {
 	root.render(
 		<StrictMode>
 			<ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-				<ConvexProvider client={convex}>
+				<ConvexAuthProvider client={convex}>
 					<RouterProvider router={router} />
-				</ConvexProvider>
+				</ConvexAuthProvider>
 			</ThemeProvider>
 		</StrictMode>
 	);
