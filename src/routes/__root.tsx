@@ -8,6 +8,7 @@ import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 
 import { useAuthActions } from "@convex-dev/auth/react";
 import { Authenticated, Unauthenticated } from "convex/react";
+import { Separator } from "@/components/ui/separator";
 
 export const Route = createRootRoute({
 	component: Root,
@@ -22,7 +23,7 @@ function Root() {
 	};
 
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto font-primaryRegular">
 			<div className="flex justify-between p-3">
 				<div className="gap-x-2 items-center flex">
 					<Link to="/" className="[&.active]:font-bold">
@@ -50,7 +51,9 @@ function Root() {
 					</Unauthenticated>
 				</div>
 			</div>
-			<hr />
+			<div className="px-3">
+				<hr />
+			</div>
 			<Outlet />
 			<TanStackRouterDevtools />
 		</div>

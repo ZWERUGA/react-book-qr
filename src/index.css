@@ -3,6 +3,43 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		font-family: "Roboto Condensed";
+	}
+
+	@font-face {
+		font-family: "Roboto Condensed";
+		src:
+			local("Roboto Condensed"),
+			local("RobotoCondensed-Regular"),
+			url("./assets/fonts/RobotoCondensed-Regular.ttf") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Roboto Condensed";
+		src:
+			local("Roboto Condensed Bold"),
+			local("RobotoCondensed-Bold"),
+			url("./assets/fonts/RobotoCondensed-Bold.ttf") format("truetype");
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Roboto Condensed";
+		src:
+			local("Roboto Condensed Light"),
+			local("RobotoCondensed-Light"),
+			url("./assets/fonts/RobotoCondensed-Light.ttf") format("truetype");
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+
 	:root {
 		--background: 0 0% 100%;
 		--foreground: 240 10% 3.9%;

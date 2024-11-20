@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { useInView } from "react-intersection-observer";
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
 import { useGetBooks } from "../../features/books/api/use-get-books";
 
 import { BATCH_SIZE } from "@/constants/books";
 import noBookImage from "@/assets/no-book-image.jpg";
+import { useCallback, useEffect } from "react";
 
 export const Route = createLazyFileRoute("/books/")({
 	component: Books,
@@ -12,6 +14,10 @@ export const Route = createLazyFileRoute("/books/")({
 function Books() {
 	const { results: books, status, loadMore } = useGetBooks();
 
+	const { ref, inView } = useInView({
+		threshold: 0.5,
+	});
+
 	const changeImageZoomLink = (imageLink?: string) => {
 		return imageLink?.replace("zoom=1", "zoom=3");
 	};
@@ -19,6 +25,10 @@ function Books() {
 	const displayTitle = (title?: string) => {
 		return title && title.length > 50 ? `${title?.slice(0, 50)} ...` : title;
 	};
+
+	useEffect(() => {
+		loadMore(BATCH_SIZE);
+	}, [inView]);
 
 	if (status === "LoadingFirstPage") {
 		return <div>Loading books...</div>;
@@ -41,7 +51,7 @@ function Books() {
 						</div>
 						<div className="flex flex-col gap-y-2 h-full items-center text-center">
 							<div className="flex flex-col gap-1 h-full">
-								<p className="sm:text-sm md:text-base lg:text-lg text-xs font-semibold text-card-foreground">
+								<p className="sm:text-sm md:text-base lg:text-lg text-xs font-light text-card-foreground">
 									{displayTitle(book.title)}
 								</p>
 								<span className="text-xs italic mt-auto">
@@ -64,10 +74,7 @@ function Books() {
 					</div>
 				))}
 			</div>
-			<Button
-				onClick={() => loadMore(BATCH_SIZE)}
-				disabled={status !== "CanLoadMore"}
-			>
+			<Button ref={ref} onClick={() => {}} disabled={status !== "CanLoadMore"}>
 				{status === "LoadingMore"
 					? "Загрузка..."
 					: status !== "CanLoadMore"
