@@ -30,3 +30,12 @@ export const signUpSchema = z
 			path: ["isAdminCode"],
 		}
 	);
+
+export const signInSchema = z.object({
+	email: z
+		.string()
+		.email({ message: "Введите корректный адрес электронной почты." }),
+	password: z
+		.string()
+		.min(6, { message: "Пароль должен содержать минимум 6 символов." }),
+});

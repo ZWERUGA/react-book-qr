@@ -14,12 +14,13 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as BooksBookIdImport } from './routes/books/$bookId'
+import { Route as AuthSignUpImport } from './routes/auth/sign-up'
+import { Route as AuthSignInImport } from './routes/auth/sign-in'
 
 // Create Virtual Routes
 
 const IndexLazyImport = createFileRoute('/')()
 const BooksIndexLazyImport = createFileRoute('/books/')()
-const AuthIndexLazyImport = createFileRoute('/auth/')()
 
 // Create/Update Routes
 
@@ -35,15 +36,21 @@ const BooksIndexLazyRoute = BooksIndexLazyImport.update({
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/books/index.lazy').then((d) => d.Route))
 
-const AuthIndexLazyRoute = AuthIndexLazyImport.update({
-  id: '/auth/',
-  path: '/auth/',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/auth/index.lazy').then((d) => d.Route))
-
 const BooksBookIdRoute = BooksBookIdImport.update({
   id: '/books/$bookId',
   path: '/books/$bookId',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AuthSignUpRoute = AuthSignUpImport.update({
+  id: '/auth/sign-up',
+  path: '/auth/sign-up',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AuthSignInRoute = AuthSignInImport.update({
+  id: '/auth/sign-in',
+  path: '/auth/sign-in',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -58,18 +65,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyImport
       parentRoute: typeof rootRoute
     }
+    '/auth/sign-in': {
+      id: '/auth/sign-in'
+      path: '/auth/sign-in'
+      fullPath: '/auth/sign-in'
+      preLoaderRoute: typeof AuthSignInImport
+      parentRoute: typeof rootRoute
+    }
+    '/auth/sign-up': {
+      id: '/auth/sign-up'
+      path: '/auth/sign-up'
+      fullPath: '/auth/sign-up'
+      preLoaderRoute: typeof AuthSignUpImport
+      parentRoute: typeof rootRoute
+    }
     '/books/$bookId': {
       id: '/books/$bookId'
       path: '/books/$bookId'
       fullPath: '/books/$bookId'
       preLoaderRoute: typeof BooksBookIdImport
-      parentRoute: typeof rootRoute
-    }
-    '/auth/': {
-      id: '/auth/'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthIndexLazyImport
       parentRoute: typeof rootRoute
     }
     '/books/': {
@@ -86,46 +100,62 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
+  '/auth/sign-in': typeof AuthSignInRoute
+  '/auth/sign-up': typeof AuthSignUpRoute
   '/books/$bookId': typeof BooksBookIdRoute
-  '/auth': typeof AuthIndexLazyRoute
   '/books': typeof BooksIndexLazyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
+  '/auth/sign-in': typeof AuthSignInRoute
+  '/auth/sign-up': typeof AuthSignUpRoute
   '/books/$bookId': typeof BooksBookIdRoute
-  '/auth': typeof AuthIndexLazyRoute
   '/books': typeof BooksIndexLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexLazyRoute
+  '/auth/sign-in': typeof AuthSignInRoute
+  '/auth/sign-up': typeof AuthSignUpRoute
   '/books/$bookId': typeof BooksBookIdRoute
-  '/auth/': typeof AuthIndexLazyRoute
   '/books/': typeof BooksIndexLazyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/books/$bookId' | '/auth' | '/books'
+  fullPaths:
+    | '/'
+    | '/auth/sign-in'
+    | '/auth/sign-up'
+    | '/books/$bookId'
+    | '/books'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/books/$bookId' | '/auth' | '/books'
-  id: '__root__' | '/' | '/books/$bookId' | '/auth/' | '/books/'
+  to: '/' | '/auth/sign-in' | '/auth/sign-up' | '/books/$bookId' | '/books'
+  id:
+    | '__root__'
+    | '/'
+    | '/auth/sign-in'
+    | '/auth/sign-up'
+    | '/books/$bookId'
+    | '/books/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
+  AuthSignInRoute: typeof AuthSignInRoute
+  AuthSignUpRoute: typeof AuthSignUpRoute
   BooksBookIdRoute: typeof BooksBookIdRoute
-  AuthIndexLazyRoute: typeof AuthIndexLazyRoute
   BooksIndexLazyRoute: typeof BooksIndexLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
+  AuthSignInRoute: AuthSignInRoute,
+  AuthSignUpRoute: AuthSignUpRoute,
   BooksBookIdRoute: BooksBookIdRoute,
-  AuthIndexLazyRoute: AuthIndexLazyRoute,
   BooksIndexLazyRoute: BooksIndexLazyRoute,
 }
 
@@ -140,19 +170,23 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/auth/sign-in",
+        "/auth/sign-up",
         "/books/$bookId",
-        "/auth/",
         "/books/"
       ]
     },
     "/": {
       "filePath": "index.lazy.tsx"
     },
+    "/auth/sign-in": {
+      "filePath": "auth/sign-in.tsx"
+    },
+    "/auth/sign-up": {
+      "filePath": "auth/sign-up.tsx"
+    },
     "/books/$bookId": {
       "filePath": "books/$bookId.tsx"
-    },
-    "/auth/": {
-      "filePath": "auth/index.lazy.tsx"
     },
     "/books/": {
       "filePath": "books/index.lazy.tsx"

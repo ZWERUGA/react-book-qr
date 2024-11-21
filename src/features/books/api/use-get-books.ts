@@ -3,7 +3,7 @@ import { usePaginatedQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 
 export function useGetBooks() {
-	const { results, status, loadMore } = usePaginatedQuery(
+	const { results, status, isLoading, loadMore } = usePaginatedQuery(
 		api.books.getAll,
 		{},
 		{ initialNumItems: BATCH_SIZE }
@@ -11,6 +11,7 @@ export function useGetBooks() {
 
 	return {
 		results,
+		isLoading,
 		status,
 		loadMore,
 	};

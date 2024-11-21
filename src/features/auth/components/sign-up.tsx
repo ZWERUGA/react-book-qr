@@ -14,9 +14,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { PasswordInput } from "@/components/ui/password-input";
-import { Button } from "@/components/ui/button";
 
 export function SignUp() {
 	const form = useForm<z.infer<typeof signUpSchema>>({
@@ -40,6 +41,7 @@ export function SignUp() {
 			password: values.password,
 			role: values.isAdmin ? "admin" : "user",
 			flow: "signUp",
+			redirectTo: "/",
 		});
 	};
 
@@ -59,6 +61,7 @@ export function SignUp() {
 								<Input
 									type="text"
 									placeholder="Имя пользователя..."
+									required
 									{...field}
 								/>
 							</FormControl>
@@ -77,6 +80,7 @@ export function SignUp() {
 								<Input
 									type="email"
 									placeholder="Электронная почта..."
+									required
 									{...field}
 								/>
 							</FormControl>
@@ -91,18 +95,20 @@ export function SignUp() {
 						<FormItem className="space-y-1">
 							<FormLabel>Пароль</FormLabel>
 							<FormControl>
-								<PasswordInput placeholder="Пароль..." {...field} />
+								<PasswordInput placeholder="Пароль..." {...field} required />
 							</FormControl>
 							<FormMessage />
 						</FormItem>
 					)}
 				/>
 
+				<Separator />
+
 				<FormField
 					control={form.control}
 					name="isAdmin"
 					render={({ field }) => (
-						<FormItem className="flex items-center justify-between rounded-lg border space-y-0 p-4">
+						<FormItem className="flex items-center justify-between rounded-md border space-y-0 p-4">
 							<div className="space-y-0.5">
 								<FormLabel className="text-base">Администратор</FormLabel>
 								<FormDescription>
@@ -134,7 +140,9 @@ export function SignUp() {
 						)}
 					/>
 				)}
-				<Button type="submit">Подтвердить</Button>
+				<Button type="submit" className="mt-2">
+					Продолжить
+				</Button>
 			</form>
 		</Form>
 	);
