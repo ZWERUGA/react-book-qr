@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { useInView } from "react-intersection-observer";
 import { createLazyFileRoute, Link } from "@tanstack/react-router";
-import { useGetBooks } from "../../features/books/api/use-get-books";
-
+import { useGetBooks } from "../../../features/books/api/use-get-books";
 
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
-import { RiseLoader } from "react-spinners";
+import Loader from "@/components/loader";
 import { BATCH_SIZE } from "@/constants/books";
 import noBookImage from "@/assets/no-book-image.jpg";
 
-export const Route = createLazyFileRoute("/books/")({
+export const Route = createLazyFileRoute("/_layout/books/")({
 	component: Books,
 });
 
@@ -38,7 +37,7 @@ function Books() {
 	if (status === "LoadingFirstPage") {
 		return (
 			<div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
-				<RiseLoader color="white" />
+				<Loader />
 			</div>
 		);
 	}
@@ -90,7 +89,7 @@ function Books() {
 					status === "Exhausted" && "my-0"
 				)}
 			>
-				{isLoading && <RiseLoader className="dark:bg-" />}
+				{isLoading && <Loader />}
 				{status === "Exhausted" && "Нет книг"}
 			</div>
 		</div>
