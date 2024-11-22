@@ -1,5 +1,6 @@
+import Loader from "@/components/loader";
+import { UserMenu } from "@/components/user-menu";
 import { Authenticated, Unauthenticated } from "convex/react";
-import { UserMenu } from "@/components/profile";
 import { createFileRoute, Link, Outlet } from "@tanstack/react-router";
 import { useCurrentUser } from "@/hooks/use-current-user";
 
@@ -8,7 +9,15 @@ export const Route = createFileRoute("/_layout")({
 });
 
 function RouteComponent() {
-  const { currentUser } = useCurrentUser();
+  const { currentUser, isLoading } = useCurrentUser();
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
+        <Loader />
+      </div>
+    );
+  }
 
   return (
     <>
@@ -43,12 +52,7 @@ function RouteComponent() {
           <Authenticated>
             <p>Здравствуй, {currentUser?.name}</p>
           </Authenticated>
-          <UserMenu
-            image={currentUser?.image}
-            username={currentUser?.name}
-            email={currentUser?.email}
-            role={currentUser?.role === 'user' ? 'Читатель' : 'Библиотекарь'}
-          />
+          <UserMenu />
         </div>
       </div>
       <hr />

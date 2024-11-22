@@ -23,20 +23,25 @@ import { useNavigate } from "@tanstack/react-router";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import { PROTECTED_ROUTES } from "@/constants/protected-routes";
 
-interface UserMenuProps {
-  image?: string;
-  username?: string;
-  email?: string;
-  role?: string;
-}
-
-export function UserMenu({ image, username, email, role }: UserMenuProps) {
+export function UserMenu() {
   const navigate = useNavigate();
   const { setTheme } = useTheme();
   const { signOut } = useAuthActions();
 
-  const avatarFallback = username?.charAt(0).toUpperCase();
+  const { currentUser } = useCurrentUser();
+
+  const avatarFallback = currentUser?.name?.charAt(0).toUpperCase();
+
+  const currentPath = location.pathname;
+
+  const handleSignOut = () => {
+    if (PROTECTED_ROUTES.includes(currentPath)) {
+      navigate({ to: "/" });
+    }
+  };
 
   return (
     <DropdownMenu modal={false}>
@@ -46,7 +51,10 @@ export function UserMenu({ image, username, email, role }: UserMenuProps) {
             <CircleUserRound size={30} />
           </Unauthenticated>
           <Authenticated>
-            <AvatarImage src={image} />
+            <AvatarImage
+              src={currentUser?.imageUrl ?? ""}
+              className="object-cover"
+            />
             <AvatarFallback className="text-xl">
               {avatarFallback}
             </AvatarFallback>
@@ -61,14 +69,25 @@ export function UserMenu({ image, username, email, role }: UserMenuProps) {
           <DropdownMenuLabel>
             <div>
               <div className="flex justify-between items-center">
-                <p className="text-xl">{username}</p>
-                <span className="text-xs text-slate-500">{role}</span>
+                <p className="text-xl">{currentUser?.name}</p>
+                <span className="text-xs text-slate-500">
+                  {currentUser?.role}
+                </span>
               </div>
-              <span className="text-sm text-slate-500">{email}</span>
+              <span className="text-sm text-slate-500">
+                {currentUser?.email}
+              </span>
             </div>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="cursor-pointer">
+          <DropdownMenuItem
+            onSelect={() =>
+              navigate({
+                to: "/profile",
+              })
+            }
+            className="cursor-pointer"
+          >
             <User />
             <span>Профиль</span>
           </DropdownMenuItem>
@@ -117,7 +136,11 @@ export function UserMenu({ image, username, email, role }: UserMenuProps) {
         </DropdownMenuGroup>
         <Authenticated>
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="cursor-pointer" onSelect={signOut}>
+          <DropdownMenuItem
+            onClick={handleSignOut}
+            className="cursor-pointer"
+            onSelect={signOut}
+          >
             <LogOut />
             <span>Выйти</span>
           </DropdownMenuItem>

@@ -74,8 +74,9 @@ export function SignIn({ setError }: ISignInProps) {
                 <Input
                   type="email"
                   placeholder="Электронная почта..."
-                  required
                   className="text-xs sm:text-base"
+                  required
+                  autoComplete="true"
                   {...field}
                 />
               </FormControl>
@@ -96,6 +97,7 @@ export function SignIn({ setError }: ISignInProps) {
                   required
                   {...field}
                   className="text-xs sm:text-base"
+                  autoComplete="true"
                 />
               </FormControl>
               <FormMessage />
@@ -104,11 +106,7 @@ export function SignIn({ setError }: ISignInProps) {
         />
 
         <Separator className="mt-1" />
-        <Button
-          disabled={isLoading}
-          type="submit"
-          className="mt-1"
-        >
+        <Button disabled={isLoading} type="submit" className="mt-1">
           {isLoading && <Loader className="animate-spin" />}
           {isLoading ? "Подождите..." : "Продолжить"}
         </Button>

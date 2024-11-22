@@ -105,6 +105,7 @@ export function SignUp({ setError }: ISignUpProps) {
                   placeholder="Электронная почта..."
                   className="text-xs sm:text-base"
                   required
+                  autoComplete="true"
                   {...field}
                 />
               </FormControl>
@@ -123,6 +124,7 @@ export function SignUp({ setError }: ISignUpProps) {
                   placeholder="Пароль..."
                   {...field}
                   required
+                  autoComplete="true"
                   className="text-xs sm:text-base"
                 />
               </FormControl>
