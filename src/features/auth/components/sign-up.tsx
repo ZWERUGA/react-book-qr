@@ -83,6 +83,7 @@ export function SignUp({ setError }: ISignUpProps) {
 								<Input
 									type="text"
 									placeholder="Имя пользователя..."
+									className="text-xs sm:text-base"
 									required
 									{...field}
 								/>
@@ -102,6 +103,7 @@ export function SignUp({ setError }: ISignUpProps) {
 								<Input
 									type="email"
 									placeholder="Электронная почта..."
+									className="text-xs sm:text-base"
 									required
 									{...field}
 								/>
@@ -117,7 +119,7 @@ export function SignUp({ setError }: ISignUpProps) {
 						<FormItem className="space-y-1">
 							<FormLabel>Пароль</FormLabel>
 							<FormControl>
-								<PasswordInput placeholder="Пароль..." {...field} required />
+								<PasswordInput placeholder="Пароль..." {...field} required className="text-xs sm:text-base" />
 							</FormControl>
 							<FormMessage />
 						</FormItem>
@@ -133,7 +135,7 @@ export function SignUp({ setError }: ISignUpProps) {
 						<FormItem className="flex items-center justify-between rounded-md border space-y-0 p-4">
 							<div className="space-y-0.5">
 								<FormLabel className="text-base">Администратор</FormLabel>
-								<FormDescription>
+								<FormDescription className="text-xs sm:text-base">
 									Необходимо ввести служебный код
 								</FormDescription>
 							</div>
@@ -155,7 +157,7 @@ export function SignUp({ setError }: ISignUpProps) {
 							<FormItem className="space-y-1">
 								<FormLabel>Служебный код</FormLabel>
 								<FormControl>
-									<Input placeholder="Код..." {...field} />
+									<Input placeholder="Код..." {...field} className="text-xs sm:text-base" />
 								</FormControl>
 								<FormMessage />
 							</FormItem>

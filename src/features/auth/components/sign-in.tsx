@@ -75,6 +75,7 @@ export function SignIn({ setError }: ISignInProps) {
 									type="email"
 									placeholder="Электронная почта..."
 									required
+									className="text-xs sm:text-base"
 									{...field}
 								/>
 							</FormControl>
@@ -89,7 +90,7 @@ export function SignIn({ setError }: ISignInProps) {
 						<FormItem className="space-y-1">
 							<FormLabel>Пароль</FormLabel>
 							<FormControl>
-								<PasswordInput placeholder="Пароль..." required {...field} />
+								<PasswordInput placeholder="Пароль..." required {...field} className="text-xs sm:text-base" />
 							</FormControl>
 							<FormMessage />
 						</FormItem>

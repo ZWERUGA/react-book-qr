@@ -22,7 +22,7 @@ export default function AuthForm({ title, step }: IAuthFormProps) {
 	const { signIn } = useAuthActions();
 
 	return (
-		<>
+		<div className="flex flex-col items-center gap-y-2 px-2">
 			<Link
 				to="/"
 				className="flex items-center gap-2 text-lg border-primary border-b"
@@ -31,9 +31,9 @@ export default function AuthForm({ title, step }: IAuthFormProps) {
 				<span>На главную</span>
 			</Link>
 
-			<div className="flex flex-col items-center border rounded-md p-3 w-[520px] sm:w-3/4">
-				<h1 className="text-[40px]">{title}</h1>
-				<p className="text-sm text-gray-400">
+			<div className="flex flex-col items-center border rounded-md p-2 md:w-[520px] w-full">
+				<h1 className="text-[30px] sm:text-[40px]">{title}</h1>
+				<p className="text-xs sm:text-sm text-gray-400 text-center">
 					Используйте электронную почту или другой сервис, чтобы продолжить
 				</p>
 				{error && (
@@ -53,10 +53,10 @@ export default function AuthForm({ title, step }: IAuthFormProps) {
 					<SignUp setError={setError} />
 				)}
 
-				<div className="mt-4 mb-7">
+				<div className="mt-4 mb-7 flex gap-1 items-center sm:flex-row text-xs sm:text-base">
 					{step === "signIn"
-						? "У вас нет учетной записи? "
-						: "У вас уже есть учетная запись? "}
+						? "У вас нет учетной записи?"
+						: "У вас уже есть учетная запись?"}
 					<Link
 						to={step === "signIn" ? "/auth/sign-up" : "/auth/sign-in"}
 						className="underline underline-offset-4"
@@ -68,7 +68,7 @@ export default function AuthForm({ title, step }: IAuthFormProps) {
 					<p className="absolute bg-background px-5">или</p>
 					<Separator />
 				</div>
-				<div className="flex w-full justify-center gap-3">
+				<div className="flex flex-col sm:flex-row w-full justify-center gap-1">
 					<Button variant="outline" onClick={() => signIn("github")}>
 						<FaGithub />
 						Github
@@ -83,6 +83,6 @@ export default function AuthForm({ title, step }: IAuthFormProps) {
 					</Button>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
