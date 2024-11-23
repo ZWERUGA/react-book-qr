@@ -71,7 +71,9 @@ export function UserMenu() {
               <div className="flex justify-between items-center">
                 <p className="text-xl">{currentUser?.name}</p>
                 <span className="text-xs text-slate-500">
-                  {currentUser?.role}
+                  {currentUser?.role === "user"
+                    ? "Пользователь"
+                    : "Библиотекарь"}
                 </span>
               </div>
               <span className="text-sm text-slate-500">

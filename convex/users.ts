@@ -1,6 +1,6 @@
+import { v } from "convex/values";
 import { getAuthUserId } from "@convex-dev/auth/server";
 import { mutation, query, QueryCtx } from "./_generated/server";
-import { v } from "convex/values";
 
 export const currentUser = query({
   args: {},
@@ -11,14 +11,23 @@ export const currentUser = query({
       return null;
     }
 
-    const profile = await ctx.db.get(userId);
+    const user = await ctx.db.get(userId);
 
-    const imageUrl = profile?.image
-      ? await ctx.storage.getUrl(profile.image)
-      : undefined;
+    if (user === null) {
+      return null;
+    }
+
+    if (!user.image) {
+      return {
+        ...user,
+        imageUrl: "",
+      };
+    }
+
+    const imageUrl = await ctx.storage.getUrl(user.image);
 
     return {
-      ...profile,
+      ...user,
       imageUrl: imageUrl,
     };
   },

@@ -14,13 +14,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useState } from "react";
-import { Loader } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-import { Button } from "@/components/ui/button";
 import { useNavigate } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
+import { SubmitButton } from "@/components/submit-button";
 import { PasswordInput } from "@/components/ui/password-input";
 
 interface ISignUpProps {
@@ -176,11 +175,8 @@ export function SignUp({ setError }: ISignUpProps) {
           />
         )}
 
-        <Separator className="mt-1" />
-        <Button disabled={isLoading} type="submit" className="mt-1">
-          {isLoading && <Loader className="animate-spin" />}
-          {isLoading ? "Подождите..." : "Продолжить"}
-        </Button>
+        <Separator className="my-1" />
+        <SubmitButton isLoading={isLoading} />
       </form>
     </Form>
   );

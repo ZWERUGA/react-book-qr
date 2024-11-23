@@ -1,8 +1,9 @@
 import Loader from "@/components/loader";
 import { UserMenu } from "@/components/user-menu";
 import { Authenticated, Unauthenticated } from "convex/react";
-import { createFileRoute, Link, Outlet } from "@tanstack/react-router";
+import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useCurrentUser } from "@/hooks/use-current-user";
+import { HeaderLink } from "@/components/header-link";
 
 export const Route = createFileRoute("/_layout")({
   component: RouteComponent,
@@ -24,20 +25,10 @@ function RouteComponent() {
       <div className="flex justify-between p-3">
         <nav className="flex items-center gap-x-2 list-none">
           <li>
-            <Link
-              to="/"
-              className="px-4 py-2 [&.active]:border-b border-foreground"
-            >
-              Главная
-            </Link>
+            <HeaderLink to="/" title="Главная" />
           </li>
           <li>
-            <Link
-              to="/books"
-              className="px-4 py-2 [&.active]:border-b border-foreground"
-            >
-              Книги
-            </Link>
+            <HeaderLink to="/books" title="Книги" />
           </li>
         </nav>
         <div className="flex items-center gap-x-2">

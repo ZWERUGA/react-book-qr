@@ -25,10 +25,13 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 
 export function Profile() {
-  const imageInput = useRef<HTMLInputElement>(null);
   const { currentUser, isLoading: currentUserLoading } = useCurrentUser();
-  const [imagePreview, setImagePreview] = useState(currentUser?.imageUrl);
+
+  const imageInput = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
+  const [imagePreview, setImagePreview] = useState<string>(
+    currentUser?.imageUrl ?? ""
+  );
 
   const [isLoading, setLoading] = useState<boolean>(false);
 
@@ -37,6 +40,22 @@ export function Profile() {
   const generateUploadUrl = useMutation(api.upload.generateUploadUrl);
 
   const { toast } = useToast();
+
+  useEffect(() => {
+    if (selectedImage) {
+      const selectedImageBlob = URL.createObjectURL(selectedImage);
+
+      setImagePreview(selectedImageBlob);
+    }
+  }, [selectedImage]);
+
+  const handleClearSelectedImage = () => {
+    console.log(imagePreview);
+    setImagePreview("");
+    setSelectedImage(null);
+    imageInput.current!.value = "";
+    console.log(imagePreview);
+  };
 
   const form = useForm<z.infer<typeof profileSchema>>({
     resolver: zodResolver(profileSchema),
@@ -47,12 +66,6 @@ export function Profile() {
 
   const avatarFallback = currentUser?.name?.charAt(0).toUpperCase();
 
-  useEffect(() => {
-    if (selectedImage) {
-      setImagePreview(URL.createObjectURL(selectedImage));
-    }
-  }, [selectedImage]);
-
   if (currentUserLoading) {
     return (
       <div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
@@ -62,7 +75,11 @@ export function Profile() {
   }
 
   if (!currentUser) {
-    return <div>Пользователь не найден...</div>;
+    return (
+      <div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
+        Пользователь не найден...
+      </div>
+    );
   }
 
   const onSubmit = async (values: z.infer<typeof profileSchema>) => {
@@ -70,6 +87,12 @@ export function Profile() {
       setLoading(true);
 
       let storageId = currentUser.image;
+
+      if (!imagePreview) {
+        if (storageId) {
+          deleteImage({ storageId });
+        }
+      }
 
       if (selectedImage) {
         const postUrl = await generateUploadUrl();
@@ -96,7 +119,7 @@ export function Profile() {
       }
 
       await update({
-        image: storageId,
+        image: imagePreview ? storageId : undefined,
         name: values.name,
       });
 
@@ -135,6 +158,14 @@ export function Profile() {
                 <FormLabel>
                   <div className="flex items-center justify-between gap-x-2 h-4">
                     Изображение
+                    {imagePreview && (
+                      <span
+                        onClick={handleClearSelectedImage}
+                        className="text-red-400 cursor-pointer"
+                      >
+                        (очистить)
+                      </span>
+                    )}
                   </div>
                 </FormLabel>
                 <FormControl>
@@ -144,12 +175,11 @@ export function Profile() {
                       accept="image/*"
                       ref={imageInput}
                       onChange={(e) => setSelectedImage(e.target.files![0])}
-                      disabled={selectedImage !== null}
                     />
                     <div>
                       <Avatar className="flex items-center justify-center">
                         <AvatarImage
-                          src={imagePreview || ""}
+                          src={imagePreview}
                           className="object-cover"
                         />
                         <AvatarFallback className="text-xl">
