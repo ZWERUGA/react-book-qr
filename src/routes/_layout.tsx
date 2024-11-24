@@ -4,6 +4,7 @@ import { Authenticated, Unauthenticated } from "convex/react";
 import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { HeaderLink } from "@/components/header-link";
+import { Logo } from "@/components/logo";
 
 export const Route = createFileRoute("/_layout")({
   component: RouteComponent,
@@ -20,29 +21,22 @@ function RouteComponent() {
     );
   }
 
+  console.log(currentUser);
+
   return (
     <>
       <div className="flex justify-between p-3">
         <nav className="flex items-center gap-x-2 list-none">
-          <li>
-            <HeaderLink to="/" title="Главная" />
+          <li className="hover:bg-slate-300 dark:hover:bg-slate-800 transition-colors rounded-md">
+            <HeaderLink to="/">
+              <Logo />
+            </HeaderLink>
           </li>
-          <li>
-            <HeaderLink to="/books" title="Книги" />
+          <li className="h-full hover:bg-slate-300 dark:hover:bg-slate-800 transition-colors rounded-md">
+            <HeaderLink to="/books" title="Книги" className="h-full" />
           </li>
         </nav>
         <div className="flex items-center gap-x-2">
-          <Unauthenticated>
-            <div className="flex flex-col items-end">
-              <p>Здравствуй, Гость!</p>
-              <span className="text-xs text-slate-500">
-                Войди или зарегистрируйся
-              </span>
-            </div>
-          </Unauthenticated>
-          <Authenticated>
-            <p>Здравствуй, {currentUser?.name}</p>
-          </Authenticated>
           <UserMenu />
         </div>
       </div>

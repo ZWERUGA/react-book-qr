@@ -3,6 +3,7 @@ import { IconType } from "react-icons/lib";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useState } from "react";
 import { Loader } from "lucide-react";
+import { useCurrentUser } from "@/hooks/use-current-user";
 
 interface SocialButtonProps {
   icon: IconType;
@@ -16,16 +17,23 @@ export function SocialButton({
   title,
 }: SocialButtonProps) {
   const { signIn } = useAuthActions();
+  const { currentUser } = useCurrentUser();
   const [isLoading, setLoading] = useState<boolean>(false);
 
   const handleClick = async () => {
     setLoading(true);
 
-    signIn(provider).finally(() => setLoading(false));
+    signIn(provider)
+      .then(() => console.log(currentUser))
+      .finally(() => setLoading(false));
   };
 
   return (
-    <Button variant="outline" onClick={handleClick}>
+    <Button
+      variant="outline"
+      onClick={handleClick}
+      className="w-full sm:w-[100px]"
+    >
       {isLoading ? (
         <Loader className="animate-spin" />
       ) : (

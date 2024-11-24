@@ -43,23 +43,38 @@ export function UserMenu() {
     }
   };
 
+  console.log(currentUser);
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Avatar className="cursor-pointer flex items-center justify-center">
+        <div className="flex items-center gap-x-2 select-none cursor-pointer p-2 hover:bg-slate-300 dark:hover:bg-slate-800 transition-colors rounded-md">
           <Unauthenticated>
-            <CircleUserRound size={30} />
+            <div className="flex flex-col items-end">
+              <p>Здравствуй, Гость!</p>
+              <span className="text-xs text-slate-500">
+                Войди или зарегистрируйся
+              </span>
+            </div>
           </Unauthenticated>
           <Authenticated>
-            <AvatarImage
-              src={currentUser?.imageUrl ?? ""}
-              className="object-cover"
-            />
-            <AvatarFallback className="text-xl">
-              {avatarFallback}
-            </AvatarFallback>
+            <p>Здравствуй, {currentUser?.name}</p>
           </Authenticated>
-        </Avatar>
+          <Avatar className="cursor-pointer flex items-center justify-center">
+            <Unauthenticated>
+              <CircleUserRound size={30} />
+            </Unauthenticated>
+            <Authenticated>
+              <AvatarImage
+                src={currentUser?.imageUrl ?? ""}
+                className="object-cover"
+              />
+              <AvatarFallback className="text-xl">
+                {avatarFallback}
+              </AvatarFallback>
+            </Authenticated>
+          </Avatar>
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
@@ -70,15 +85,10 @@ export function UserMenu() {
             <div>
               <div className="flex justify-between items-center">
                 <p className="text-xl">{currentUser?.name}</p>
-                <span className="text-xs text-slate-500">
-                  {currentUser?.role === "user"
-                    ? "Пользователь"
-                    : "Библиотекарь"}
-                </span>
               </div>
-              <span className="text-sm text-slate-500">
-                {currentUser?.email}
-              </span>
+              <div className="mt-1">
+                <p className="text-sm text-slate-500">{currentUser?.email}</p>
+              </div>
             </div>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />

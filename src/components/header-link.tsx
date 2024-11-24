@@ -1,14 +1,23 @@
+import { PropsWithChildren } from "react";
 import { Link } from "@tanstack/react-router";
+import { cn } from "@/lib/utils";
 
-interface HeaderLinkProps {
+interface HeaderLinkProps extends PropsWithChildren {
   to: string;
-  title: string;
+  title?: string;
+  className?: string;
 }
 
-export function HeaderLink({ to, title }: HeaderLinkProps) {
+export function HeaderLink({
+  to,
+  title,
+  className,
+  children,
+}: HeaderLinkProps) {
   return (
-    <Link to={to} className="px-4 py-2 [&.active]:border-b border-foreground">
-      {title}
+    <Link to={to} className={cn("p-2 flex items-center", className)}>
+      {children}
+      {title && title}
     </Link>
   );
 }
