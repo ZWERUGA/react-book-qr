@@ -1,8 +1,9 @@
 import { RiseLoader } from "react-spinners";
-import { useTheme } from "./theme-provider";
 
 export default function Loader() {
-  const { theme } = useTheme();
+  const root = window.document.documentElement;
 
-  return <RiseLoader color={theme === "light" ? "black" : "white"} />;
+  const themeMode = root.classList.contains("light") ? "black" : "white";
+
+  return <RiseLoader color={themeMode} />;
 }

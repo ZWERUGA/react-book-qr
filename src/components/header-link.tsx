@@ -15,9 +15,11 @@ export function HeaderLink({
   children,
 }: HeaderLinkProps) {
   return (
-    <Link to={to} className={cn("p-2 flex items-center", className)}>
-      {children}
-      {title && title}
-    </Link>
+    <li className="h-full hover:bg-[#f4f4f6] dark:hover:bg-[#27262b] transition-colors rounded-md">
+      <Link to={to} className={cn("p-2 flex items-center h-full", className)}>
+        {children}
+        {title && title}
+      </Link>
+    </li>
   );
 }

@@ -12,19 +12,21 @@ import {
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useTheme } from "./theme-provider";
 import { useNavigate } from "@tanstack/react-router";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { PROTECTED_ROUTES } from "@/constants/protected-routes";
+import { useTheme } from "./theme-provider";
+import { useState } from "react";
 
 export function UserMenu() {
   const navigate = useNavigate();
@@ -32,6 +34,10 @@ export function UserMenu() {
   const { signOut } = useAuthActions();
 
   const { currentUser } = useCurrentUser();
+
+  const [position, setPosition] = useState(
+    localStorage.getItem("vite-ui-theme") ?? "light"
+  );
 
   const avatarFallback = currentUser?.name?.charAt(0).toUpperCase();
 
@@ -43,12 +49,10 @@ export function UserMenu() {
     }
   };
 
-  console.log(currentUser);
-
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <div className="flex items-center gap-x-2 select-none cursor-pointer p-2 hover:bg-slate-300 dark:hover:bg-slate-800 transition-colors rounded-md">
+        <div className="flex items-center gap-x-2 select-none cursor-pointer p-2 hover:bg-[#f4f4f6] dark:hover:bg-[#27262b] transition-colors rounded-md">
           <Unauthenticated>
             <div className="flex flex-col items-end">
               <p>Здравствуй, Гость!</p>
@@ -76,6 +80,7 @@ export function UserMenu() {
           </Avatar>
         </div>
       </DropdownMenuTrigger>
+
       <DropdownMenuContent
         align="end"
         className="w-52 drop-shadow-md shadow-2xl"
@@ -121,31 +126,34 @@ export function UserMenu() {
           </DropdownMenuItem>
         </Unauthenticated>
         <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuLabel>Тема</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem
+        <DropdownMenuLabel>Тема</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
+          <DropdownMenuRadioItem
             onClick={() => setTheme("light")}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center gap-x-2"
+            value="light"
           >
-            <Sun />
+            <Sun size={20} />
             Светлая
-          </DropdownMenuItem>
-          <DropdownMenuItem
+          </DropdownMenuRadioItem>
+          <DropdownMenuRadioItem
             onClick={() => setTheme("dark")}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center gap-x-2"
+            value="dark"
           >
-            <Moon />
+            <Moon size={20} />
             Темная
-          </DropdownMenuItem>
-          <DropdownMenuItem
+          </DropdownMenuRadioItem>
+          <DropdownMenuRadioItem
             onClick={() => setTheme("system")}
-            className="cursor-pointer"
+            className="cursor-pointer flex items-center gap-x-2"
+            value="system"
           >
-            <MonitorCog />
+            <MonitorCog size={20} />
             Системная
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
+          </DropdownMenuRadioItem>
+        </DropdownMenuRadioGroup>
         <Authenticated>
           <DropdownMenuSeparator />
           <DropdownMenuItem
