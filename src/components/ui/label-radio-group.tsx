@@ -17,7 +17,7 @@ export function LabelRadioGroup({
   return (
     <Label
       htmlFor={htmlFor}
-      className="flex flex-col items-center gap-y-2 p-2 cursor-pointer rounded-md border peer-data-[state=checked]:bg-slate-500 [&:has([data-state=checked])]:border-primary hover:bg-slate-300 dark:hover:bg-slate-800 hover:transition-colors"
+      className="flex flex-col items-center gap-y-2 p-2 cursor-pointer rounded-md border peer-data-[state=checked]:text-white peer-data-[state=checked]:bg-slate-500 [&:has([data-state=checked])]:border-primary hover:bg-slate-300 dark:hover:bg-slate-800 hover:transition-colors"
     >
       <Icon />
       <span>{title}</span>

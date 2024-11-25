@@ -7,7 +7,7 @@ export const Route = createFileRoute("/_layout/profile/")({
 
 function UserProfile() {
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center items-center h-full">
         <Profile />
     </div>
   );

@@ -4,6 +4,7 @@ import { useAuthActions } from "@convex-dev/auth/react";
 import { useState } from "react";
 import { Loader } from "lucide-react";
 import { useCurrentUser } from "@/hooks/use-current-user";
+import { useToast } from "@/hooks/use-toast";
 
 interface SocialButtonProps {
   icon: IconType;
@@ -16,15 +17,20 @@ export function SocialButton({
   provider,
   title,
 }: SocialButtonProps) {
+  const { toast } = useToast();
   const { signIn } = useAuthActions();
-  const { currentUser } = useCurrentUser();
   const [isLoading, setLoading] = useState<boolean>(false);
 
   const handleClick = async () => {
     setLoading(true);
 
     signIn(provider)
-      .then(() => console.log(currentUser))
+      .then(() => {
+        toast({
+          title: "Вход в систему",
+          description: "Продолжите авторизацию на стороннем сервисе",
+        });
+      })
       .finally(() => setLoading(false));
   };
 

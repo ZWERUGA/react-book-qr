@@ -23,6 +23,7 @@ import { useMutation } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { Id } from "convex/_generated/dataModel";
 
 export function Profile() {
   const { currentUser, isLoading: currentUserLoading } = useCurrentUser();
@@ -75,18 +76,14 @@ export function Profile() {
   }
 
   if (!currentUser) {
-    return (
-      <div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
-        Пользователь не найден...
-      </div>
-    );
+    return <div>Пользователь не найден...</div>;
   }
 
   const onSubmit = async (values: z.infer<typeof profileSchema>) => {
     try {
       setLoading(true);
 
-      let storageId = currentUser.image;
+      let storageId = currentUser.image as Id<"_storage">;
 
       if (!imagePreview) {
         if (storageId) {
@@ -132,6 +129,7 @@ export function Profile() {
       toast({
         title: "Загрузка изображения",
         description: "Ошибка загрузки изображения",
+        variant: "destructive",
       });
     } finally {
       setLoading(false);
@@ -139,7 +137,7 @@ export function Profile() {
   };
 
   return (
-    <div className="flex flex-col gap-y-2">
+    <div className="flex flex-col gap-y-2 w-[520px]">
       <div className="flex justify-between items-center">
         <h1>Информация о профиле</h1>
         <span className="text-xs text-slate-500">
@@ -149,7 +147,7 @@ export function Profile() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col gap-y-2 border w-full md:w-[520px] p-2 rounded-md"
+          className="flex flex-col gap-y-2 border p-2 rounded-md w-full sm:w-[520px]"
         >
           <FormField
             name="image"
@@ -175,6 +173,7 @@ export function Profile() {
                       accept="image/*"
                       ref={imageInput}
                       onChange={(e) => setSelectedImage(e.target.files![0])}
+                      className="text-xs sm:text-base"
                     />
                     <div>
                       <Avatar className="flex items-center justify-center">

@@ -20,19 +20,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useNavigate } from "@tanstack/react-router";
-import { useAuthActions } from "@convex-dev/auth/react";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useCurrentUser } from "@/hooks/use-current-user";
-import { PROTECTED_ROUTES } from "@/constants/protected-routes";
 import { useTheme } from "./theme-provider";
 import { useState } from "react";
+import { useSignOut } from "@/hooks/use-sign-out";
 
 export function UserMenu() {
   const navigate = useNavigate();
   const { setTheme } = useTheme();
-  const { signOut } = useAuthActions();
-
+  const { handleSignOut } = useSignOut();
   const { currentUser } = useCurrentUser();
 
   const [position, setPosition] = useState(
@@ -40,14 +38,6 @@ export function UserMenu() {
   );
 
   const avatarFallback = currentUser?.name?.charAt(0).toUpperCase();
-
-  const currentPath = location.pathname;
-
-  const handleSignOut = () => {
-    if (PROTECTED_ROUTES.includes(currentPath)) {
-      navigate({ to: "/" });
-    }
-  };
 
   return (
     <DropdownMenu modal={false}>
@@ -156,11 +146,7 @@ export function UserMenu() {
         </DropdownMenuRadioGroup>
         <Authenticated>
           <DropdownMenuSeparator />
-          <DropdownMenuItem
-            onClick={handleSignOut}
-            className="cursor-pointer"
-            onSelect={signOut}
-          >
+          <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer">
             <LogOut />
             <span>Выйти</span>
           </DropdownMenuItem>
