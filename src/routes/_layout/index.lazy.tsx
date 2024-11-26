@@ -5,7 +5,6 @@ import { useGetBooks } from "@/features/books/api/use-get-books";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { useDebounce } from "use-debounce";
-import { PaginationBooks } from "@/features/books/components/pagination";
 
 export const Route = createLazyFileRoute("/_layout/")({
   component: Index,
@@ -20,7 +19,7 @@ function Index() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalBooks, setTotalBooks] = useState(0);
 
-  const booksPerPage = 4;
+  const booksPerPage = 12;
 
   const { books, isLoading } = useGetBooks();
 
@@ -28,30 +27,31 @@ function Index() {
     let computedBooks = books;
 
     if (searchText) {
-      computedBooks = computedBooks?.filter((book) =>
-        book.title?.toLowerCase().includes(searchText.toLowerCase())
-      );
+      computedBooks =
+        selectInput === "title"
+          ? computedBooks?.filter((book) =>
+              book.title?.toLowerCase().includes(searchText.toLowerCase())
+            )
+          : computedBooks?.filter((book) =>
+              book.authors?.some((author) =>
+                author.toLowerCase().includes(searchText.toLowerCase())
+              )
+            );
     }
 
     setTotalBooks(computedBooks?.length ?? 0);
 
     return computedBooks?.slice(
-      (currentPage - 1) * booksPerPage,
+      0,
       (currentPage - 1) * booksPerPage + booksPerPage
     );
-  }, [books, currentPage, searchText]);
+  }, [books, currentPage, searchText, selectInput]);
 
   if (isLoading) {
     return (
       <div className="flex h-full justify-center items-center">
         <Loader />
       </div>
-    );
-  }
-
-  if (!books) {
-    return (
-      <div className="flex items-center justify-center h-full">Книг нет...</div>
     );
   }
 
@@ -63,6 +63,18 @@ function Index() {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
+  const setBookListTitle = () => {
+    if (searchText) {
+      if (selectInput === "title")
+        return `Книги, в названиях которых есть: ${searchText} (${totalBooks})`;
+
+      if (selectInput === "author")
+        return `Книги, автором которых является: ${searchText} (${totalBooks})`;
+    }
+
+    return `Все книги (${totalBooks})`;
+  };
+
   return (
     <div className="flex flex-col h-full p-2">
       <SearchBar
@@ -73,27 +85,13 @@ function Index() {
         setCurrentPage={setCurrentPage}
       />
 
-      {/* <nav>
-        <ul className="pagination">
-          {pageNumbers.map((number) => (
-            <li key={number} className="page-item">
-              <button onClick={() => paginate(number)} className="page-link">
-                {number}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav> */}
-
       <div className="mt-2">
-        <BookList title="Все книги" books={booksData} />
-      </div>
-
-      <div className="mt-4">
-        <PaginationBooks
+        <BookList
+          title={setBookListTitle()}
+          books={booksData}
+          currentPage={currentPage}
           pageNumbers={pageNumbers}
           paginate={paginate}
-          currentPage={currentPage}
         />
       </div>
     </div>

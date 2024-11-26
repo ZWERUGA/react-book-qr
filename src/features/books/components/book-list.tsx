@@ -1,107 +1,105 @@
-import { Label } from "@/components/ui/label";
-import { MoveRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { TBook } from "../book-type";
-import { Pagination } from "@/components/ui/pagination";
+import noBookImage from "@/assets/no-book-image.jpg";
+import { cn } from "@/lib/utils";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import Loader from "@/components/loader";
+import { Label } from "@/components/ui/label";
+import { MoveRight } from "lucide-react";
 
 interface BookListProps {
   title: string;
   books: TBook[] | undefined;
+  currentPage: number;
+  pageNumbers: number[];
+  paginate: (pageNumber: number) => void;
 }
 
-export function BookList({ title, books }: BookListProps) {
+export function BookList({
+  title,
+  books,
+  currentPage,
+  pageNumbers,
+  paginate,
+}: BookListProps) {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      paginate(currentPage + 1);
+      return;
+    }
+  }, [inView]);
+
   const changeImageZoomLink = (imageLink?: string) => {
     return imageLink?.replace("zoom=1", "zoom=3");
   };
 
-  const truncateDescription = (description?: string) => {
-    return description && description.length > 150
-      ? `${description?.slice(0, 150)}...`
-      : description;
+  const displayTitle = (title?: string) => {
+    return title && title.length > 35 ? `${title?.slice(0, 35)}...` : title;
   };
 
   if (!books?.length) {
-    return <div className="flex justify-center">Нет книг...</div>;
+    return <div className="flex justify-center text-lg">Нет книг...</div>;
   }
 
   return (
     <div>
-      <h1 className="text-4xl">{title}</h1>
+      <h1 className="text-2xl">{title}</h1>
 
-      <div className="grid grid-cols-2 gap-2 text-sm">
-        {books.map((book) => (
+      <div className="grid 2xl:grid-cols-6 gap-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-2">
+        {books?.map((book) => (
           <Link
-            key={book._id}
             to={"/books/$bookId"}
             params={{ bookId: book._id }}
-            className="flex gap-x-2 border rounded-md p-1 bg-muted relative  group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover: transition-colors"
+            key={book._id}
+            className="border flex flex-col gap-2 items-center p-2 rounded-md relative group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover:transition-colors"
           >
-            <div className="flex flex-shrink-0 w-[200px] h-[300px]">
+            <div className="flex items-center w-full justify-center bg-slate-200 dark:bg-primary/5 rounded-md py-3">
               <img
-                className="w-full h-full object-cover rounded-md"
-                src={changeImageZoomLink(book.imageLink)}
+                className="2xl:h-80 gap-5 md:h-64 sm:h-52 h-40"
+                src={changeImageZoomLink(book.imageLink) ?? noBookImage}
                 alt={book.title}
               />
             </div>
-
-            <div className="flex flex-col gap-y-2">
-              <div className="flex flex-col">
-                <h2 className="text-lg font-semibold">{book.title}</h2>
-                <h3>
-                  Автор:{" "}
-                  <span className="italic text-sm">
-                    {book.authors?.length
-                      ? book.authors?.map((author) => author).join(", ")
-                      : "Нет автора"}
-                  </span>
-                </h3>
+            <div className="flex flex-col gap-y-2 h-full items-center text-center">
+              <div className="flex flex-col gap-1 h-full">
+                <p className="sm:text-sm md:text-base lg:text-lg text-xs font-light text-card-foreground">
+                  {displayTitle(book.title)}
+                </p>
+                <span className="text-xs italic mt-auto">
+                  {book.authors?.length
+                    ? book.authors?.length > 1
+                      ? `${book.authors
+                          ?.slice(0, 1)
+                          .map((author) => author)
+                          .join(", ")} и др.`
+                      : book.authors?.map((author) => author).join(", ")
+                    : "Нет автора"}
+                </span>
               </div>
 
-              <div className="mt-4">
-                <h3>Описание:</h3>
-                <p>{truncateDescription(book.description)}</p>
-              </div>
-
-              <div className="flex gap-x-5 mt-auto">
-                <div>
-                  <p>
-                    <span className="text-base">Издатель: </span>
-                    <span className="italic">
-                      {book.publisher ? `"${book.publisher}"` : "не указан"}
-                    </span>
-                  </p>
-                  <p>
-                    <span className="text-base">Дата издания: </span>
-                    <span className="italic">
-                      {book.publishedDate ?? "не указана"}
-                    </span>
-                  </p>
-                </div>
-                <div>
-                  <p>
-                    <span className="text-base">Язык: </span>{" "}
-                    <span className="italic">
-                      {book.language ?? "не указан"}
-                    </span>
-                  </p>
-                  <p>
-                    <span className="text-base">Страниц: </span>{" "}
-                    <span className="italic">
-                      {book.pageCount ?? "не указано"}
-                    </span>
-                  </p>
-                </div>
-              </div>
+              <Label className="flex opacity-0 absolute right-10 text-cyan-950 dark:text-cyan-300 bottom-1 group-hover:translate-x-7 group-hover:opacity-100 transition-all items-center gap-x-2 cursor-pointer">
+                <MoveRight />
+              </Label>
             </div>
-
-            <Label className="flex opacity-0 absolute right-10 text-cyan-950 dark:text-cyan-300 bottom-1 group-hover:translate-x-7 group-hover:opacity-100 transition-all items-center gap-x-2">
-              Подробнее <MoveRight />
-            </Label>
           </Link>
         ))}
       </div>
 
-      
+      <div
+        ref={ref}
+        className={cn(pageNumbers.includes(currentPage + 1) ? "my-5" : "mt-2")}
+      >
+        {inView && pageNumbers.includes(currentPage + 1) && (
+          <div className="flex justify-center items-center">
+            <Loader />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

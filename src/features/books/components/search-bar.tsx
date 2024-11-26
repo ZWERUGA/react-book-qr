@@ -24,7 +24,7 @@ export function SearchBar({
   setCurrentPage,
 }: SearchBarProps) {
   return (
-    <div className="flex gap-x-2">
+    <div className="flex flex-col gap-y-2 sm:flex-row sm:gap-x-2">
       <Input
         type="search"
         placeholder="Найти книгу..."
@@ -38,7 +38,7 @@ export function SearchBar({
         defaultValue={selectInput}
         onValueChange={(value) => setSelectInput(value)}
       >
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="w-full sm:w-[180px]">
           <SelectValue placeholder={selectInput} />
         </SelectTrigger>
         <SelectContent>
