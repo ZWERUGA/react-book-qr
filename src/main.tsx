@@ -1,4 +1,3 @@
-import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { ConvexReactClient } from "convex/react";
 import { ConvexAuthProvider } from "@convex-dev/auth/react";
@@ -25,12 +24,10 @@ const rootElement = document.getElementById("root")!;
 if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
-    <StrictMode>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <ConvexAuthProvider client={convex}>
-          <RouterProvider router={router} />
-        </ConvexAuthProvider>
-      </ThemeProvider>
-    </StrictMode>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <ConvexAuthProvider client={convex}>
+        <RouterProvider router={router} />
+      </ConvexAuthProvider>
+    </ThemeProvider>
   );
 }

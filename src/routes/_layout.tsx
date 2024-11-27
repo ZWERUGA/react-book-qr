@@ -5,7 +5,7 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { HeaderLink } from "@/components/header-link";
 import { Logo } from "@/components/logo";
 import { Separator } from "@/components/ui/separator";
-import { CustomSheet } from "@/components/custom-sheet";
+import { CustomSheet } from "@/components/mobile-nav";
 
 export const Route = createFileRoute("/_layout")({
   component: RouteComponent,

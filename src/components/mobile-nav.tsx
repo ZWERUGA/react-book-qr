@@ -9,58 +9,16 @@ import {
 import { Link } from "@tanstack/react-router";
 import { Separator } from "./ui/separator";
 import { ThemeRadioGroup } from "./theme-radio-group";
-import {
-  BookHeart,
-  CircleUserRound,
-  House,
-  LogIn,
-  LogOut,
-  SquareMenu,
-  UserPlus,
-} from "lucide-react";
+import { CircleUserRound, LogOut } from "lucide-react";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { useSignOut } from "@/hooks/use-sign-out";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-
-const navLinks = [
-  {
-    id: 1,
-    to: "/",
-    title: "Главная",
-    icon: <House />,
-  },
-  {
-    id: 2,
-    to: "/books",
-    title: "Книги",
-    icon: <BookHeart />,
-  },
-];
-
-const unauthorizedUserLinks = [
-  {
-    id: 1,
-    to: "/auth/sign-in",
-    title: "Войти",
-    icon: <LogIn />,
-  },
-  {
-    id: 2,
-    to: "/auth/sign-up",
-    title: "Зарегистрироваться",
-    icon: <UserPlus />,
-  },
-];
-
-const authorizedUserLinks = [
-  {
-    id: 1,
-    to: "/profile",
-    title: "Профиль",
-    icon: <LogIn />,
-  },
-];
+import {
+  authorizedUserLinks,
+  navLinks,
+  unauthorizedUserLinks,
+} from "@/constants/links";
 
 export function CustomSheet() {
   const { handleSignOut } = useSignOut();
@@ -95,7 +53,7 @@ export function CustomSheet() {
                 to={link.to}
                 className="hover:bg-slate-300 dark:hover:bg-slate-800 p-2 border rounded-md hover:transition-colors flex flex-col items-center gap-y-1 justify-center"
               >
-                {link.icon}
+                <link.icon />
                 {link.title}
               </Link>
             </SheetClose>
@@ -114,7 +72,7 @@ export function CustomSheet() {
                     to={link.to}
                     className="hover:bg-slate-300 dark:hover:bg-slate-800 p-2 border rounded-md hover:transition-colors flex flex-col items-center gap-y-1 justify-center w-1/2"
                   >
-                    {link.icon}
+                    <link.icon />
                     {link.title}
                   </Link>
                 </SheetClose>
@@ -139,7 +97,7 @@ export function CustomSheet() {
                     to={link.to}
                     className="hover:bg-slate-300 dark:hover:bg-slate-800 p-2 border rounded-md hover:transition-colors flex flex-col items-center gap-y-1 justify-center w-full"
                   >
-                    {link.icon}
+                    <link.icon />
                     {link.title}
                   </Link>
                 </SheetClose>

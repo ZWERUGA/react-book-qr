@@ -19,7 +19,7 @@ interface BookListProps {
   books: TBook[] | undefined;
   currentPage: number;
   pageNumbers: number[];
-  paginate: (pageNumber: number) => void;
+  paginate: () => void;
 }
 
 export function BookList({
@@ -34,9 +34,13 @@ export function BookList({
   });
 
   useEffect(() => {
-    if (inView) {
-      paginate(currentPage + 1);
+    if (!inView) {
       return;
+    } 
+
+    if (pageNumbers.includes(currentPage + 1)) {
+      console.log("useEffect");
+      paginate();
     }
   }, [inView]);
 
@@ -57,9 +61,9 @@ export function BookList({
       <h1 className="text-2xl">{title}</h1>
 
       <div className="grid 2xl:grid-cols-6 gap-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-2">
-        {books?.map((book) => (
-          <TooltipProvider delayDuration={300}>
-            <Tooltip>
+        <TooltipProvider delayDuration={300}>
+          {books?.map((book) => (
+            <Tooltip key={book._id}>
               <TooltipTrigger asChild>
                 <Link
                   to={"/books/$bookId"}
@@ -101,8 +105,8 @@ export function BookList({
                 <p>{book.title}</p>
               </TooltipContent>
             </Tooltip>
-          </TooltipProvider>
-        ))}
+          ))}
+        </TooltipProvider>
       </div>
 
       <div

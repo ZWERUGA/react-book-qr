@@ -3,7 +3,6 @@ import { IconType } from "react-icons/lib";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { useState } from "react";
 import { Loader } from "lucide-react";
-import { useCurrentUser } from "@/hooks/use-current-user";
 import { useToast } from "@/hooks/use-toast";
 
 interface SocialButtonProps {

@@ -5,6 +5,7 @@ import { useGetBooks } from "@/features/books/api/use-get-books";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { useDebounce } from "use-debounce";
+import { BATCH_SIZE } from "@/constants/books";
 
 export const Route = createLazyFileRoute("/_layout/")({
   component: Index,
@@ -13,13 +14,12 @@ export const Route = createLazyFileRoute("/_layout/")({
 function Index() {
   const [searchInput, setSearchInput] = useState<string>("");
   const [selectInput, setSelectInput] = useState<string>("title");
-
   const [searchText] = useDebounce(searchInput, 500);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [totalBooks, setTotalBooks] = useState(0);
 
-  const booksPerPage = 12;
+  const booksPerPage = BATCH_SIZE;
 
   const { books, isLoading } = useGetBooks();
 
@@ -45,7 +45,7 @@ function Index() {
       0,
       (currentPage - 1) * booksPerPage + booksPerPage
     );
-  }, [books, currentPage, searchText, selectInput]);
+  }, [books, booksPerPage, currentPage, searchText, selectInput]);
 
   if (isLoading) {
     return (
@@ -55,13 +55,13 @@ function Index() {
     );
   }
 
-  const pageNumbers = [];
+  const pageNumbers: number[] = [];
 
   for (let i = 1; i <= Math.ceil(totalBooks / booksPerPage); i++) {
     pageNumbers.push(i);
   }
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const paginate = () => setCurrentPage((prev) => prev + 1);
 
   const setBookListTitle = () => {
     if (searchText) {
