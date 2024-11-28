@@ -22,7 +22,6 @@ import { Route as LayoutBooksBookIdImport } from './routes/_layout/books/$bookId
 // Create Virtual Routes
 
 const LayoutIndexLazyImport = createFileRoute('/_layout/')()
-const LayoutBooksIndexLazyImport = createFileRoute('/_layout/books/')()
 
 // Create/Update Routes
 
@@ -48,14 +47,6 @@ const AuthSignInRoute = AuthSignInImport.update({
   path: '/auth/sign-in',
   getParentRoute: () => rootRoute,
 } as any)
-
-const LayoutBooksIndexLazyRoute = LayoutBooksIndexLazyImport.update({
-  id: '/books/',
-  path: '/books/',
-  getParentRoute: () => LayoutRoute,
-} as any).lazy(() =>
-  import('./routes/_layout/books/index.lazy').then((d) => d.Route),
-)
 
 const LayoutProfileIndexRoute = LayoutProfileIndexImport.update({
   id: '/profile/',
@@ -115,13 +106,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutProfileIndexImport
       parentRoute: typeof LayoutImport
     }
-    '/_layout/books/': {
-      id: '/_layout/books/'
-      path: '/books'
-      fullPath: '/books'
-      preLoaderRoute: typeof LayoutBooksIndexLazyImport
-      parentRoute: typeof LayoutImport
-    }
   }
 }
 
@@ -131,14 +115,12 @@ interface LayoutRouteChildren {
   LayoutIndexLazyRoute: typeof LayoutIndexLazyRoute
   LayoutBooksBookIdRoute: typeof LayoutBooksBookIdRoute
   LayoutProfileIndexRoute: typeof LayoutProfileIndexRoute
-  LayoutBooksIndexLazyRoute: typeof LayoutBooksIndexLazyRoute
 }
 
 const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutIndexLazyRoute: LayoutIndexLazyRoute,
   LayoutBooksBookIdRoute: LayoutBooksBookIdRoute,
   LayoutProfileIndexRoute: LayoutProfileIndexRoute,
-  LayoutBooksIndexLazyRoute: LayoutBooksIndexLazyRoute,
 }
 
 const LayoutRouteWithChildren =
@@ -151,7 +133,6 @@ export interface FileRoutesByFullPath {
   '/': typeof LayoutIndexLazyRoute
   '/books/$bookId': typeof LayoutBooksBookIdRoute
   '/profile': typeof LayoutProfileIndexRoute
-  '/books': typeof LayoutBooksIndexLazyRoute
 }
 
 export interface FileRoutesByTo {
@@ -160,7 +141,6 @@ export interface FileRoutesByTo {
   '/': typeof LayoutIndexLazyRoute
   '/books/$bookId': typeof LayoutBooksBookIdRoute
   '/profile': typeof LayoutProfileIndexRoute
-  '/books': typeof LayoutBooksIndexLazyRoute
 }
 
 export interface FileRoutesById {
@@ -171,7 +151,6 @@ export interface FileRoutesById {
   '/_layout/': typeof LayoutIndexLazyRoute
   '/_layout/books/$bookId': typeof LayoutBooksBookIdRoute
   '/_layout/profile/': typeof LayoutProfileIndexRoute
-  '/_layout/books/': typeof LayoutBooksIndexLazyRoute
 }
 
 export interface FileRouteTypes {
@@ -183,15 +162,8 @@ export interface FileRouteTypes {
     | '/'
     | '/books/$bookId'
     | '/profile'
-    | '/books'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/auth/sign-in'
-    | '/auth/sign-up'
-    | '/'
-    | '/books/$bookId'
-    | '/profile'
-    | '/books'
+  to: '/auth/sign-in' | '/auth/sign-up' | '/' | '/books/$bookId' | '/profile'
   id:
     | '__root__'
     | '/_layout'
@@ -200,7 +172,6 @@ export interface FileRouteTypes {
     | '/_layout/'
     | '/_layout/books/$bookId'
     | '/_layout/profile/'
-    | '/_layout/books/'
   fileRoutesById: FileRoutesById
 }
 
@@ -236,8 +207,7 @@ export const routeTree = rootRoute
       "children": [
         "/_layout/",
         "/_layout/books/$bookId",
-        "/_layout/profile/",
-        "/_layout/books/"
+        "/_layout/profile/"
       ]
     },
     "/auth/sign-in": {
@@ -256,10 +226,6 @@ export const routeTree = rootRoute
     },
     "/_layout/profile/": {
       "filePath": "_layout/profile/index.tsx",
-      "parent": "/_layout"
-    },
-    "/_layout/books/": {
-      "filePath": "_layout/books/index.lazy.tsx",
       "parent": "/_layout"
     }
   }

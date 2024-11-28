@@ -1,4 +1,4 @@
-import { BookHeart, House, LogIn, UserPlus } from "lucide-react";
+import { House, LogIn, UserPlus } from "lucide-react";
 
 export const navLinks = [
   {
@@ -6,13 +6,7 @@ export const navLinks = [
     to: "/",
     title: "Главная",
     icon: House,
-  },
-  {
-    id: 2,
-    to: "/books",
-    title: "Книги",
-    icon: BookHeart,
-  },
+  }
 ];
 
 export const unauthorizedUserLinks = [

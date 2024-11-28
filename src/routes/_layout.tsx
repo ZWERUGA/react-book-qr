@@ -32,7 +32,7 @@ function RouteComponent() {
               <Logo />
             </HeaderLink>
             <div className="hidden lg:flex">
-              <HeaderLink to="/books" title="Книги" />
+              
             </div>
           </nav>
           <div className="hidden md:block">

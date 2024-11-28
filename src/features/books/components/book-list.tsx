@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { TBook } from "../book-type";
 import noBookImage from "@/assets/no-book-image.jpg";
-import { cn } from "@/lib/utils";
+import { changeImageZoomLink, cn } from "@/lib/utils";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Loader from "@/components/loader";
@@ -43,10 +43,6 @@ export function BookList({
       paginate();
     }
   }, [inView]);
-
-  const changeImageZoomLink = (imageLink?: string) => {
-    return imageLink?.replace("zoom=1", "zoom=3");
-  };
 
   const displayTitle = (title?: string) => {
     return title && title.length > 35 ? `${title?.slice(0, 35)}...` : title;
