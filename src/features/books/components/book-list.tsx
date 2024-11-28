@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { TBook } from "../book-type";
+import { TBook, TFavoriteBook } from "../book-type";
 import noBookImage from "@/assets/no-book-image.jpg";
 import { changeImageZoomLink, cn } from "@/lib/utils";
 import { useInView } from "react-intersection-observer";
@@ -13,10 +13,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Id } from "convex/_generated/dataModel";
 
 interface BookListProps {
   title: string;
   books: TBook[] | undefined;
+  favoriteBooks: Id<"books">[] | null | undefined;
   currentPage: number;
   pageNumbers: number[];
   paginate: () => void;
@@ -25,6 +27,7 @@ interface BookListProps {
 export function BookList({
   title,
   books,
+  favoriteBooks,
   currentPage,
   pageNumbers,
   paginate,
@@ -36,7 +39,7 @@ export function BookList({
   useEffect(() => {
     if (!inView) {
       return;
-    } 
+    }
 
     if (pageNumbers.includes(currentPage + 1)) {
       console.log("useEffect");
@@ -65,11 +68,14 @@ export function BookList({
                   to={"/books/$bookId"}
                   params={{ bookId: book._id }}
                   key={book._id}
-                  className="border flex flex-col gap-2 items-center p-2 rounded-md relative group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover:transition-colors"
+                  className={cn(
+                    "border flex flex-col gap-2 items-center p-2 rounded-md relative group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover:transition-colors",
+                    favoriteBooks?.includes(book._id) && "border-yellow-500 bg-yellow-500/20"
+                  )}
                 >
                   <div className="flex items-center w-full justify-center bg-slate-200 dark:bg-primary/5 rounded-md py-3">
                     <img
-                      className="2xl:h-80 gap-5 md:h-64 sm:h-52 h-40"
+                      className="2xl:h-80 gap-5 md:h-64 sm:h-52 h-40 rounded-md"
                       src={changeImageZoomLink(book.imageLink) ?? noBookImage}
                       alt={book.title}
                     />

@@ -1,6 +1,6 @@
 import { v } from "convex/values";
 import { getAuthUserId } from "@convex-dev/auth/server";
-import { mutation, query, QueryCtx } from "./_generated/server";
+import { mutation, query } from "./_generated/server";
 
 export const currentUser = query({
   args: {},
@@ -32,13 +32,6 @@ export const currentUser = query({
     };
   },
 });
-
-export const findUserByEmail = (ctx: QueryCtx, email?: string) => {
-  return ctx.db
-    .query("users")
-    .filter((q) => q.eq(q.field("email"), email))
-    .unique();
-};
 
 export const update = mutation({
   args: {

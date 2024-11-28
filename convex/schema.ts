@@ -26,7 +26,10 @@ export default defineSchema({
     publishedDate: v.optional(v.string()),
     publisher: v.optional(v.string()),
     title: v.optional(v.string()),
-  })
-    .index("by_author", ["authors"])
-    .index("by_title", ["title"]),
+  }),
+
+  favorites: defineTable({
+    userId: v.id("users"),
+    bookId: v.id("books"),
+  }),
 });

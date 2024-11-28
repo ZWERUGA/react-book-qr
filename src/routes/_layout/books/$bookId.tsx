@@ -2,10 +2,15 @@ import { Id } from "convex/_generated/dataModel";
 import { createFileRoute } from "@tanstack/react-router";
 import { useGetBook } from "@/features/books/api/use-get-book";
 import Loader from "@/components/loader";
-import { changeImageZoomLink } from "@/lib/utils";
+import { changeImageZoomLink, cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
+import { Loader as LoaderLucide, Star } from "lucide-react";
+import { useAddFavorite } from "@/features/favorites/api/use-add-favorite";
+import { useCurrentUser } from "@/hooks/use-current-user";
+import { useToast } from "@/hooks/use-toast";
+import { useGetFavorite } from "@/features/favorites/api/use-get-favorite";
+import { useDeleteFavorite } from "@/features/favorites/api/use-remove-favorite";
 
 export const Route = createFileRoute("/_layout/books/$bookId")({
   component: Book,
@@ -13,8 +18,37 @@ export const Route = createFileRoute("/_layout/books/$bookId")({
 
 function Book() {
   const { bookId } = Route.useParams();
+  const { currentUser } = useCurrentUser();
 
   const { book, isLoading } = useGetBook(bookId as Id<"books">);
+
+  const { toast } = useToast();
+
+  const { favoriteBook, isLoading: favoriteBookIsLoading } = useGetFavorite(
+    bookId as Id<"books">
+  );
+  const { mutate: addFavorite, isLoading: bookIsAddingInFavorite } =
+    useAddFavorite(bookId as Id<"books">);
+  const { mutate: removeFavorite, isLoading: bookIsRemovingFromFavorite } =
+    useDeleteFavorite();
+
+  const handleClick = () => {
+    if (!currentUser) {
+      toast({
+        title: "Добавление книги в избранное",
+        description: "Необходимо войти в систему",
+        variant: "destructive",
+      });
+
+      return;
+    }
+
+    if (favoriteBook) {
+      removeFavorite(favoriteBook._id);
+    } else {
+      addFavorite();
+    }
+  };
 
   if (isLoading) {
     return (
@@ -35,10 +69,30 @@ function Book() {
         />
         <Button
           variant="outline"
-          className="absolute top-0 right-0 p-3 border-yellow-500 "
+          className={cn(
+            "absolute top-0 right-0 p-3",
+            favoriteBook && "border-yellow-500"
+          )}
+          onClick={handleClick}
+          disabled={
+            bookIsAddingInFavorite ||
+            favoriteBookIsLoading ||
+            bookIsRemovingFromFavorite
+          }
         >
-          <Star className="fill-yellow-500 text-yellow-500" />
-          <span className="hidden sm:block">В избранное</span>
+          {bookIsAddingInFavorite ||
+          favoriteBookIsLoading ||
+          bookIsRemovingFromFavorite ? (
+            <LoaderLucide className="animate-spin" />
+          ) : (
+            <Star
+              className={cn(favoriteBook && "fill-yellow-500 text-yellow-500")}
+            />
+          )}
+
+          <span className="hidden sm:block">
+            {favoriteBook ? " Удалить из избранного" : "В избранное"}
+          </span>
         </Button>
       </div>
 

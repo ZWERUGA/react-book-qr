@@ -6,6 +6,7 @@ import { createLazyFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { useDebounce } from "use-debounce";
 import { BATCH_SIZE } from "@/constants/books";
+import { useGetFavorites } from "@/features/favorites/api/use-get-favorites";
 
 export const Route = createLazyFileRoute("/_layout/")({
   component: Index,
@@ -22,6 +23,7 @@ function Index() {
   const booksPerPage = BATCH_SIZE;
 
   const { books, isLoading } = useGetBooks();
+  const { favoriteBooks } = useGetFavorites();
 
   const booksData = useMemo(() => {
     let computedBooks = books;
@@ -89,6 +91,7 @@ function Index() {
         <BookList
           title={setBookListTitle()}
           books={booksData}
+          favoriteBooks={favoriteBooks}
           currentPage={currentPage}
           pageNumbers={pageNumbers}
           paginate={paginate}
