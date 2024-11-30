@@ -32,4 +32,11 @@ export default defineSchema({
     userId: v.id("users"),
     bookId: v.id("books"),
   }),
+
+  rents: defineTable({
+    userId: v.id("users"),
+    bookId: v.id("books"),
+    confirmed: v.boolean(),
+    remainingTime: v.optional(v.string()),
+  }),
 });

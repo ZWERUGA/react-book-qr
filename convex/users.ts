@@ -43,7 +43,7 @@ export const update = mutation({
     const userId = await getAuthUserId(ctx);
 
     if (!userId) {
-      return new Error("Несанкционированный доступ");
+      return;
     }
 
     await ctx.db.patch(userId, {

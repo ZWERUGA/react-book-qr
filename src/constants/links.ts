@@ -1,12 +1,14 @@
 import { House, LogIn, UserPlus } from "lucide-react";
 
+export const baseUrl = "http://192.168.1.109:5173";
+
 export const navLinks = [
   {
     id: 1,
     to: "/",
     title: "Главная",
     icon: House,
-  }
+  },
 ];
 
 export const unauthorizedUserLinks = [

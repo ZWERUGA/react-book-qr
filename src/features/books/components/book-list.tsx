@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { TBook, TFavoriteBook } from "../book-type";
+import { TBook } from "../book-type";
 import noBookImage from "@/assets/no-book-image.jpg";
 import { changeImageZoomLink, cn } from "@/lib/utils";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +42,6 @@ export function BookList({
     }
 
     if (pageNumbers.includes(currentPage + 1)) {
-      console.log("useEffect");
       paginate();
     }
   }, [inView]);

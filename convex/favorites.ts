@@ -1,4 +1,4 @@
-import { v } from "convex/values";
+import { ConvexError, v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
@@ -47,7 +47,7 @@ export const add = mutation({
     const userId = await getAuthUserId(ctx);
 
     if (userId === null) {
-      return new Error("Несанкционированный доступ");
+      return;
     }
 
     const favoriteId = await ctx.db.insert("favorites", {
@@ -67,13 +67,13 @@ export const remove = mutation({
     const userId = await getAuthUserId(ctx);
 
     if (userId === null) {
-      return new Error("Несанкционированный доступ");
+      return;
     }
 
     const favoriteId = await ctx.db.get(args.favoriteId);
 
     if (!favoriteId) {
-      return new Error("Книга не найдена");
+      return;
     }
 
     await ctx.db.delete(args.favoriteId);

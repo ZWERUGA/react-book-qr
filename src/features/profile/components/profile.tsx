@@ -24,6 +24,7 @@ import { api } from "../../../../convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Id } from "convex/_generated/dataModel";
+import { AuthRequire } from "@/components/auth-require";
 
 export function Profile() {
   const { currentUser, isLoading: currentUserLoading } = useCurrentUser();
@@ -76,7 +77,7 @@ export function Profile() {
   }
 
   if (!currentUser) {
-    return <div>Пользователь не найден...</div>;
+    return <AuthRequire />;
   }
 
   const onSubmit = async (values: z.infer<typeof profileSchema>) => {
@@ -101,7 +102,7 @@ export function Profile() {
         });
 
         if (!result.ok) {
-          throw new Error("Ошибка загрузки изображения");
+          return;
         }
 
         if (storageId) {

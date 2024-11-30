@@ -14,11 +14,11 @@ import {
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
-import { useNavigate } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { SubmitButton } from "@/components/submit-button";
 import { PasswordInput } from "@/components/ui/password-input";
+import { useRouter } from "@tanstack/react-router";
 
 interface ISignInProps {
   setError: (text: string) => void;
@@ -28,8 +28,9 @@ export function SignIn({ setError }: ISignInProps) {
   const [isLoading, setLoading] = useState<boolean>(false);
 
   const { toast } = useToast();
-  const navigate = useNavigate();
   const { signIn } = useAuthActions();
+
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof signInSchema>>({
     resolver: zodResolver(signInSchema),
@@ -51,7 +52,8 @@ export function SignIn({ setError }: ISignInProps) {
           title: "Вход в систему",
           description: "Вы успешно вошли в систему",
         });
-        navigate({ to: "/" });
+
+        router.history.back();
       })
       .catch(() => setError("Ошибка авторизации"))
       .finally(() => setLoading(false));

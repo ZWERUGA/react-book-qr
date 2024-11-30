@@ -58,7 +58,6 @@ function Index() {
   }
 
   const pageNumbers: number[] = [];
-
   for (let i = 1; i <= Math.ceil(totalBooks / booksPerPage); i++) {
     pageNumbers.push(i);
   }

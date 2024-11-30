@@ -17,7 +17,7 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-import { useNavigate } from "@tanstack/react-router";
+import { useRouter } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
 import { SubmitButton } from "@/components/submit-button";
 import { PasswordInput } from "@/components/ui/password-input";
@@ -30,8 +30,9 @@ export function SignUp({ setError }: ISignUpProps) {
   const [isLoading, setLoading] = useState<boolean>(false);
 
   const { toast } = useToast();
-  const navigate = useNavigate();
   const { signIn } = useAuthActions();
+
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof signUpSchema>>({
     resolver: zodResolver(signUpSchema),
@@ -53,14 +54,13 @@ export function SignUp({ setError }: ISignUpProps) {
       password: values.password,
       role: values.isAdmin ? "admin" : "user",
       flow: "signUp",
-      redirectTo: "/",
     })
       .then(() => {
         toast({
           title: "Регистрация в системе",
           description: "Вы успешно зарегистрировались в системе",
         });
-        navigate({ to: "/" });
+        router.history.back();
       })
       .catch(() => setError("Ошибка регистрации"))
       .finally(() => setLoading(false));

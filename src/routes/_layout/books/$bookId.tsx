@@ -11,6 +11,9 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { useToast } from "@/hooks/use-toast";
 import { useGetFavorite } from "@/features/favorites/api/use-get-favorite";
 import { useDeleteFavorite } from "@/features/favorites/api/use-remove-favorite";
+import QRCode from "react-qr-code";
+import { baseUrl } from "@/constants/links";
+import { GetBookButton } from "@/components/get-book-button";
 
 export const Route = createFileRoute("/_layout/books/$bookId")({
   component: Book,
@@ -23,7 +26,6 @@ function Book() {
   const { book, isLoading } = useGetBook(bookId as Id<"books">);
 
   const { toast } = useToast();
-
   const { favoriteBook, isLoading: favoriteBookIsLoading } = useGetFavorite(
     bookId as Id<"books">
   );
@@ -32,7 +34,7 @@ function Book() {
   const { mutate: removeFavorite, isLoading: bookIsRemovingFromFavorite } =
     useDeleteFavorite();
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (!currentUser) {
       toast({
         title: "Добавление книги в избранное",
@@ -44,9 +46,9 @@ function Book() {
     }
 
     if (favoriteBook) {
-      removeFavorite(favoriteBook._id);
+      await removeFavorite(favoriteBook._id);
     } else {
-      addFavorite();
+      await addFavorite();
     }
   };
 
@@ -60,75 +62,72 @@ function Book() {
 
   return (
     <div className="flex flex-col border p-2 mt-2 rounded-md gap-x-5 lg:w-[900px] mx-auto">
-      {/* Изображение */}
       <div className="flex flex-shrink-0 w-full h-[300px] justify-center relative">
         <img
           className="w-[180px] h-full object-cover rounded-md"
           src={changeImageZoomLink(book?.imageLink)}
           alt={book?.title}
         />
-        <Button
-          variant="outline"
-          className={cn(
-            "absolute top-0 right-0 p-3",
-            favoriteBook && "border-yellow-500"
-          )}
-          onClick={handleClick}
-          disabled={
-            bookIsAddingInFavorite ||
+        <div className="absolute top-0 right-0 flex flex-col gap-y-1">
+          <Button
+            variant="outline"
+            className={cn("p-3", favoriteBook && "border-yellow-500")}
+            onClick={handleClick}
+            disabled={
+              bookIsAddingInFavorite ||
+              favoriteBookIsLoading ||
+              bookIsRemovingFromFavorite
+            }
+          >
+            {bookIsAddingInFavorite ||
             favoriteBookIsLoading ||
-            bookIsRemovingFromFavorite
-          }
-        >
-          {bookIsAddingInFavorite ||
-          favoriteBookIsLoading ||
-          bookIsRemovingFromFavorite ? (
-            <LoaderLucide className="animate-spin" />
-          ) : (
-            <Star
-              className={cn(favoriteBook && "fill-yellow-500 text-yellow-500")}
-            />
-          )}
+            bookIsRemovingFromFavorite ? (
+              <LoaderLucide className="animate-spin" />
+            ) : (
+              <Star
+                className={cn(
+                  favoriteBook && "fill-yellow-500 text-yellow-500"
+                )}
+              />
+            )}
 
-          <span className="hidden sm:block">
-            {favoriteBook ? " Удалить из избранного" : "В избранное"}
-          </span>
-        </Button>
+            <span className="hidden sm:block">
+              {favoriteBook ? " Удалить из избранного" : "В избранное"}
+            </span>
+          </Button>
+          <GetBookButton book={book} />
+        </div>
       </div>
 
-      {/* Описание */}
       <div className="flex flex-col">
         <div className="flex flex-col">
           <p className="text-base md:text-xl text-center mt-2">{book?.title}</p>
 
           <Separator className="my-2" />
 
-          <p className="text-xs md:text-base">
+          <div className="text-xs md:text-base">
             <span>Автор(ы)</span>:{" "}
-            <p className="italic">{book?.authors ?? "не указаны"}</p>
-          </p>
+            <p className="italic">
+              {book?.authors?.join(", ") ?? "не указаны"}
+            </p>
+          </div>
         </div>
-
         <Separator className="my-2" />
-
         <div className="text-xs md:text-base">
           <p>Описание: </p>
           <p>{book?.description ?? "не указано"}</p>
         </div>
-
         <Separator className="my-2" />
-
         <div className="flex justify-between text-sm md:text-base">
           <span>Язык: {book?.language ?? "не указан"}</span>
           <span>Страниц: {book?.pageCount ?? "не указано"}</span>
         </div>
-
         <Separator className="my-2" />
-
         <div className="text-sm md:text-base">
           <p>Издатель: {book?.publisher ?? "не указан"}</p>
           <p>Дата издания: {book?.publishedDate ?? "не указана"}</p>
         </div>
+        <Separator className="my-2" />
       </div>
     </div>
   );
