@@ -24,7 +24,6 @@ import { api } from "../../../../convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Id } from "convex/_generated/dataModel";
-import { AuthRequire } from "@/components/auth-require";
 
 export function Profile() {
   const { currentUser, isLoading: currentUserLoading } = useCurrentUser();
@@ -68,7 +67,7 @@ export function Profile() {
 
   const avatarFallback = currentUser?.name?.charAt(0).toUpperCase();
 
-  if (currentUserLoading) {
+  if (!currentUser || currentUserLoading) {
     return (
       <div className="flex justify-center items-center h-full absolute top-0 right-0 left-0 bottom-0">
         <Loader />
@@ -76,15 +75,11 @@ export function Profile() {
     );
   }
 
-  if (!currentUser) {
-    return <AuthRequire />;
-  }
-
   const onSubmit = async (values: z.infer<typeof profileSchema>) => {
     try {
       setLoading(true);
 
-      let storageId = currentUser.image as Id<"_storage">;
+      let storageId = currentUser?.image as Id<"_storage">;
 
       if (!imagePreview) {
         if (storageId) {
@@ -142,7 +137,8 @@ export function Profile() {
       <div className="flex justify-between items-center">
         <h1>Информация о профиле</h1>
         <span className="text-xs text-slate-500">
-          Дата создания: {format(currentUser._creationTime ?? "", "dd.MM.yyyy")}
+          Дата создания:{" "}
+          {format(currentUser?._creationTime ?? "", "dd.MM.yyyy")}
         </span>
       </div>
       <Form {...form}>
@@ -244,7 +240,7 @@ export function Profile() {
                     readOnly
                     disabled
                     {...field}
-                    value={currentUser.email}
+                    value={currentUser?.email}
                   />
                 </FormControl>
                 <FormMessage />
@@ -272,7 +268,7 @@ export function Profile() {
                     disabled
                     {...field}
                     value={
-                      currentUser.role === "user" ? "Читатель" : "Библиотекарь"
+                      currentUser?.role === "user" ? "Читатель" : "Библиотекарь"
                     }
                   />
                 </FormControl>

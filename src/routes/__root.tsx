@@ -30,10 +30,17 @@ function Root() {
     }
 
     if (
-      (currentUser && location.href === "/auth/sign-in") ||
-      location.href === "/auth/sign-up"
+      currentUser &&
+      (location.href === "/auth/sign-in" || location.href === "/auth/sign-up")
     ) {
       router.history.push(sessionStorage.getItem("prevPage") ?? "/");
+    }
+
+    if (
+      !currentUser &&
+      (location.href === "/profile" || location.href.includes("/books/rent/"))
+    ) {
+      router.history.push("/auth/sign-in");
     }
   }, [currentUser, location.href, router.history]);
 

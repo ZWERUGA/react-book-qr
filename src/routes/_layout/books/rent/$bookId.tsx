@@ -1,4 +1,3 @@
-import { AuthRequire } from "@/components/auth-require";
 import Loader from "@/components/loader";
 import { useGetBook } from "@/features/books/api/use-get-book";
 import { useCreateRent } from "@/features/rents/api/use-create-rent";
@@ -29,10 +28,6 @@ function RouteComponent() {
       mutate(bookId as Id<"books">);
     }
   }, [bookId, currentUser, mutate, rentBook, rentBookIsLoading]);
-
-  if (!currentUser) {
-    return <AuthRequire />;
-  }
 
   if (bookIsLoading || rentBookIsLoading) {
     return (
