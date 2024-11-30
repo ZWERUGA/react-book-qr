@@ -11,8 +11,6 @@ import { useCurrentUser } from "@/hooks/use-current-user";
 import { useToast } from "@/hooks/use-toast";
 import { useGetFavorite } from "@/features/favorites/api/use-get-favorite";
 import { useDeleteFavorite } from "@/features/favorites/api/use-remove-favorite";
-import QRCode from "react-qr-code";
-import { baseUrl } from "@/constants/links";
 import { GetBookButton } from "@/components/get-book-button";
 
 export const Route = createFileRoute("/_layout/books/$bookId")({
@@ -90,10 +88,6 @@ function Book() {
                 )}
               />
             )}
-
-            <span className="hidden sm:block">
-              {favoriteBook ? " Удалить из избранного" : "В избранное"}
-            </span>
           </Button>
           <GetBookButton book={book} />
         </div>

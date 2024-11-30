@@ -18,12 +18,15 @@ export function SocialButton({
 }: SocialButtonProps) {
   const { toast } = useToast();
   const { signIn } = useAuthActions();
+
   const [isLoading, setLoading] = useState<boolean>(false);
 
   const handleClick = async () => {
     setLoading(true);
 
-    signIn(provider)
+    signIn(provider, {
+      redirectTo: sessionStorage.getItem("prevPage") ?? "/",
+    })
       .then(() => {
         toast({
           title: "Вход в систему",

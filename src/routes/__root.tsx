@@ -1,16 +1,41 @@
 import { Toaster } from "@/components/ui/toaster";
+import { useCurrentUser } from "@/hooks/use-current-user";
 import { cn } from "@/lib/utils";
-import { createRootRoute, Outlet } from "@tanstack/react-router";
+import {
+  createRootRoute,
+  Outlet,
+  useLocation,
+  useRouter,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { ChevronUp } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Route = createRootRoute({
   component: Root,
 });
 
 function Root() {
+  const location = useLocation();
+  const router = useRouter();
+  const { currentUser } = useCurrentUser();
   const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (
+      location.href !== "/auth/sign-in" &&
+      location.href !== "/auth/sign-up"
+    ) {
+      sessionStorage.setItem("prevPage", location.href);
+    }
+
+    if (
+      (currentUser && location.href === "/auth/sign-in") ||
+      location.href === "/auth/sign-up"
+    ) {
+      router.history.push(sessionStorage.getItem("prevPage") ?? "/");
+    }
+  }, [currentUser, location.href, router.history]);
 
   window.addEventListener("scroll", () => {
     if (scrollY > 1000) {
