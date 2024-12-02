@@ -23,6 +23,7 @@ import { Route as LayoutBooksRentBookIdImport } from './routes/_layout/books/ren
 // Create Virtual Routes
 
 const LayoutIndexLazyImport = createFileRoute('/_layout/')()
+const LayoutFavoritesIndexLazyImport = createFileRoute('/_layout/favorites/')()
 
 // Create/Update Routes
 
@@ -48,6 +49,14 @@ const AuthSignInRoute = AuthSignInImport.update({
   path: '/auth/sign-in',
   getParentRoute: () => rootRoute,
 } as any)
+
+const LayoutFavoritesIndexLazyRoute = LayoutFavoritesIndexLazyImport.update({
+  id: '/favorites/',
+  path: '/favorites/',
+  getParentRoute: () => LayoutRoute,
+} as any).lazy(() =>
+  import('./routes/_layout/favorites/index.lazy').then((d) => d.Route),
+)
 
 const LayoutProfileIndexRoute = LayoutProfileIndexImport.update({
   id: '/profile/',
@@ -113,6 +122,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LayoutProfileIndexImport
       parentRoute: typeof LayoutImport
     }
+    '/_layout/favorites/': {
+      id: '/_layout/favorites/'
+      path: '/favorites'
+      fullPath: '/favorites'
+      preLoaderRoute: typeof LayoutFavoritesIndexLazyImport
+      parentRoute: typeof LayoutImport
+    }
     '/_layout/books/rent/$bookId': {
       id: '/_layout/books/rent/$bookId'
       path: '/books/rent/$bookId'
@@ -129,6 +145,7 @@ interface LayoutRouteChildren {
   LayoutIndexLazyRoute: typeof LayoutIndexLazyRoute
   LayoutBooksBookIdRoute: typeof LayoutBooksBookIdRoute
   LayoutProfileIndexRoute: typeof LayoutProfileIndexRoute
+  LayoutFavoritesIndexLazyRoute: typeof LayoutFavoritesIndexLazyRoute
   LayoutBooksRentBookIdRoute: typeof LayoutBooksRentBookIdRoute
 }
 
@@ -136,6 +153,7 @@ const LayoutRouteChildren: LayoutRouteChildren = {
   LayoutIndexLazyRoute: LayoutIndexLazyRoute,
   LayoutBooksBookIdRoute: LayoutBooksBookIdRoute,
   LayoutProfileIndexRoute: LayoutProfileIndexRoute,
+  LayoutFavoritesIndexLazyRoute: LayoutFavoritesIndexLazyRoute,
   LayoutBooksRentBookIdRoute: LayoutBooksRentBookIdRoute,
 }
 
@@ -149,6 +167,7 @@ export interface FileRoutesByFullPath {
   '/': typeof LayoutIndexLazyRoute
   '/books/$bookId': typeof LayoutBooksBookIdRoute
   '/profile': typeof LayoutProfileIndexRoute
+  '/favorites': typeof LayoutFavoritesIndexLazyRoute
   '/books/rent/$bookId': typeof LayoutBooksRentBookIdRoute
 }
 
@@ -158,6 +177,7 @@ export interface FileRoutesByTo {
   '/': typeof LayoutIndexLazyRoute
   '/books/$bookId': typeof LayoutBooksBookIdRoute
   '/profile': typeof LayoutProfileIndexRoute
+  '/favorites': typeof LayoutFavoritesIndexLazyRoute
   '/books/rent/$bookId': typeof LayoutBooksRentBookIdRoute
 }
 
@@ -169,6 +189,7 @@ export interface FileRoutesById {
   '/_layout/': typeof LayoutIndexLazyRoute
   '/_layout/books/$bookId': typeof LayoutBooksBookIdRoute
   '/_layout/profile/': typeof LayoutProfileIndexRoute
+  '/_layout/favorites/': typeof LayoutFavoritesIndexLazyRoute
   '/_layout/books/rent/$bookId': typeof LayoutBooksRentBookIdRoute
 }
 
@@ -181,6 +202,7 @@ export interface FileRouteTypes {
     | '/'
     | '/books/$bookId'
     | '/profile'
+    | '/favorites'
     | '/books/rent/$bookId'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -189,6 +211,7 @@ export interface FileRouteTypes {
     | '/'
     | '/books/$bookId'
     | '/profile'
+    | '/favorites'
     | '/books/rent/$bookId'
   id:
     | '__root__'
@@ -198,6 +221,7 @@ export interface FileRouteTypes {
     | '/_layout/'
     | '/_layout/books/$bookId'
     | '/_layout/profile/'
+    | '/_layout/favorites/'
     | '/_layout/books/rent/$bookId'
   fileRoutesById: FileRoutesById
 }
@@ -235,6 +259,7 @@ export const routeTree = rootRoute
         "/_layout/",
         "/_layout/books/$bookId",
         "/_layout/profile/",
+        "/_layout/favorites/",
         "/_layout/books/rent/$bookId"
       ]
     },
@@ -254,6 +279,10 @@ export const routeTree = rootRoute
     },
     "/_layout/profile/": {
       "filePath": "_layout/profile/index.tsx",
+      "parent": "/_layout"
+    },
+    "/_layout/favorites/": {
+      "filePath": "_layout/favorites/index.lazy.tsx",
       "parent": "/_layout"
     },
     "/_layout/books/rent/$bookId": {

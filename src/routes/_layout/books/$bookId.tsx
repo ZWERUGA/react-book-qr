@@ -66,36 +66,40 @@ function Book() {
           src={changeImageZoomLink(book?.imageLink)}
           alt={book?.title}
         />
-        <div className="absolute top-0 right-0 flex flex-col gap-y-1">
-          <Button
-            variant="outline"
-            className={cn("p-3", favoriteBook && "border-yellow-500")}
-            onClick={handleClick}
-            disabled={
-              bookIsAddingInFavorite ||
-              favoriteBookIsLoading ||
-              bookIsRemovingFromFavorite
-            }
-          >
-            {bookIsAddingInFavorite ||
-            favoriteBookIsLoading ||
-            bookIsRemovingFromFavorite ? (
-              <LoaderLucide className="animate-spin" />
-            ) : (
-              <Star
-                className={cn(
-                  favoriteBook && "fill-yellow-500 text-yellow-500"
-                )}
-              />
-            )}
-          </Button>
-          <GetBookButton book={book} />
-        </div>
       </div>
 
       <div className="flex flex-col">
         <div className="flex flex-col">
           <p className="text-base md:text-xl text-center mt-2">{book?.title}</p>
+
+          <Separator className="my-2" />
+
+          <div className="flex gap-1 flex-col sm:flex-row">
+            <Button
+              variant="outline"
+              className={cn("p-3 w-full", favoriteBook && "border-yellow-500")}
+              onClick={handleClick}
+              disabled={
+                bookIsAddingInFavorite ||
+                favoriteBookIsLoading ||
+                bookIsRemovingFromFavorite
+              }
+            >
+              {bookIsAddingInFavorite ||
+              favoriteBookIsLoading ||
+              bookIsRemovingFromFavorite ? (
+                <LoaderLucide className="animate-spin" />
+              ) : (
+                <Star
+                  className={cn(
+                    favoriteBook && "fill-yellow-500 text-yellow-500"
+                  )}
+                />
+              )}
+              {favoriteBook ? "Удалить из ибранного" : "Добавить в избранное"}
+            </Button>
+            <GetBookButton book={book} />
+          </div>
 
           <Separator className="my-2" />
 

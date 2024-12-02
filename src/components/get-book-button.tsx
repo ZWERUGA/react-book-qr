@@ -35,8 +35,9 @@ export function GetBookButton({ book }: GetBookButtonProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="p-3">
+        <Button variant="outline" className="p-3 w-full">
           <HandHelping />
+          Получить
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">

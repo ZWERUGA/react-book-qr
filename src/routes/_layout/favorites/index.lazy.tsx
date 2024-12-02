@@ -1,18 +1,16 @@
 import Loader from "@/components/loader";
 import { BookList } from "@/features/books/components/book-list";
 import { SearchBar } from "@/features/books/components/search-bar";
-import { useGetBooks } from "@/features/books/api/use-get-books";
-import { createLazyFileRoute } from "@tanstack/react-router";
-import { useGetFavorites } from "@/features/favorites/api/use-get-favorites";
+import { useGetFavoritesBooks } from "@/features/favorites/api/use-get-favorite-books";
 import { useBooks } from "@/hooks/use-books";
+import { createLazyFileRoute } from "@tanstack/react-router";
 
-export const Route = createLazyFileRoute("/_layout/")({
-  component: Index,
+export const Route = createLazyFileRoute("/_layout/favorites/")({
+  component: Favorites,
 });
 
-function Index() {
-  const { books, isLoading } = useGetBooks();
-  const { favorites } = useGetFavorites();
+function Favorites() {
+  const { favoriteBooks, isLoading } = useGetFavoritesBooks();
 
   const {
     searchInput,
@@ -25,7 +23,7 @@ function Index() {
     pageNumbers,
     paginate,
     setBookListTitle,
-  } = useBooks(books, isLoading);
+  } = useBooks(favoriteBooks, isLoading);
 
   if (isLoading) {
     return (
@@ -49,7 +47,7 @@ function Index() {
         <BookList
           title={setBookListTitle()}
           books={booksData}
-          favoriteBooks={favorites}
+          favoriteBooks={null}
           currentPage={currentPage}
           pageNumbers={pageNumbers}
           paginate={paginate}

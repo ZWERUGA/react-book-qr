@@ -2,8 +2,8 @@ import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 
 export function useGetFavorites() {
-  const favoriteBooks = useQuery(api.favorites.getAllById);
-  const isLoading = favoriteBooks === undefined;
+  const favorites = useQuery(api.favorites.getAllIds);
+  const isLoading = favorites === undefined;
 
-  return { favoriteBooks, isLoading };
+  return { favorites, isLoading };
 }

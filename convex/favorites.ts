@@ -2,7 +2,7 @@ import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import { getAuthUserId } from "@convex-dev/auth/server";
 
-export const getAllById = query({
+export const getAllIds = query({
   args: {},
   handler: async (ctx) => {
     const userId = await getAuthUserId(ctx);
@@ -14,7 +14,43 @@ export const getAllById = query({
       .filter((q) => q.eq(q.field("userId"), userId))
       .collect();
 
+    if (!favorites) {
+      return null;
+    }
+
     return favorites.map((favorite) => favorite.bookId);
+  },
+});
+
+export const getAllFavorites = query({
+  args: {},
+  handler: async (ctx) => {
+    const userId = await getAuthUserId(ctx);
+
+    if (userId === null) {
+      return;
+    }
+
+    const favorites = await ctx.db
+      .query("favorites")
+      .filter((q) => q.eq(q.field("userId"), userId))
+      .collect();
+
+    if (!favorites) {
+      return null;
+    }
+
+    const favoritesBooks = [];
+
+    for (const favorite of favorites) {
+      favoritesBooks.push(await ctx.db.get(favorite.bookId));
+    }
+
+    if (!favoritesBooks) {
+      return null;
+    }
+
+    return favoritesBooks;
   },
 });
 

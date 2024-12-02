@@ -17,7 +17,7 @@ import { Id } from "convex/_generated/dataModel";
 
 interface BookListProps {
   title: string;
-  books: TBook[] | undefined;
+  books: (TBook | null)[] | undefined;
   favoriteBooks: Id<"books">[] | null | undefined;
   currentPage: number;
   pageNumbers: number[];
@@ -58,7 +58,7 @@ export function BookList({
     <div>
       <h1 className="text-2xl">{title}</h1>
 
-      <div className="grid 2xl:grid-cols-6 gap-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-2">
+      <div className="grid 2xl:grid-cols-7 gap-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-2">
         <TooltipProvider delayDuration={300}>
           {books?.map((book) => (
             <Tooltip key={book._id}>
@@ -69,12 +69,13 @@ export function BookList({
                   key={book._id}
                   className={cn(
                     "border flex flex-col gap-2 items-center p-2 rounded-md relative group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover:transition-colors",
-                    favoriteBooks?.includes(book._id) && "border-yellow-500 bg-yellow-500/20"
+                    favoriteBooks?.includes(book._id) &&
+                      "border-yellow-500 bg-yellow-500/20"
                   )}
                 >
-                  <div className="flex items-center w-full justify-center bg-slate-200 dark:bg-primary/5 rounded-md py-3">
+                  <div className="flex items-center w-full justify-center bg-primary/5 rounded-md py-3">
                     <img
-                      className="2xl:h-80 gap-5 md:h-64 sm:h-52 h-40 rounded-md"
+                      className="sm:h-52 h-40 rounded-md"
                       src={changeImageZoomLink(book.imageLink) ?? noBookImage}
                       alt={book.title}
                     />

@@ -32,7 +32,9 @@ function RouteComponent() {
               <Logo />
             </HeaderLink>
             <div className="hidden lg:flex">
-              
+              <HeaderLink to="/favorites">
+                Избранное
+              </HeaderLink>
             </div>
           </nav>
           <div className="hidden md:block">
