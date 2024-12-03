@@ -61,50 +61,51 @@ export function BookList({
       <div className="grid 2xl:grid-cols-7 gap-1 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-2">
         <TooltipProvider delayDuration={300}>
           {books?.map((book) => (
-            <Tooltip key={book._id}>
+            <Tooltip key={book?._id}>
               <TooltipTrigger asChild>
                 <Link
                   to={"/books/$bookId"}
-                  params={{ bookId: book._id }}
-                  key={book._id}
+                  params={{ bookId: book?._id as string }}
+                  key={book?._id}
                   className={cn(
                     "border flex flex-col gap-2 items-center p-2 rounded-md relative group hover:bg-cyan-100 dark:hover:bg-cyan-950 hover:transition-colors",
-                    favoriteBooks?.includes(book._id) &&
+                    book &&
+                      favoriteBooks?.includes(book._id) &&
                       "border-yellow-500 bg-yellow-500/20"
                   )}
                 >
                   <div className="flex items-center w-full justify-center bg-primary/5 rounded-md py-3">
                     <img
                       className="sm:h-52 h-40 rounded-md"
-                      src={changeImageZoomLink(book.imageLink) ?? noBookImage}
-                      alt={book.title}
+                      src={changeImageZoomLink(book?.imageLink) ?? noBookImage}
+                      alt={book?.title}
                     />
                   </div>
                   <div className="flex flex-col gap-y-2 h-full items-center text-center">
                     <div className="flex flex-col gap-1 h-full">
                       <p className="sm:text-sm md:text-base lg:text-lg text-xs font-light text-card-foreground">
-                        {displayTitle(book.title)}
+                        {displayTitle(book?.title)}
                       </p>
                       <span className="text-xs italic mt-auto">
-                        {book.authors?.length
-                          ? book.authors?.length > 1
-                            ? `${book.authors
+                        {book?.authors?.length
+                          ? book?.authors?.length > 1
+                            ? `${book?.authors
                                 ?.slice(0, 1)
                                 .map((author) => author)
                                 .join(", ")} и др.`
-                            : book.authors?.map((author) => author).join(", ")
+                            : book?.authors?.map((author) => author).join(", ")
                           : "Нет автора"}
                       </span>
                     </div>
 
-                    <Label className="flex opacity-0 absolute right-10 text-cyan-950 dark:text-cyan-300 bottom-1 group-hover:translate-x-7 group-hover:opacity-100 transition-all items-center gap-x-2 cursor-pointer">
+                    <Label className="flex opacity-0 absolute right-10 text-cyan-950 dark:text-cyan-300 bottom-1 group-hover:translate-x-7 sm:group-hover:opacity-100 transition-all items-center gap-x-2 cursor-pointer">
                       <MoveRight />
                     </Label>
                   </div>
                 </Link>
               </TooltipTrigger>
               <TooltipContent className="bg-cyan-100 dark:bg-cyan-950 w-[280px] sm:w-[300px]">
-                <p>{book.title}</p>
+                <p>{book?.title}</p>
               </TooltipContent>
             </Tooltip>
           ))}

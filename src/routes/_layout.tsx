@@ -4,8 +4,8 @@ import { createFileRoute, Outlet } from "@tanstack/react-router";
 import { useCurrentUser } from "@/hooks/use-current-user";
 import { HeaderLink } from "@/components/header-link";
 import { Logo } from "@/components/logo";
-import { Separator } from "@/components/ui/separator";
 import { CustomSheet } from "@/components/mobile-nav";
+import { LuStar } from "react-icons/lu";
 
 export const Route = createFileRoute("/_layout")({
   component: RouteComponent,
@@ -27,12 +27,10 @@ function RouteComponent() {
       <div className="flex flex-col h-full px-1 2xl:p-0">
         {/* HEADER */}
         <div className="flex justify-between items-center py-1">
-          <nav className="list-none flex">
-            <HeaderLink to="/">
-              <Logo />
-            </HeaderLink>
+          <nav className="list-none flex gap-x-2">
+            <HeaderLink to="/" icon={Logo} />
             <div className="hidden lg:flex">
-              <HeaderLink to="/favorites">
+              <HeaderLink to="/favorites" icon={LuStar} className="[&.active]:border-b [&.active]:border-yellow-500">
                 Избранное
               </HeaderLink>
             </div>
@@ -44,7 +42,6 @@ function RouteComponent() {
             <CustomSheet />
           </div>
         </div>
-        <Separator />
         <Outlet />
       </div>
     </>

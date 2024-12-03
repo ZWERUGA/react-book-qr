@@ -51,7 +51,7 @@ export function CustomSheet() {
             <SheetClose key={link.id} asChild>
               <Link
                 to={link.to}
-                className="hover:bg-slate-300 dark:hover:bg-slate-800 p-2 border rounded-md hover:transition-colors flex flex-col items-center gap-y-1 justify-center"
+                className="hover:bg-slate-300 dark:hover:bg-slate-800 p-2 border rounded-md hover:transition-colors flex flex-col items-center gap-y-1 justify-center [&.active]:bg-slate-500 [&.active]:text-white"
               >
                 <link.icon />
                 {link.title}

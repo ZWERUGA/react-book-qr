@@ -22,10 +22,10 @@ export const useBooks = (
       computedBooks =
         selectInput === "title"
           ? computedBooks?.filter((book) =>
-              book.title?.toLowerCase().includes(searchText.toLowerCase())
+              book?.title?.toLowerCase().includes(searchText.toLowerCase())
             )
           : computedBooks?.filter((book) =>
-              book.authors?.some((author) =>
+              book?.authors?.some((author) =>
                 author.toLowerCase().includes(searchText.toLowerCase())
               )
             );
